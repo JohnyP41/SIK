@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
 <sprawozdanie przedmiot="SIK" temat="E">
-<imie_nazwisko>Jan Przybylski</imie_nazwisko>
-<nr_indeksu>426228</nr_indeksu>
+<imie_nazwisko></imie_nazwisko>
+<nr_indeksu></nr_indeksu>
 <liczba_pkt>20.5</liczba_pkt>
 <zadanie nr="opis(1) Przyklad 1" pkt="0.5"></zadanie>
 <zadanie nr="opis(1) Przyklad 2" pkt="0.5"></zadanie>

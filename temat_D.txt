@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
+<sprawozdanie przedmiot="SIK" temat="D">
+<imie_nazwisko>Jan Przybylski</imie_nazwisko>
+<nr_indeksu>426228</nr_indeksu>
+<liczba_pkt>18.5</liczba_pkt>
+<zadanie nr="D.1" pkt="1.0"></zadanie>
+<zadanie nr="D.4" pkt="1.0"></zadanie>
+<zadanie nr="D.5" pkt="1.0"></zadanie>
+<zadanie nr="D.6" pkt="1.0"></zadanie>
+<zadanie nr="D.7" pkt="1.0"></zadanie>
+<zadanie nr="D.8" pkt="1.0"></zadanie>
+<zadanie nr="D.10" pkt="2.5"></zadanie>
+<zadanie nr="D.11" pkt="1.0"></zadanie>
+<zadanie nr="D.11a" pkt="1.0"></zadanie>
+<zadanie nr="D.12a" pkt="1.0"></zadanie>
+<zadanie nr="D.12" pkt="2.0"></zadanie>
+<zadanie nr="D.13" pkt="1.0"></zadanie>
+<zadanie nr="D.13a" pkt="1.5"></zadanie>
+<zadanie nr="D.13b" pkt="1.5"></zadanie>
+<zadanie nr="D.15" pkt="1.0"></zadanie>
+</sprawozdanie>
+
+Zadanie D.1 -------------------------------------
+\\\wydruk
+12:21:39 localhost:8016 <--> localhost:8015
+12:21:39 waiting for new connection...
+12:21:53 connect from 127.0.0.1 localhost 8016 37948
+12:21:53 connecting to localhost:8015
+12:21:53 GET / HTTP/1.1
+12:21:53 Host: localhost:8016
+12:21:53 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+12:21:53 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:21:53 Accept-Language: en-US,en;q=0.5
+12:21:53 Accept-Encoding: gzip, deflate
+12:21:53 Connection: keep-alive
+12:21:53 Upgrade-Insecure-Requests: 1
+12:21:53 
+12:21:53 
+12:21:53 HTTP/1.1 200 Data follows
+12:21:53 Date: Wed, 04 Apr 2018 10:21:53 GMT
+12:21:53 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:21:53 Content-Type: text/html
+12:21:53 Content-Length: 5026
+12:21:53 
+12:21:53 
+12:21:53 
+12:21:53 
+12:21:53 <html><head>
+12:21:53 	<title>TclHttpd Home Page</title>
+12:21:53 	<!-- Brent Welch -->
+12:21:53 	<meta name="description" content="TclHttpd, the Tcl Web Server, is an extensible
+12:21:53 platform for web application development.">
+12:21:53 	<meta name="keywords" content="Tcl, TclHttpd, Tcl/Tk, Tcl Web Server, Web Server">
+12:21:53 </head>
+12:21:53 
+12:21:53 <body bgcolor="white" text="black">
+12:21:53 
+12:21:53 <table cellpadding=0 cellspacing=0 border=0 width=100%>
+12:21:53 <tr>  <td align=left><font face="arial"><a href=/><img src=/images/tclp.gif border=0 alt="Home"></a></font></td>  <td><font face="arial"><h2>TclHttpd Home Page</h2></font></td>  </tr><tr><td colspan=2  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:21:53 </table><font face="arial">
+12:21:53 
+12:21:53 <!-- DynamicOnly -->
+12:21:53 
+12:21:53 
+12:21:53 <!-- Two Column Format -->
+12:21:53 <table border=0 cellpadding=4>
+12:21:53 <tr><td valign=top>
+12:21:53 <!-- Left Column -->
+12:21:53 
+12:21:53 April 04, 2018 12:21:53
+12:21:53 
+12:21:53 
+12:21:53 <p>
+12:21:53 The TclHttpd is a pure Tcl implementation of a Web server.
+12:21:53 It runs as a Tcl script on top of
+12:21:53 <a href=http://www.tcl.tk/software/tcltk/>Tcl</a>.
+12:21:53 This server is running Tcl 8.4.8.
+12:21:53 There is more <a href=version_history.html>TclHttpd version information</a>
+12:21:53 about using other versions of Tcl and the Standard Tcl Library (tcllib).
+12:21:53 <p>
+12:21:53 
+12:21:53 While this server works fine as a stand alone web server, the
+12:21:53 intent is to embed the server in other applications in order to
+12:21:53 "web enable" them.
+12:21:53 A Tcl-based web server is ideal for embedding
+12:21:53 because Tcl was designed from the start
+12:21:53 to support embedding into other applications.
+12:21:53 The interpreted nature of Tcl allows dynamic reconfiguration of the
+12:21:53 server. Once the core interface between the web server and the hosting
+12:21:53 application is defined, it is possible to manage the web server, upload
+12:21:53 Safe-Tcl control scripts, download logging information, and otherwise
+12:21:53 debug the Tcl part of the application without restarting the hosting
+12:21:53 application.
+12:21:53 <p>
+12:21:53 
+12:21:53   The server is distributed under a <a href=license.terms>copyright</a> that allows free use.
+12:21:53 
+12:21:53 
+12:21:53 <p>
+12:21:53 The <a href="mailto:tclhttpd-users@lists.sourceforge.net">tclhttpd-users@lists.sourceforge.net</a> mailing list is the best source of current
+12:21:53 information about TclHttpd.
+12:21:53 
+12:21:53 <!--
+12:21:53 Please <a href=register.html>Register Your Software</a> so
+12:21:53 we can see how widely used the server is.
+12:21:53  -->
+12:21:53 
+12:21:53 <h4>Related Articles</h4>
+12:21:53 
+12:21:53 <ul><li><a href=/links/INSTALL.txt>INSTALL.txt</a>
+12:21:53 <li><a href=/links/README.ssl.txt>README.ssl.txt</a>
+12:21:53 <li><a href=/links/README.txt>README.txt</a>
+12:21:53 <li><a href=/links/WHATSNEW.txt>WHATSNEW.txt</a>
+12:21:53 </ul>
+12:21:53 
+12:21:53 <a href=http://www.tcl.tk/software/tclhttpd/>The main TclHttpd Information Page</a>.
+12:21:53 <p>
+12:21:53 A <a href=book/TCLHTTPD.html>Tcl Httpd Book Chapter</a> from the
+12:21:53 3rd Edition of
+12:21:53 <em><a href=http://www.beedub.com/book>Practical Programming in Tcl and Tk</a></em>
+12:21:53 by Brent Welch.
+12:21:53 <p>
+12:21:53 The <a HREF="http://www.tcl.tk/software/tclhttpd/server.html">white
+12:21:53 paper</a> presents a case for an embedded web server from more of a
+12:21:53 business angle.
+12:21:53 
+12:21:53 <!-- End Left Column -->
+12:21:53 </td><td valign=top>
+12:21:53 <!-- Right Column -->
+12:21:53 
+12:21:53 <h4>Control/Status Pages</h4>
+12:21:53 <ul>
+12:21:53 <li><a HREF="/status/">Server statistics</a>.
+12:21:53 Home hits: 2
+12:21:53 <li><!--- <a HREF="hacks.html">Control panel</a> -->
+12:21:53 <a HREF="hacks.tml">Control panel</a>
+12:21:53 </ul>
+12:21:53 <h4>Documentation</h4>
+12:21:53 <ul>
+12:21:53 <li>
+12:21:53 <a href=man/>Manual pages</a>.
+12:21:53 <li>
+12:21:53 <a HREF="templates/">Templates with inline Tcl</a>.
+12:21:53 <li>
+12:21:53 <a HREF="access/">Access control schemes</a>.
+12:21:53 <li>
+12:21:53 
+12:21:53   <a href="/learn/">Learn</a> 
+12:21:53 <li><a href="/learn/setup.tml">Basic Setup</a>
+12:21:53 <li><a href="/templates/">Templates</a>
+12:21:53 <li><a href="/learn/security.tml">Server Security</a>
+12:21:53 <li><a href="/learn/direct.tml">Direct URLs</a>
+12:21:53 <li><a href="/learn/domain.tml">URL Domains</a>
+12:21:53 
+12:21:53 </ul>
+12:21:53 
+12:21:53 <h4>Test Pages</h4>
+12:21:53 <ul>
+12:21:53 <li><a href="guestbook/guestbook.cgi">View Guest Book</a>
+12:21:53 <li><a href="guestbook/newguest.html">Update Guest Book</a>
+12:21:53 <li><a HREF="include.shtml">Server includes</a>
+12:21:53 <li><a HREF="forms/">CGI</a>  You probably need to install the Standard Tcl Library for this.
+12:21:53 <li><a HREF="map/">Imagemaps</a>
+12:21:53 <li><a HREF="/xyzzy">Sample missing page</a>
+12:21:53 <li><a HREF="/debug/raise?message=This+page+raises+errors!">A page that raises an error</a>
+12:21:53 <li><a HREF="images">A directory listing page</a>
+12:21:53 </ul>
+12:21:53 
+12:21:53 <!-- End Right Column -->
+12:21:53 </td></tr>
+12:21:53 <!-- End Two Column Format -->
+12:21:53     "Learn"     	/learn/
+12:21:53 </table>
+12:21:53 
+12:21:53 
+12:21:53 <!-- 
+12:21:53     Home		/
+12:21:53     Status		/status	
+12:21:53     "CGI Tests"		/forms/
+12:21:53     "Templates"		/templates/
+12:21:53     "Access Control"	/access/
+12:21:53     "Reference Manual"	/man/
+12:21:53  -->
+12:21:53 <table cellpadding=0 cellspacing=2 border=0 width=100%>
+12:21:53 <tr><td colspan=7  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:21:53 <tr><td><font face="arial">Home</font></td><td><font face="arial"><a href="/status">Status</a></font></td><td><font face="arial"><a href="/learn/">Learn</a></font></td><td><font face="arial"><a href="/forms/">CGI Tests</a></font></td><td><font face="arial"><a href="/templates/">Templates</a></font></td><td><font face="arial"><a href="/access/">Access Control</a></font></td><td><font face="arial"><a href="/man/">Reference Manual</a></font></td></tr>
+12:21:53 </table>
+12:21:53 </body>
+12:21:53 </html>
+12:21:53 
+12:21:53 
+12:21:53 GET /images/tclp.gif HTTP/1.1
+12:21:53 Host: localhost:8016
+12:21:53 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+12:21:53 Accept: */*
+12:21:53 Accept-Language: en-US,en;q=0.5
+12:21:53 Accept-Encoding: gzip, deflate
+12:21:53 Referer: http://localhost:8016/
+12:21:53 Connection: keep-alive
+12:21:53 
+12:21:53 
+12:21:53 connect from 127.0.0.1 localhost 8016 37952
+12:21:53 connecting to localhost:8015
+12:21:53 GET /images/Space.gif HTTP/1.1
+12:21:53 Host: localhost:8016
+12:21:53 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+12:21:53 Accept: */*
+12:21:53 Accept-Language: en-US,en;q=0.5
+12:21:53 Accept-Encoding: gzip, deflate
+12:21:53 Referer: http://localhost:8016/
+12:21:53 Connection: keep-alive
+12:21:53 
+12:21:53 
+12:21:53 HTTP/1.1 200 Data follows
+12:21:53 Date: Wed, 04 Apr 2018 10:21:53 GMT
+12:21:53 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:21:53 Content-Type: image/gif
+12:21:53 Content-Length: 1294
+12:21:53 Last-Modified: Tue, 18 Apr 2000 16:02:40 GMT
+12:21:53 
+12:21:53 GIF89a*.@...........................f..............f.ff.f..3...........f..ff.f3.33f..ff.ff.ffff3ff333f.33f.3.!. Made with GIMP by L@Demailly.com.!...d...,....*.@....` .dI2L.6....#.t]7o..r...A.G..x..L.......'C ..G.4.)y...h.>.....0d[R..K.$..I.y .~.t2......X0D.N3......&{6....Y.]4
+12:21:53 ...5.igf..4....J.2..$.5f2....f...%.4.Z.....{T...'D....
+12:21:53 .6..#.E...a....%.Y.....a.4..~E....2.3..\d.7...G5.
+12:21:53 .BP..'...#")..7O<H.....I..xH7......$H*.....u.D..r....y.h....*...Rd@2..:....	.C.xe...$.G....p..{.....A...^k.X...J...-HK...(....Kw...O&.Z..P.J&(`....;.D^$.b.1..~].*..raJb^l.....f....Y.....4Ci.....b.....H...(.b.....D.!*.W......i.A....... .L....k'.].I.....Q.<..9.h.\|....(.._.....'C	q.......".j$....	>..v.<....@....`.....f...j! .%.H^.3X."..l...4...........@.Od.#......~.X'..H"...OZ7..G>i..W&..!XN..6Nb	e.J*i..`j.d.YJ...ij.f.W6).......|J....a...............EB..!.......,............'.......i...!.......,....
+12:21:53 ......  ....%P.k.~...p;.g..!.......,....	.............y..Z.....g.!.!...
+12:21:53 ...,.........;  >...$J.).....i9.s...c....C,~..$..T....G
+12:21:53 .T.L.V..J...6..ZC.!...
+12:21:53 ...,..7......... |..........;.f..!...
+12:21:53 ...,..7.........'|.S........9.e..!...
+12:21:53 ...,..7...........O)..(....p...!...
+12:21:53 ...,..7......... ~..	_j>#i.*).k..!...
+12:21:53 ...,..7......... |.c..C.......f..!...
+12:21:53 ...,..7......... ~..	_j>#I..;._..!...
+12:21:53 ...,..7......... |.H.f..;
+12:21:53 HTTP/1.1 200 Data follows
+12:21:53 Date: Wed, 04 Apr 2018 10:21:53 GMT
+12:21:53 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:21:53 Content-Type: image/gif
+12:21:53 Content-Length: 49
+12:21:53 Last-Modified: Tue, 09 May 2000 17:10:44 GMT
+12:21:53 
+12:21:53 GIF89a	.
+12:21:53 ..........!.......,....	.
+12:21:53 ..........a..;
+12:21:53 GET /favicon.ico HTTP/1.1
+12:21:53 Host: localhost:8016
+12:21:53 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+12:21:53 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:21:53 Accept-Language: en-US,en;q=0.5
+12:21:53 Accept-Encoding: gzip, deflate
+12:21:53 Connection: keep-alive
+12:21:53 
+12:21:53 
+12:21:53 HTTP/1.1 200 Data follows
+12:21:53 Date: Wed, 04 Apr 2018 10:21:53 GMT
+12:21:53 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:21:53 Content-Type: text/html
+12:21:53 Content-Length: 455
+12:21:53 
+12:21:53 <!Doctype HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+12:21:53 <Html>
+12:21:53 <Head>
+12:21:53 <Title>URL Not Found</Title>
+12:21:53 <!-- Author: bwelch -->
+12:21:53 <META HTTP-Equiv=Editor Content="SunLabs WebTk 1.0demo 3/10/97">
+12:21:53 </Head>
+12:21:53 <Body>
+12:21:53 
+12:21:53 
+12:21:53 
+12:21:53 <h1>URL:/favicon.ico<br>Not Found</h1>
+12:21:53 <p>
+12:21:53 The server was not able to locate the specified URL.
+12:21:53 <h4>/favicon.ico</h4>
+12:21:53 <p>
+12:21:53 <a HREF="index.html">Home</a>
+12:21:53 <p>
+12:21:53 <a HREF=mailto:webmaster@pc15h.labs.wmi.amu.edu.pl>Send email to webmaster</a>.
+12:21:53 
+12:21:53 </Body>
+12:21:53 </Html>
+12:21:53 
+12:21:53 
+12:23:49 ----- closed connection -----
+12:23:49 waiting for new connection...
+12:23:49 ----- closed connection -----
+12:23:49 waiting for new connection...
+12:24:01 connect from 127.0.0.1 localhost 8016 37956
+12:24:01 connecting to localhost:8015
+12:24:01 GET / HTTP/1.1
+12:24:01 Host: localhost:8016
+12:24:01 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+12:24:01 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:24:01 Accept-Language: en-US,en;q=0.5
+12:24:01 Accept-Encoding: gzip, deflate
+12:24:01 Connection: keep-alive
+12:24:01 Upgrade-Insecure-Requests: 1
+12:24:01 
+12:24:01 
+12:24:01 HTTP/1.1 200 Data follows
+12:24:01 Date: Wed, 04 Apr 2018 10:24:01 GMT
+12:24:01 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:24:01 Content-Type: text/html
+12:24:01 Content-Length: 5026
+12:24:01 
+12:24:01 
+12:24:01 
+12:24:01 
+12:24:01 <html><head>
+12:24:01 	<title>TclHttpd Home Page</title>
+12:24:01 	<!-- Brent Welch -->
+12:24:01 	<meta name="description" content="TclHttpd, the Tcl Web Server, is an extensible
+12:24:01 platform for web application development.">
+12:24:01 	<meta name="keywords" content="Tcl, TclHttpd, Tcl/Tk, Tcl Web Server, Web Server">
+12:24:01 </head>
+12:24:01 
+12:24:01 <body bgcolor="white" text="black">
+12:24:01 
+12:24:01 <table cellpadding=0 cellspacing=0 border=0 width=100%>
+12:24:01 <tr>  <td align=left><font face="arial"><a href=/><img src=/images/tclp.gif border=0 alt="Home"></a></font></td>  <td><font face="arial"><h2>TclHttpd Home Page</h2></font></td>  </tr><tr><td colspan=2  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:24:01 </table><font face="arial">
+12:24:01 
+12:24:01 <!-- DynamicOnly -->
+12:24:01 
+12:24:01 
+12:24:01 <!-- Two Column Format -->
+12:24:01 <table border=0 cellpadding=4>
+12:24:01 <tr><td valign=top>
+12:24:01 <!-- Left Column -->
+12:24:01 
+12:24:01 April 04, 2018 12:24:01
+12:24:01 
+12:24:01 
+12:24:01 <p>
+12:24:01 The TclHttpd is a pure Tcl implementation of a Web server.
+12:24:01 It runs as a Tcl script on top of
+12:24:01 <a href=http://www.tcl.tk/software/tcltk/>Tcl</a>.
+12:24:01 This server is running Tcl 8.4.8.
+12:24:01 There is more <a href=version_history.html>TclHttpd version information</a>
+12:24:01 about using other versions of Tcl and the Standard Tcl Library (tcllib).
+12:24:01 <p>
+12:24:01 
+12:24:01 While this server works fine as a stand alone web server, the
+12:24:01 intent is to embed the server in other applications in order to
+12:24:01 "web enable" them.
+12:24:01 A Tcl-based web server is ideal for embedding
+12:24:01 because Tcl was designed from the start
+12:24:01 to support embedding into other applications.
+12:24:01 The interpreted nature of Tcl allows dynamic reconfiguration of the
+12:24:01 server. Once the core interface between the web server and the hosting
+12:24:01 application is defined, it is possible to manage the web server, upload
+12:24:01 Safe-Tcl control scripts, download logging information, and otherwise
+12:24:01 debug the Tcl part of the application without restarting the hosting
+12:24:01 application.
+12:24:01 <p>
+12:24:01 
+12:24:01   The server is distributed under a <a href=license.terms>copyright</a> that allows free use.
+12:24:01 
+12:24:01 
+12:24:01 <p>
+12:24:01 The <a href="mailto:tclhttpd-users@lists.sourceforge.net">tclhttpd-users@lists.sourceforge.net</a> mailing list is the best source of current
+12:24:01 information about TclHttpd.
+12:24:01 
+12:24:01 <!--
+12:24:01 Please <a href=register.html>Register Your Software</a> so
+12:24:01 we can see how widely used the server is.
+12:24:01  -->
+12:24:01 
+12:24:01 <h4>Related Articles</h4>
+12:24:01 
+12:24:01 <ul><li><a href=/links/INSTALL.txt>INSTALL.txt</a>
+12:24:01 <li><a href=/links/README.ssl.txt>README.ssl.txt</a>
+12:24:01 <li><a href=/links/README.txt>README.txt</a>
+12:24:01 <li><a href=/links/WHATSNEW.txt>WHATSNEW.txt</a>
+12:24:01 </ul>
+12:24:01 
+12:24:01 <a href=http://www.tcl.tk/software/tclhttpd/>The main TclHttpd Information Page</a>.
+12:24:01 <p>
+12:24:01 A <a href=book/TCLHTTPD.html>Tcl Httpd Book Chapter</a> from the
+12:24:01 3rd Edition of
+12:24:01 <em><a href=http://www.beedub.com/book>Practical Programming in Tcl and Tk</a></em>
+12:24:01 by Brent Welch.
+12:24:01 <p>
+12:24:01 The <a HREF="http://www.tcl.tk/software/tclhttpd/server.html">white
+12:24:01 paper</a> presents a case for an embedded web server from more of a
+12:24:01 business angle.
+12:24:01 
+12:24:01 <!-- End Left Column -->
+12:24:01 </td><td valign=top>
+12:24:01 <!-- Right Column -->
+12:24:01 
+12:24:01 <h4>Control/Status Pages</h4>
+12:24:01 <ul>
+12:24:01 <li><a HREF="/status/">Server statistics</a>.
+12:24:01 Home hits: 4
+12:24:01 <li><!--- <a HREF="hacks.html">Control panel</a> -->
+12:24:01 <a HREF="hacks.tml">Control panel</a>
+12:24:01 </ul>
+12:24:01 <h4>Documentation</h4>
+12:24:01 <ul>
+12:24:01 <li>
+12:24:01 <a href=man/>Manual pages</a>.
+12:24:01 <li>
+12:24:01 <a HREF="templates/">Templates with inline Tcl</a>.
+12:24:01 <li>
+12:24:01 <a HREF="access/">Access control schemes</a>.
+12:24:01 <li>
+12:24:01 
+12:24:01   <a href="/learn/">Learn</a> 
+12:24:01 <li><a href="/learn/setup.tml">Basic Setup</a>
+12:24:01 <li><a href="/templates/">Templates</a>
+12:24:01 <li><a href="/learn/security.tml">Server Security</a>
+12:24:01 <li><a href="/learn/direct.tml">Direct URLs</a>
+12:24:01 <li><a href="/learn/domain.tml">URL Domains</a>
+12:24:01 
+12:24:01 </ul>
+12:24:01 
+12:24:01 <h4>Test Pages</h4>
+12:24:01 <ul>
+12:24:01 <li><a href="guestbook/guestbook.cgi">View Guest Book</a>
+12:24:01 <li><a href="guestbook/newguest.html">Update Guest Book</a>
+12:24:01 <li><a HREF="include.shtml">Server includes</a>
+12:24:01 <li><a HREF="forms/">CGI</a>  You probably need to install the Standard Tcl Library for this.
+12:24:01 <li><a HREF="map/">Imagemaps</a>
+12:24:01 <li><a HREF="/xyzzy">Sample missing page</a>
+12:24:01 <li><a HREF="/debug/raise?message=This+page+raises+errors!">A page that raises an error</a>
+12:24:01 <li><a HREF="images">A directory listing page</a>
+12:24:01 </ul>
+12:24:01 
+12:24:01 <!-- End Right Column -->
+12:24:01 </td></tr>
+12:24:01 <!-- End Two Column Format -->
+12:24:01 </table>
+12:24:01 
+12:24:01 
+12:24:01 <!-- 
+12:24:01     Home		/
+12:24:01     Status		/status	
+12:24:01     "Learn"     	/learn/
+12:24:01     "CGI Tests"		/forms/
+12:24:01     "Templates"		/templates/
+12:24:01     "Access Control"	/access/
+12:24:01     "Reference Manual"	/man/
+12:24:01  -->
+12:24:01 <table cellpadding=0 cellspacing=2 border=0 width=100%>
+12:24:01 <tr><td colspan=7  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:24:01 <tr><td><font face="arial">Home</font></td><td><font face="arial"><a href="/status">Status</a></font></td><td><font face="arial"><a href="/learn/">Learn</a></font></td><td><font face="arial"><a href="/forms/">CGI Tests</a></font></td><td><font face="arial"><a href="/templates/">Templates</a></font></td><td><font face="arial"><a href="/access/">Access Control</a></font></td><td><font face="arial"><a href="/man/">Reference Manual</a></font></td></tr>
+12:24:01 </table>
+12:24:01 </body>
+12:24:01 </html>
+12:24:01 
+12:24:01 
+12:25:56 ----- closed connection -----
+12:25:56 waiting for new connection...
+
+Zadanie D.4 -------------------------------------
+\\\wydruk
+## przykład użycia pakietu dns:
+#load ./tcludp.so udp; package re udp
+  # + to jest konieczne, jeśli nasz ser. dns NIE używa prot TCP !
+  #   (zip z pakietem udp j.Tcl jest w tym folderze)
+lappend auto_path sciezka_do_tcllib; package re dns
+  # + pakiet dns jest częścią zbioru tcllib;
+  #   ew. można użyć "dużego" interpa tclkit_2, patrz materiały o j.Tcl
+set n1 [dns::resolve "dns:wmi.amu.edu.pl;type=NS"]
+  #% ::dns::9
+  #% ::dns::8
+  #% ::dns::7
+  #% ::dns::6
+  #% ::dns::5
+  #% ::dns::4
+  #% ::dns::3
+  #% ::dns::2
+  #% ::dns::1
+  # + wysyłamy zapytanie dns...
+  # + jako argument resolve można też użyć "dns:nazwa_domenowa;type=YYY"
+dns::address $n1
+  #% 
+  #% 
+  #% 
+ 
+  #% 213.180.141.140
+  #% 212.77.98.9
+  #% 212.77.98.9 212.77.100.101
+  # + kolejnosc sie zmienia!! load balancing!!!
+join [dns::result $n1] \n
+  #% name wmi.amu.edu.pl type NS class IN ttl 117 rdlength 7 rdata dns3.amu.edu.pl
+name wmi.amu.edu.pl type NS class IN ttl 117 rdlength 6 rdata dns.amu.edu.pl
+name wmi.amu.edu.pl type NS class IN ttl 117 rdlength 7 rdata dns2.amu.edu.pl
+name wmi.amu.edu.pl type NS class IN ttl 117 rdlength 6 rdata ns1.wmi.amu.edu.pl
+name wmi.amu.edu.pl type NS class IN ttl 117 rdlength 6 rdata ns2.wmi.amu.edu.pl
+  #% name amu.edu.pl type NS class IN ttl 2233 rdlength 7 rdata dns2.amu.edu.pl
+name amu.edu.pl type NS class IN ttl 2233 rdlength 7 rdata dns3.amu.edu.pl
+name amu.edu.pl type NS class IN ttl 2233 rdlength 6 rdata dns.amu.edu.pl
+  #% 
+  #% name amu.edu.pl type MX class IN ttl 726 rdlength 8 rdata {10 mx2.amu.edu.pl}
+name amu.edu.pl type MX class IN ttl 726 rdlength 8 rdata {10 mx1.amu.edu.pl}
+  #% name onet.pl type A class IN ttl 60 rdlength 4 rdata 213.180.141.140
+  #% name wp.pl type A class IN ttl 300 rdlength 4 rdata 212.77.98.9
+name wp.pl type A class IN ttl 268 rdlength 4 rdata 212.77.100.101
+  # + wszystkie odpowiedzi na zapytanie dns...
+dns::cleanup $n1
+  #% 
+
+Zadanie D.5 -------------------------------------
+\\\Przed odpaleniem tora
+peeraddr 150.254.79.244
+\\\Po odpaleniu tora
+peeraddr 197.231.221.211
+
+\\\Konfiguracja
+Przeglądarka:Mozilla Firefox
+Preferences -> Network Proxy -> Manual proxy configuration
+Ustawiamy w SOCKS Host localhost oraz port na 9050 i klikamy OK.
+
+Zadanie D.6 -------------------------------------
+\\\
+# opis prot SOCKS v.4
+proc socks4connect {proxy_host proxy_port host port {username {}}} {
+  set connect_request \x04\x01
+  append connect_request [binary format S $port]
+  if {[regexp {[0-9]+.[0-9]+.[0-9]+.[0-9]+} $host]} {
+    set use_host false
+    append connect_request [binary format c4 [split $host .]]
+  } else {
+    # ip address 0.0.0.x is always invalid and signals that a hostname is specified
+    set use_host true
+    append connect_request [binary format c4 [split 0.0.0.1 .]]
+  }
+  append connect_request $username
+  append connect_request \x00
+  if {$use_host} {
+    append connect_request $host
+    append connect_request \x00
+  }
+  set s [socket $proxy_host $proxy_port]
+  fconfigure $s -translation binary -encoding binary
+  puts -nonewline $s $connect_request; flush $s
+  set response [read $s 8]
+  set rr [string index $response 1]
+  if {$rr ne "\x5a"} {
+    error "connection request rejected by proxy ($rr)"
+  } else {
+    return $s
+  }
+}
+  #%
+
+# ta proc jest komatybilna z poleceniem socket j. Tcl !!
+# + węzeł tor standardowo używa nr portu 9050
+proc tor_socket {host port} {
+  socks4connect localhost 9050 $host $port
+}
+  #%
+
+## klient
+#
+set host "localhost"
+  #% localhost
+set s [tor_socket $host 9050]
+  #% sock5
+  # tworzymy połączenie tcp z serwerem na maszynie $host, port=10000
+  # komenda socket zwraca gniazdko repr. koniec tego połączenia
+puts $s "A ku ku !!!"
+  #% 
+  # wysylamy dane przez gniazdko s
+flush $s
+  #% 
+  # flush to wypróżnienie buforów
+  #   !!! bardzo ważne bez tego dane nie zostaną "wypchnięte" !!!
+close $s
+  #%
+
+## serwer 1
+#
+socket -server obsluga 9050
+  #% sock5
+  # zgloszenie się klienta jest obsługiwane przez proc "obsluga"
+proc obsluga {s args} {
+    # s to socket klienta po stronie serwera
+  set linia [gets $s]
+  _puts "od $s: $linia"
+  close $s
+}
+  #%
+
+Zadanie D.7 -------------------------------------
+\\\
+Zastosowanie:
+Możemy wejść przez ssh na wydziałowy serwer (podczas gdy mamy uruchomionego tora) i strona, ktora odpalimy bedzie widziala ze sie łaczym z nią z WMI.
+
+Zadanie D.8 -------------------------------------
+\\\
+lappend auto_path ~/tcl/tcllib
+package re ldap
+  #% 1.8
+package re dict
+  #% 8.5.2
+
+set h [ldap::connect ldap.wmi.amu.edu.pl]
+  #% ::ldap::ldapsock5
+
+set x [ldap::search $h "OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl" "(CN=*)" ""]   
+llength $x
+  #% 442
+  #% 21
+
+
+lindex $x 0 0
+  #% CN=lior,OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Algebry_i_Teorii_Liczb,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+q
+lindex $x 1 0
+  #% CN=izab,OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Algorytmiki_i_Metod_Numerycznych,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  # + DN czyli DistinguishedName
+
+lindex $x 2 0
+  #% CN=rmur,OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Analizy_Funkcjonalnej,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+
+lindex $x 3 0
+  #% CN=swirydow,OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Analizy_Matematycznej,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+
+lindex $x 4 0
+  #% CN=horhe,OU=Faculty,OU=People,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+
+dict keys [lindex $x 0 1]
+  #% managedBy sAMAccountType objectGUID member uSNChanged msSFU30NisDomain description whenChanged gidNumber objectCategory dSCorePropagationData uSNCreated groupType sAMAccountName objectSid instanceType cn name msSFU30Name whenCreated objectClass distinguishedName memberOf
+
+  # + klucze slownika z atrybutami ob. CN=mhanckow,...
+
+dict get [lindex $x 0 1] mail
+
+  # + odczytujemy atrybuty z tego slownika
+
+encoding convertfrom utf-8 [dict get [lindex $x 0 1] memberOf]
+  #% CN=print_report,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=print_report,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Teorii_Algorytmow_i_Bezpieczenstwa_Danych,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl CN=public,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl CN=faculty_research,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl CN=faculty,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+
+join [encoding convertfrom utf-8 [dict get [lindex $x 0 1] memberOf]] \n
+  #% CN=print_report,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=print_report,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  #% CN=Zaklad_Teorii_Algorytmow_i_Bezpieczenstwa_Danych,OU=Departments,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+CN=public,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+CN=faculty_research,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+CN=faculty,OU=Groups,DC=labs,DC=wmi,DC=amu,DC=edu,DC=pl
+  # + troche ulepszony wydruk...
+
+ldap::disconnect $h
+  #% 
+
+exit
+
+Zadanie D.10 -------------------------------------
+\\\
+## tylko szyfrowanie --------------------------------------------
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.5
+package require tls
+  #% 1.50
+
+## serwer
+tls::socket -server obsluga 10000
+  #% sock5
+proc obsluga {s args} {
+  fileevent $s readable "obslugaKli $s"
+  _puts "server socket $s"; # zakladam ze uruchamiamy to z konsola2c.tcl
+  tls::handshake $s
+}
+  #%
+proc obslugaKli s {
+  if {[eof $s]} { close $s; return }
+  set linia [gets $s]
+  _puts "od $s: $linia"
+}
+  #%
+
+## klient
+set s [tls::socket localhost 10000]
+  #% sock5
+tls::handshake $s
+  #% 1
+puts $s "A ku ku !!!"; flush $s
+  #%
+
+## uwierzytelnianie serwera --------------------------------------------
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.5
+package require tls
+  #% 1.50
+
+## serwer
+tls::socket -server obsluga \
+  -keyfile newreq.pem -certfile newcert.pem \
+  -password haslo \
+  10000
+  #% sock5
+proc haslo {} {return "qwerty"}; # haslo do klucza pryw serwera
+  #%
+proc obsluga {s args} {
+  fileevent $s readable "obslugaKli $s"
+  _puts "server socket $s"; # zakladam ze uruchamiamy to z konsola2c.tcl
+  tls::handshake $s
+}
+  #%
+proc obslugaKli s {
+  if {[eof $s]} { close $s; return }
+  set linia [gets $s]
+  _puts "od $s: $linia"
+}
+  #%
+
+## klient
+set s [tls::socket localhost 10000]
+  #% sock5
+tls::handshake $s
+  #% 1
+
+puts $s "A ku ku !!!"; flush $s
+  #%
+
+## uwierzytelnianie serwera ORAZ klientow ---------------------------
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.5
+package require tls
+  #% 1.50
+
+## serwer
+proc haslo {} {return "qwerty"}
+  #%
+tls::socket -server obsluga -require 1 -cafile cacert.pem \
+  -password haslo -keyfile newreq.pem -certfile newcert.pem \
+  10000
+  #% sock5
+proc obsluga {s args} {
+  fileevent $s readable "obslugaKli $s"
+  _puts "server socket $s"
+  tls::handshake $s
+}
+  #%
+proc obslugaKli s {
+  if {[eof $s]} { close $s; return }
+  set linia [gets $s]
+  _puts "od $s: $linia"
+}
+  #%
+
+## klient
+proc haslo {} {return "qwerty"}
+  #%
+set s [tls::socket -password haslo -keyfile newreq.pem -certfile newcert.pem \
+  localhost 10000
+]
+  #% sock5
+tls::handshake $s
+  #% 1
+puts $s "A ku ku !!!"; flush $s
+  #%
+
+Zadanie D.11 -------------------------------------
+\\\Zwykle gniazdka
+17:16:04 localhost:10001 <--> localhost:10000
+17:16:04 waiting for new connection...
+17:17:55 connect from 127.0.0.1 localhost 10001 35868
+17:17:55 connecting to localhost:10000
+17:18:01 A ku ku !!!
+17:18:01 
+17:18:01 ----- closed connection -----
+17:18:01 waiting for new connection...
+
+\\\Gniazdka SSL
+17:24:06 localhost:10001 <--> localhost:10000
+17:24:06 waiting for new connection...
+17:27:14 connect from 127.0.0.1 localhost 10001 52526
+17:27:14 connecting to localhost:10000
+17:27:18 .j....Q......9..8..5........
+17:27:18 .....3..2../..........................	..@........................'.x....iV...s
+17:27:18 ....J...F..Z..V.a>.nc.$p...:......I.h....D D.Kh...`.}......AU..*0..[..n.....9................0...0...........0.	*.H.......0Y1.0	..U....AU1.0...U...
+17:27:18 Some-State1!0...U.
+17:27:18 ..Internet Widgits Pty Ltd1.0...U...	pan wazny0..140410161611Z.150410161611Z0Z1.0	..U....AU1.0...U...
+17:27:18 Some-State1!0...U.
+17:27:18 ..Internet Widgits Pty Ltd1.0...U...
+17:27:18 moj serwer0.."0.	*.H............0..
+17:27:18 ........;.m.Lu:.&.|.T.q>.g.k.B.......L.vO0N.]..0..L.;.^...A.$..E.....1....em...2....@....h/.Vw...._...6..O&&*uMs.hb0OK.r...%/./K=L.2-.X.>H..	<.`.}..5....v{.p2&t.k"..1+.,T!...g.........f........>...^.....=........P.YF.tRh.5..
+17:27:18 .1.....	..:...X.:...m[.K.....H..........{0y0	..U....0.0,.	`.H...B.....OpenSSL Generated Certificate0...U......ak.b!.'.>......{..h.0...U.#..0.....D.L.52n..E..sGE...0.	*.H............v.....2..==.b.W........g..M:c..*..i.9M...$...yy....1.#.....2.[.P..8^zi{X..r.........!....|.......a......!.+....._h.^.9(...h4.....ZT.#a..
+17:27:18 U.F..,8s..'I..\..}.f
+17:27:18 ..,=S.../..t..o.....%7,0.'5.S....,*..G.BT8..,4..S.t..............f.%....."..f..?.....	.....................@.X<..."....uoL...K.3.........D..WFP.i..).v'k..........L...>|Gt.3....@h5......'F..5.g /.4B%.}..4.+..<...H...#,..Q..X..-...p..,..V.......z.....Ft..bF.z6.Ml9......Gu.
+17:27:18 ./.y.......M%*.Re............\..^G.......Y..
+17:27:18 ...Q..<.....	.i.....YbN..{#.A.<.C0a@....)._z..\.D5.m..nE...".ERaX....yn.r..w...f."..3.\l.+...D...R.....;.M.....4......E]..'.3m3.vs..q.O.4...rS4...j!)......&..|l/...@j...}]~a#Ix............	.............
+17:27:18 ......)....F...B.@P:.=.....E.,g5..qs..p...p..Ug..A.a.8(..........u...oN.Q..:...n.y..........@l.>J..1.BY..T..U......S...x.1w.K.HR(.|h.].p.r....qPM....J.9....\
+17:27:18 ..........@.UF)...l.L..r...y}....d.._f.u.]..\,...&..a...
+17:27:18 ..T..uxn..O/a.m."
+17:27:23 ....0u0..P.%zA......|`.28F....j...g.....du.o..AF....
+17:28:26 ----- closed connection -----
+17:28:26 waiting for new connection...
+
+Zadanie D.11a -------------------------------------
+\\\
+Trzeba podać jego klucz prywatny ,ponieważ serwer musi sprawdzić czy klucz prywatny jest zgodny z jego kluczem prywatnym.
+
+Zadanie D.12a -------------------------------------
+\\\
+ #% {Return-Path: <swierkowska@o2.pl>
+Received: by o2.pl (o2.pl mailsystem) with LMTP;
+	Wed, 23 Mar 2011 09:01:28 +0100
+Received: by moh1-ve2.go2.pl (Postfix)
+	id 8A44710651CE; Wed, 23 Mar 2011 09:01:28 +0100 (CET)
+Delivered-To: jasiuprzybylski@o2.pl
+Received: from moh1-ve2.go2.pl (unknown [10.0.0.132])
+	by moh1-ve2.go2.pl (Postfix) with ESMTP id 3204A10651B5;
+	Wed, 23 Mar 2011 09:01:26 +0100 (CET)
+Received: from o2.pl (unknown [10.0.0.33])
+	by moh1-ve2.go2.pl (Postfix) with SMTP;
+	Wed, 23 Mar 2011 09:01:26 +0100 (CET)
+Subject: =?UTF-8?Q?Fwd:_FWD:_Przebud=C5=BAmy_si=C4=99!?=
+	=?UTF-8?Q?!!!!!!!?=
+From: =?UTF-8?Q?swierkowska?= <swierkowska@o2.pl>
+To: henia.k@wp.pl,
+	=?UTF-8?Q?Jan_Przybylski?=<jasiuprzybylski@o2.pl>,
+	=?UTF-8?Q?Katarzyna_Buescher?=<katjabuescher@yahoo.de>,
+	=?UTF-8?Q?Maria_Przybylska?=<maria.przybylska6@neostrada.pl>,
+	=?UTF-8?Q?Maria_Ratajczak?=<maria_ratajczak@wp.pl>
+Mime-Version: 1.0
+Message-ID: <2edbf278.b82fd27.4d89a8d6.242e1@o2.pl>
+Date: Wed, 23 Mar 2011 09:01:26 +0100
+X-Originator: 77.65.74.40
+Content-Type: multipart/alternative;
+	boundary="==o2.pl-WebMail-7d3130c.52902136.242f0=="
+
+--==o2.pl-WebMail-7d3130c.52902136.242f0==
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+&gt;=20
+&gt;=20
+&gt;=20&gt;=20Dosta=C5=82am=20maila:
+&gt;=20&gt;=20Wo=C5=82anie=20Jezusa=20w=20=C5=9Bwiecie=20jest=20wyra=C5=BA=
+ne=20i=20zawsze=20od=20modlitwy=20i=20pokuty=20zale=C5=BCa=C5=82o=20wiele=
+.=20PRZEBUD=C5=B9MY=20SI=C4=98=20!!!!!!!!!!!!
+&gt;=20&gt;=20.......brat=20bratu=20wyrz=C4=85dza=20krzywdy!!
+&gt;=20&gt;=20TRZECI=20SEKRET=20FATIMSKI
+&gt;=20&gt;=20Naj=C5=9Bwi=C4=99tsza=20Maryja=20Panna=20ukaza=C5=82a=20si=C4=
+=99=20trojga=20dzieciom=20w=201917=20roku=20w=20Fatimie=20w=20Portugalii.=
+=20Objawienie=20si=C4=99=20Matki=20Bo=C5=BCej=20w=20Fatimie=20zosta=C5=82=
+o=20oficjalnie=20uznane=20przez=20Ko=C5=9Bci=C3=B3=C5=82=20Katolicki.=20J=
+edna=20z=20dziewczynek=20-=20=C5=81ucja,=20po=20=C5=9Bmierci=20Franciszka=
+=20i=20Hiacynty=20wst=C4=85pi=C5=82a=20do=20zakonu=20klauzurowego=20w=20K=
+oimbrze=20-=20Portugalia.=20=C5=81ucja=20zmar=C5=82a=2011=20lutego=202005=
+=20roku.
+&gt;=20&gt;=20Siostra=20=C5=81ucja=20przes=C5=82a=C5=82a=20trzeci=20sekre=
+t=20Ojcu=20=C5=9Awi=C4=99temu=20Piusowi=20XII,=20aby=20objawi=C5=82=20go=20=
+=C5=9Bwiatu.=20Papie=C5=BC=20przeczyta=C5=82=20go=20z=20przera=C5=BCeniem=
+,=20ale=20go=20nie=20objawi=C5=82.=20To=20samo=20uczynili=20nast=C4=99pni=
+=20Papie=C5=BCe,=20aby=20nie=20wzbudza=C4=87=20w=20=C5=9Bwiecie=20paniki=20=
+i=20l=C4=99ku.=20Po=20=C5=9Bmierci=20=C5=81ucji,=20trzeci=20sekret=20zost=
+a=C5=82=20ujawniony,=20oczywi=C5=9Bcie=20nie=20po=20to,=20aby=20straszy=C4=
+=87=20ludzi,=20lecz=20po=20to,=20by=20ludzie=20byli=20przygotowani=20na=20=
+to=20wydarzenie.=20Matka=20Bo=C5=BCa=20powiedzia=C5=82a=20do=20=C5=81ucji=
+:=20Objawiam=20=C5=9Bwiatu=20to,=20co=20ma=20si=C4=99=20zdarzy=C4=87=20mi=
+=C4=99dzy=201959,=20a=202012=20rokiem.=20Ludzko=C5=9B=C4=87=20zaniedbuje=20=
+przykazania=20Bo=C5=BCe.=20Szatan=20zaw=C5=82adn=C4=85=C5=82=20=C5=9Bwiat=
+em,=20siej=C4=85c=20nienawi=C5=9B=C4=87=20w=C5=9Br=C3=B3d=20ludzi=20i=20n=
+iezgod=C4=99.
+&gt;=20&gt;=20Pa=C5=84stwa=20produkuj=C4=85=20bro=C5=84=20=C5=9Bmierciono=
+=C5=9Bn=C4=85,=20kt=C3=B3ra=20jest=20zdolna=20zniszczy=C4=87=20ziemi=C4=99=
+=20w=20kilku=20minutach.=20Wi=C4=99ksza=20po=C5=82owa=20ludzko=C5=9Bci=20=
+b=C4=99dzie=20w=20tragiczny=20spos=C3=B3b=20zniszczona=20przez=20wojn=C4=99=
+=20atomow=C4=85.=20Powstanie=20wielki=20konflikt=20religijny,=20Islam=20p=
+rzepu=C5=9Bci=20atak=20na=20Chrze=C5=9Bcija=C5=84stwo.=20Powstan=C4=85=20=
+wielkie=20zgorszenia=20w=20Ko=C5=9Bciele=20i=20w=20zakonach.=20B=C3=B3g=20=
+dopu=C5=9Bci=20na=20ludzko=C5=9B=C4=87=20grady,=20ostre=20zimy,=20upalne=20=
+lata,=20powodzie,=20ogie=C5=84,=20trz=C4=99sienia=20ziemi,=20czas=20niepr=
+zychylny,=20katastrofy,=20kt=C3=B3re=20powoli=20b=C4=99d=C4=85=20wyka=C5=84=
+cza=C4=87=20ziemi=C4=99".=20Te=20wszystkie=20zdarzenia=20maj=C4=85=20si=C4=
+=99=20dokona=C4=87=20przed=20rokiem=202-12-tym.=20Matka=20Bo=C5=BCa=20pow=
+iedzia=C5=82a=20te=C5=BC:=20,,=20Praktykujcie=20uczynki=20mi=C5=82osierdz=
+ia=20wobec=20wszystkich=20potrzebuj=C4=85cych.=20Wszyscy,=20kt=C3=B3rzy=20=
+nie=20b=C4=99d=C4=85=20spe=C5=82niali=20Tych=20uczynk=C3=B3w,=20nie=20prz=
+e=C5=BCyj=C4=85=20katastrofy.=20Kara,=20jak=C4=85=20B=C3=B3g=20zamierza=20=
+zes=C5=82a=C4=87=20na=20grzeszn=C4=85=20ludzko=C5=9B=C4=87=20jest=20niewy=
+obra=C5=BCalna.=20B=C3=B3g=20ukarze=20surowo=20wszystkich,=20kt=C3=B3rzy=20=
+odrzucili=20Jego=20Przykazania.=20Wzywam=20wszystkich,=20aby=20zbli=C5=BC=
+yli=20si=C4=99=20do=20Chrystusa,=20kt=C3=B3ry=20jest=20=C5=9Awiat=C5=82o=C5=
+=9Bci=C4=85=20=C5=9Bwiata."
+&gt;=20&gt;=20Ojciec=20Augustyn,=20kt=C3=B3ry=20mieszka=20w=20Fatimie,=20=
+otrzyma=C5=82=20od=20Papie=C5=BCa=20Paw=C5=82a=20VI=20pozwolenie=20na=20o=
+dwiedzenie=20siostry=20=C5=81ucji=20w=20Koimbrze=20i=20ona=20powiedzia=C5=
+=82a=20mu:=20,,=20Ojcze,=20Matka=20Bo=C5=BCa=20jest=20bardzo=20smutna,=20=
+poniewa=C5=BC=20ma=C5=82o=20kto=20zainteresowa=C5=82=20si=C4=99=20Jej=20p=
+rzepowiedniami=20z=201917=20roku.=20Wierz=20mi,=20ojcze,=20kara=20Boska=20=
+przyjdzie.=20Wkr=C3=B3tce=20wiele=20dusz=20si=C4=99=20zatraci=20i=20wiele=
+=20pa=C5=84stw=20zniknie=20z=20powierzchni=20ziemi.
+&gt;=20&gt;=20Je=C5=BCeli=20ludzie=20si=C4=99=20nawr=C3=B3c=C4=85=20i=20z=
+aczn=C4=85=20pokutowa=C4=87,=20modli=C4=87=20si=C4=99=20i=20praktykowa=C4=
+=87=20uczynki=20mi=C5=82osierdzia,=20=C5=9Bwiat=20mo=C5=BCe=20by=C4=87=20=
+ocalony.=20A=20gdy=20si=C4=99=20nie=20nawr=C3=B3ci,=20to=20zginie.=20Ju=C5=
+=BC=20czas,=20aby=20or=C4=99dzie=20Matki=20Bo=C5=BCej=20da=C4=87=20pozna=C4=
+=87=20wszystkim,=20zw=C5=82aszcza=20rodzinom,=20krewnym,=20przyjacio=C5=82=
+om,=20znajomym.=20Zacznijcie=20si=C4=99=20modli=C4=87=20i=20czyni=C4=87=20=
+pokut=C4=99,=20bo=20tylko=20krok=20dzieli=20nas=20od=20katastrofy.=20Kied=
+y=20b=C4=99dzie=20si=C4=99=20m=C3=B3wi=C4=87=20du=C5=BCo=20o=20pokoju,=20=
+katastrofa=20przyjdzie.=20Pewien=20cz=C5=82owiek,=20kt=C3=B3ry=20zajmuje=20=
+w=20=C5=9Bwiecie=20wysokie=20stanowisko,=20zostanie=20zabity=20i=20to=20w=
+ywo=C5=82a=20wojn=C4=99=20atomow=C4=85,=20kt=C3=B3ra=20spowoduje=20strasz=
+ne=20zniszczenia=20w=20=C5=9Bwiecie.=20Ciemno=C5=9B=C4=87=20ogarnie=20zie=
+mi=C4=99=20przez=20trzy=20dni=20-=2072=20godziny.=20Przed=20katastrof=C4=85=
+=20noc=20b=C4=99dzie=20bardzo=20zimna=20i=20b=C4=99d=C4=85=20wia=C4=87=20=
+silne=20wiatry.=20Ludzie=20ogarnie=20niepok=C3=B3j=20i=20zacznie=20si=C4=99=
+=20trz=C4=99sienie=20ziemi,=20kt=C3=B3re=20b=C4=99dzie=20trwa=C4=87=20kil=
+ka=20godzin.=20Wiatr=20przyniesie=20gaz=20i=20rozprzestrzeni=20po=20=C5=9B=
+wiecie.=20S=C5=82o=C5=84ce=20nie=20b=C4=99dzie=20widoczne.=20Ci,=20kt=C3=B3=
+rzy=20czcz=C4=85=20Matk=C4=99=20Naj=C5=9Bwi=C4=99tsz=C4=85=20i=20rozpowsz=
+echnili=20Jej=20or=C4=99dzie,=20nie=20potrzebuj=C4=85=20si=C4=99=20ba=C4=87=
+=20niczego,=20Ona=20ich=20uchroni=20od=20katastrofy.
+&gt;=20&gt;=20Co=20nale=C5=BCy=20czyni=C4=87,=20gdy=20to=20si=C4=99=20sta=
+nie?=20W=20domu=20przygotowa=C4=87=20ma=C5=82y=20o=C5=82tarzyk,=20na=20ni=
+m=20postawi=C4=87=20krzy=C5=BC=20i=20figur=C4=99=20Matki=20Bo=C5=BCej,=20=
+by=C4=87=20w=20domu,=20ukl=C4=99kn=C4=85=C4=87=20i=20przeprasza=C4=87=20B=
+oga=20za=20grzechy,=20odm=C3=B3wi=C4=87=20wierz=C4=99=20w=20Boga=20Ojca=20=
+i=20r=C3=B3=C5=BCaniec=20i=20po=20ka=C5=BCdej=20dziesi=C4=85tce=20doda=C4=
+=87:=20,,O=20m=C3=B3j=20Jezu!=20Przebacz=20nam=20nasze=20grzechy,=20zacho=
+waj=20nas=20od=20ognia=20piekielnego=20i=20zaprowad=C5=BA=20wszystkie=20d=
+usze=20do=20Nieba=20i=20pom=C3=B3=C5=BC=20tym,=20kt=C3=B3re=20najbardziej=
+=20potrzebuj=C4=85=20Twojego=20Mi=C5=82osierdzia.=20Jezu,=20ufam=20Tobie!=
+.=20Dom=20powinien=20by=C4=87=20zamkni=C4=99ty=20i=20nikogo=20obcego=20ni=
+e=20wolno=20wpu=C5=9Bci=C4=87=20do=20domu.=20Drzwi=20i=20okna=20maj=C4=85=
+=20by=C4=87=20zamkni=C4=99te,=20z=20nikim=20nie=20rozmawia=C4=87,=20tylko=
+=20si=C4=99=20modli=C4=87.=20Zapali=C4=87=20po=C5=9Bwi=C4=99con=C4=85=20=C5=
+=9Bwiec=C4=99,=20kt=C3=B3ra=20ma=20si=C4=99=20pali=C4=87=20przez=20trzy=20=
+dni,=20bo=20innego=20=C5=9Bwiat=C5=82a=20nie=20b=C4=99dzie=20w=20tym=20cz=
+asie.=20Nie=20wychodzi=C4=87=20z=20domu=20pod=20=C5=BCadnym=20pretekstem,=
+
+Zadanie D.12 -------------------------------------
+set m1 [mime::initialize -string [imap4_for_mime $i1 3]]
+  #% ::mime::3
+  #% ::mime::2
+  #% ::mime::1
+mime::getproperty $m1 content
+  #% multipart/mixed
+  #% multipart/alternative
+  #% multipart/alternative
+set m2 [mime::getproperty $m1 parts] 
+  #% ::mime::3-1 ::mime::3-2
+  #% ::mime::2-1 ::mime::2-2
+  #% ::mime::1-1 ::mime::1-2
+mime::getproperty [lindex $m2 0] content
+  #% multipart/alternative
+  #% text/plain
+  #% text/plain
+mime::getbody [lindex $m2 0]
+  #% asasdas
+das
+dasdasdas
+da
+sgfdsgsd
+gsdgsdg
+
+<html>
+<body>
+<img src="https://static.gotujmy.pl/forum/odp-obrazki-13204.jpg">
+</body>
+</html>
+
+  #% asdasdasdasd4  asdasdasd  asd  asd  asdasdasd  asdasdas
+
+  # + wyswietla tresc tej czesci maila
+mime::getproperty [lindex $m2 1] content
+  #% image/jpeg
+  #% text/html
+  #% text/html
+
+mime::finalize $m1
+  #% 
+Zadanie D.13 -------------------------------------
+\\\
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.7; package re tls
+  #% 1.50
+tls::version
+  #% OpenSSL 0.9.7c 30 Sep 2003
+#tls::init -tls1 1
+  # + czy to pomoze z nr portu !?!?! odp: nie!
+package re mime
+  #% 1.5.4
+package re smtp
+  #% 1.4.5
+  #% 1.4.5
+
+set m1 [mime::initialize -canonical text/plain \
+  -encoding 8bit -param {charset UTF-8} \
+  -string [encoding convertto utf-8 \
+{1 A ku ku !!! ³³³ ¶¶¶ ¦¦¦
+2 sdasd  !!!
+3 adsas !!!
+4 heloo :O !!!}]]
+  #% ::mime::1
+
+#mime::setheader $m1 To "mhanckow@amu.edu.pl";
+#mime::setheader $m1 From "mhanckow@amu.edu.pl";
+#mime::setheader $m1 Subject "qqq1"
+  #% 
+  # + To i From nie dzialaja w tym miejscu, Subject mozna podac!
+
+mime::getproperty $m1
+  #% params {charset UTF-8} size 81 encoding 8bit content text/plain
+  # + przed wyslaniem przetestowac przez mime::buildmessage
+
+mime::buildmessage $m1
+  #% MIME-Version: 1.0
+Content-ID: <28089.1524346703.5@lts.wmi.amu.edu.pl>
+Content-Type: text/plain;
+              charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+1 A ku ku !!! Â³Â³Â³ Â¶Â¶Â¶ Â¦Â¦Â¦
+2 sdasd  !!!
+3 adsas !!!
+4 heloo :O !!!
+
+smtp::sendmessage $m1 -servers {smtp.gmail.com} -ports {587} \
+  -username plaljahn -password $pass \
+  -header {From "plaljahn@gmail.com"} \
+  -header {To "plaljahn@gmail.com"} \
+  -header {Subject "test"}
+  #% 
+    # + zamiast -header mozna uzyc -recipients i -originator
+    # + Subject moze byc dolaczony bezp. do mime
+    # + dlaczego nr portu= 465 nie dziala, choc w seamonkey/mail dziala !?!?!
+
+mime::finalize $m1
+  #% 
+Zadanie D.13a -------------------------------------
+\\\
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.7; package re tls
+  #% 1.50
+tls::version
+  #% OpenSSL 0.9.7c 30 Sep 2003
+#tls::init -tls1 1
+  # + czy to pomoze z nr portu !?!?! odp: nie!
+package re mime
+  #% 1.5.4
+package re smtp
+  #% 1.4.5
+  #% 1.4.5
+
+set text [mime::initialize -canonical text/plain -encoding 8bit -param {charset UTF-8} \
+  -string [encoding convertto utf-8 \ {Testowytekst}]]
+  #% ::mime::30
+
+set html [mime::initialize -canonical text/html -encoding 8bit -param {charset UTF-8} \
+  -string [encoding convertto utf-8 \ {<html>testujemy<html>}]]
+  #% ::mime::29
+
+set m1 [mime::initialize -canonical type/subtype -parts [list $text $html]]
+  #% ::mime::31
+
+#mime::setheader $m1 To "mhanckow@amu.edu.pl";
+#mime::setheader $m1 From "mhanckow@amu.edu.pl";
+#mime::setheader $m1 Subject "qqq1"
+  #% 
+  # + To i From nie dzialaja w tym miejscu, Subject mozna podac!
+
+mime::getproperty $m1
+  # + przed wyslaniem przetestowac przez mime::buildmessage
+
+mime::buildmessage $m1
+  #% MIME-Version: 1.0
+Content-ID: <28089.1524348238.23@lts.wmi.amu.edu.pl>
+Content-Type: type/subtype
+
+--
+MIME-Version: 1.0
+Content-ID: <28089.1524348232.22@lts.wmi.amu.edu.pl>
+Content-Type: text/plain;
+              charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ {Testowytekst}
+--
+MIME-Version: 1.0
+Content-ID: <28089.1524348213.21@lts.wmi.amu.edu.pl>
+Content-Type: text/html;
+              charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ {<html>testujemy<html>}
+----
+
+smtp::sendmessage $m1 -servers {smtp.gmail.com} -ports {587} \
+  -username plaljahn -password $pass \
+  -header {From "plaljahn@gmail.com"} \
+  -header {To "plaljahn@gmail.com"} \
+  -header {Subject "test"}
+  #% 
+    # + zamiast -header mozna uzyc -recipients i -originator
+    # + Subject moze byc dolaczony bezp. do mime
+    # + dlaczego nr portu= 465 nie dziala, choc w seamonkey/mail dziala !?!?!
+
+mime::finalize $m1
+  #% 
+Zadanie D.13b -------------------------------------
+\\\
+lappend auto_path /home/students/s426228/Desktop/SIK/D/1.5/tls1.7; package re tls
+  #% 1.50
+tls::version
+  #% OpenSSL 0.9.7c 30 Sep 2003
+#tls::init -tls1 1
+  # + czy to pomoze z nr portu !?!?! odp: nie!
+package re mime
+  #% 1.5.4
+package re smtp
+  #% 1.4.5
+  #% 1.4.5
+
+set text [mime::initialize -canonical text/plain -encoding 8bit -param {charset UTF-8} \
+  -string [encoding convertto utf-8 \ {Testowytekst}]]
+  #% ::mime::19
+
+set obraz [mime::initialize -canonical image/jpeg -file /home/students/s426228/Desktop/SIK/D/1.5/tls1.7/obraz.jpeg]
+  #% ::mime::20
+
+set m1 [mime::initialize -canonical type/subtype -parts [list $text $obraz]]
+  #% ::mime::21
+
+
+#mime::setheader $m1 To "mhanckow@amu.edu.pl";
+#mime::setheader $m1 From "mhanckow@amu.edu.pl";
+#mime::setheader $m1 Subject "qqq1"
+  #% 
+  # + To i From nie dzialaja w tym miejscu, Subject mozna podac!
+
+mime::getproperty $m1
+  #% params {} parts {::mime::34 ::mime::41} size 15 encoding {} content type/subtype
+  # + przed wyslaniem przetestowac przez mime::buildmessage
+
+mime::buildmessage $m1
+  #% MIME-Version: 1.0
+Content-ID: <28089.1524349148.37@lts.wmi.amu.edu.pl>
+Content-Type: type/subtype
+
+--
+MIME-Version: 1.0
+Content-ID: <28089.1524349137.35@lts.wmi.amu.edu.pl>
+Content-Type: text/plain;
+              charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ {Testowytekst}
+--
+MIME-Version: 1.0
+Content-ID: <28089.1524349141.36@lts.wmi.amu.edu.pl>
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAd
+Hx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3
+Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIoAuAMBIgACEQED
+EQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQACAwYBB//EAD8QAAIBAwIDBQYDBQYHAQAAAAECAwAE
+ERIhBTFBEyJRYXEygZGhsdFCwfAGFCMzUjRTYnLC4RUkQ5KisvFz/8QAGgEAAwEBAQEAAAAAAAAA
+AAAAAgMEAQUABv/EACwRAAICAgIBBAECBgMAAAAAAAABAhEDIRIxBBMiQVFhcbFCgaHB4fEFFJH/
+2gAMAwEAAhEDEQA/APk7oQmSOtVU6irDmCM0dEySxlZO6SPa8fWsWtzEw3AU8ieRHrXQcPk58Z/B
+jOMBMfrFUfYjHKjHiDQySpuiuSPf+jQY2BoWqCTsrLksfSpEMFfHO1RuY860t0MkyqObNisithN6
+HioI7LtW9hixwOu3+5pYJjczLCRkbYxyHjimN8Q3DkjTcAYX4/nSq2GmZmHJFLVTldNJEuFWm32U
+uT/Fc8t+dSCXsye9kEYII2Nb2yG8BUxkuNthzoheCyj2pIk8nbf4ClrHKT5RQ1zjHTAWSOTLREjH
+NTWtrIYzg7jnW/8AwlkIIuYlPmr4+lXPDZydUPZykbkRsCT545/KiUJJ3QLyRaqxlZN2UsUkbg+H
+kfCt+JBZJ1JAaGdclD88eBBpUmsKDg6hsF5YNNuJQluCmVcZR8KQc4VufzqxbgyGS4zT/kLLyBTM
+8y96KTOgk40nng+dBAGO4YjlpJ+VFi6C3EiSAmFm0SKOe3IjzFeyWciSFdjsF1dCOefTb50hx5bR
+Snx0zGRAYVx+Ik/lWECe0Oh50TcMO3IUYTljyxUVA0ZK8nOAfCvONyPXSBpFKknw5V50Ue6i7mIa
+gTnSdifSs40V9TavZ3AIoHB2EpaBJUAbb8J9ms8Pk74oloZC22GPkck+6vY4mO8iHAPMil8G2M5a
+BG1Iv+I1KKltXMjKQc56CpWPHI1TiZQP3tPRhg1tFPJbPoPeRujbg0JG3ZurDfemDzJIdMm6Mcoc
+cq2D0DNbLtdW/wC7tCIRHr3bG+9LZIyoKnG/I+NESw8xjly8CKohGOzkOFzkHqtbNt9noJLoGIyM
++FEWq6FeTkVXn67VYR6HKv8AiXYjl5GvZBohlUc8D60CjWw3K9Bzhn4bGw58vnUsbRBBNNKDugBQ
+czuPlRfCo0fhDyTDKxnl49aFN0Le4kMmXjdc4GxIPI1ZSSjOX0SKTfKMfsFmvGVOzhURJ4KOf5n3
+1is8mNi3vOKIku4ZiOztxhfxN1qajJhVU+gpEm2+xy0uisU84OzMPHfNWS5J5gHrnlURGY6SNz0y
+K0SB8Z06V8dINHFy+wW4jG2mF5GUbvNjGScMvvo23titvdRlllSWEFSOpU70nilkOYgo7Mc+h+Nd
+BwVxJM9vJsn7u41Z3HPfPiKrx1Lsi8i4K0cgQzSSkDm221dHAVk4PGvOZV0Pn8KknB9efupRHZyR
+3UkMoxochj4Y600sO922sYEyFQPAAZH5Urx4tMdnlcdCqRDNKxA88VaMFZRFjKj5Yohe44YDrkD7
+1IZi5dSFCNse7zreKs85OikmqHWyDVj3j4UIFI0nBBY7U4tk1M8Sx9op5bbiihbwIxPcZxtp8KP0
+XLdi/XUNUJRYG4YuvdHUNsPjRSQpbIO9kZ2IzjPqKYtbv2ZUwRlv83sj41tBYGW0nQd19IIRmGnG
+R8KL0ePQuXkfb0K1Ad9Jcb9EUYPv+9SmkXDuzUtjPi2knHlUpqxa2LfkL4ZwQBGzg0VD/JIb8Ps+
+VEyxEjWMSRnr1HlWYBGCqFkHhz99chQo67nyKwsR3GIZelXaINnSc+fX316Cq7DcH+qvYyD9OdMS
+1TAb+US3wo7GZSUJ2I5r51vLZsCAw1K3JhyYeVXgAkwJBh/rTbsnaxVEGSjgoPAHn+VPx4rEZMzi
+wKzlC3JsSMIyYb/Md8fQUvubdlzryHjkKH05j/VW9wpF0zqe+jEj1FNeJoLq3F7EO7cJl8dJF5/L
+J99bKPLT+DFPhJNfP7iFYlJMhGFPIDbNV7cDZCB44Ne3EuvJUaVG3uovg/DmvJgoQKg9okZpKty4
+xHNpRcpAqSln7hct0OM0TNHqlDDvkKM6eh/+07duD2Zw0MUknIockKfjpoVLjhevv28kfmpH0pyx
+12yf1m9qLBBJdrHpGrvDTsM4+VNOHxNaQzMylTFauzA+JJxWv7nFJbPLYTF0HtAHdPUdK0jtlXhV
+xIzazMypjmeeT/6/OqI46p2TTzRkq62S5tu0sIrthhpkEbHqNPP4jSPjS+xDfv8AETnSZMAV0bW+
+nhsUUsqRR51EtknPkBWdtbcKhug7C5ndF1D8CKMZ9aZw+iaPkVBrvs5hraSVl0YO+Ao5mnHDv2ev
+bpy5hZQcZLCnjcTjtIlltbK3hRx3NW7etA3XFL+RgGnlk1jKqvdUD7UPCndAvyM+RVFJfqGx/s6s
+AP7xcQw58W3qCw4TC413IkboFOd6Fg4XdXra5ThMYLvtk+XjW7/uXD8kBbifpvhc+gpu/sibk5Vz
+bf4CYksFfEVlJJ5suB9a0l4ta24ZOyhjGPxtpBP1pHecRnkLLcXQjRtu6uPp0rnOINCjiJJe2kJ7
+piQ/n1PvpWWaiUYfA9V+9/uddfcaSOPtf3eGVQM9wk9alc7DA9vauvZkyFT3ZGARCfE8s7cqlKll
+aLIeHiSr+4AbKeLJMeM7Y/8AtYvCqthlaNvBhs32qkPFLuNMpJIWGxy2RRtrxoyRlLiCF12z3dNI
+UoPVnQayR3QKhUns3XDZwAy8jXvZ9mNh6jp8qZG44fMoWe2dR07MjA/P51ovDeGXC5iu5M+BU/7/
+AFo+F9CnmS7TFB1EgDCjxG5ppYPgFN8Eb5HhvWg4LC64h4hEx6DWAfnii7Lg16sg0yxsMge1nPuG
+abji4vYnLmxuPYFdW3azyDT31DHOd+Xz5V7wWaMCSyvO7FKeZHsNyzTi64HfzxBcHUBp2zg+u1YR
+fsvevpDKF2wW3+1FKNStCP8As4pY6lI5ifhU8XFDZyLgo25xtjx9Kc8QI4Xw0wxgrM6gseqqenqe
+Z8/QV1ItrVTGvEZoe1UhYyzjVJ/hbHTPn5VynFYpbniF2twuJXyOzYbg8x8aSsajdDMflevJRl0v
+6nLukjgMWC55E9avBC2vDSqV8F3Pwr2eJ30jGhsaT7s9KYxrbcFJjWQNxMjvSaQwtx4L/i8+nSo1
+HezqudRpdjmzto+ESQztJIGYaTbY7zj/ABf0jf18qb8dgeKysltAIIJD2jLkgktjAPpQn7OcIkma
+0Nw3aozO5duePPrmnsHbi6lt7u2MsTMXyRgJ6V0sa0fPeTmUc1p213+f9AlvYRLZgpOkoXPPnsMc
+j6GqvA3aXLwIXyoRAcAfD3U8i4dahUUq4QJgIW269PfREUVnbQnslUx53PSm+qcyXmbdWxEvC5Lp
+kkuAp08zijv3OC375gLk/iIwK84hxfsY20x9mFOAR0+1c9JLNxGVpJZJOxALM7nZF8h1rXfzobih
+mzblpDO8uXcOZLmGNF20oxbH/bzNI5JYJJAsEkjad+6g295NAX3EUkwsa4hTZV8au2YbLNxqR5Tn
+QNmI6egoHO+jqYvG9NbPLmWGXuRRhiOckrkhfpQck5h1JYjv/jmVQPn0FYSyyMQqKoQb46D7++tL
+qWSC1dVAwMHYY1HA329aklLkdCOPjSBDc9i575kYjDOTmpSuY6jnOK9qV5Wui1Yl8hKyHViRM+vP
+41qkcEpwrFG8DXqlJNKyOB54rWeFohmKUSRdD1o0mLbPUDw7Pho/Oiog0f8AEh3HiOYoaGQkYZ10
+8jk1qAUfMRxnxp0fwIn+Q+O4huG03aEScu0Bwx9ehFFpaEuAkolxjAOx936NKzGJACSImHU7qfKm
+Fus8dsSBqAxgZGMdSPlVON32iXIqWmPp7JriyR4NuSsoO6sPH3YqW5lt+EyRzgrI7Ds9txjlWHDm
+uYcP2hbIx2Z6etby8UinuiCxXGxIIIJ9D0qmvs5TjO+PaWxJfWBYu6xHsyAy4PuI/XhTzhUA4lw8
+rxKLH7qB2M7NlvQnr0o+zt4psGRVKIdjpKlvgaMuZLRbMvOoWNBld+v3pUkrAzeXKVY0tnLQ8MWT
+iJlcAyrl0IHI+O/MZOa5y34TZxcd/d5bprjLZ0onPfqenjXQycWlkci2j157uDsSvXJ/CBXO3stp
+GJI+F3KapP5s0mQWH9KnGNPn19Kn8hwTTS2djxFmdqT7R9B4f/wxVVYrgSjToAzz36U4tJ4JodML
+Y0/h618ntZ44AP8AmlJGx05xnyNGzcVuLadTBI8abFQaLnGUbbOb5H/EynLUv/T6RI+pSjouTuNL
+bH1pbdrOQWt376+GxHlSvhv7SPLasLgBnB9odR5+/wCtbRcUtpj/ABFkikHPG+PQ5G1Oh+CKPiZc
+T2ugCe4nfuTQAk9UJUr51S1SN1ntysmqUZ1YD5IPjzp3cW8M0eUuFz+M+J/L0oIRvbI01qqO/JCr
+KfWmUnsrjmTjSWxNLZx2sjMZENwBsSMBPTbGfOg54JLi30a45GH9MgyR8edMrpLsq+bV2UnJATl5
+UvPD5nbXHbyK3QMKROK/hOjin8yYjms72Nu9aTb+CkiiLN2YaJIn8CjDGoAdPPw8eVMDwi69o6YR
+1LSYA+PSjrC0AWQycUMkirkKj6mz5Dkfiam9JplcvJjx+zm+I8LaKNbiE67eQZVvyqUz4lxmfslt
+LSN44o/7zvMTncnIqUrJCHIfink4+5HOiV1iUGRfe2aZ8MudbCOTsmHIbHr5YoL9wuXwogcADmVP
+504/Z/h2m5zcFEb8IdxzwcfPFDiUuSCzygoNg8kVtJIQzGJSucjcDxGKxt5Y1fR27kFei7H50de8
+HnCpHKTGVXLgqfE5OeR9xrC3tIIW2gklI6yHA+A+9N4zvoTzhx7s1dQzaUWSXPIcuZ99OuGypbDQ
+8SozA5UksR546UJbW9zcAEo6x+EaaQfzokxmIkR9lGOruRn4DJqrHGnyIsslJcSna3Kq64aPXsc+
+03mT0o/g1gsk4OgyDHuHqawZoVnYMzzvqIHQfemclzNFapbWyhri5OFCDAC9T8fOmt/JJmlKqjqw
+q74lFCzRwaZDHsqLsqk+J9B8qQcTvZbiNWurpY4F3MhGAD4KvNj+jQ/EYG4fFpl/iyHLPGhOkAcs
+48a5XiF5NcSlrhyz8sYwFHgB0HlUufPwVIq8LwYP3DHiXFRJbm3tYylv+LfvSebH8uVIy/kQK9Uk
+7ZwDWb7NpUFm8q585uW2drFjUFSNkuMAJp2/W9F9rrg0k5IOxpbnSSObn/xrXXphVR1516M2bOCH
+NndPFbDT7Qb4/rNNeH3sZkQuvc1dwg+z4j0rn4ATCwAJwB86K4ZKAHXPdAOnzb9bVXiytUiLNhTT
+HM1/JaTZjB3bvAHn96YzSxXPDo54205J1qfHbfNILSdZ/wCYBmM7auRHgaaM9sgi7HMUUurCscrv
+jI+NWQyXf0QZMKVa2CSzyRd0ggeXL4UI1znORqXGe6SPlRTxTPC8cg1CM9055g+dKWmiE5jDMF6F
+hyPupGSdFWKCeg6C5iA276gZIPStClnOQ8E/YuDnSfGlPaNHJuqEE4yDjNEJA5VpYkJReYIzigWV
+vsY8VbTDeI27yxq5w7gbON96lBrcFnzGzAkYIztUr0uMnZkXKKoVhZZCS7bDxNERRPGwJJT/AAjn
+WkciROHGcqf7vb5/ao1yo3Csc+J+2Kniq22Utt6HfA7maJ/bmGDsokIzttkUY91dPOzXl4Y989nF
++WK561vmj1LhlDf0CiYLhWwGY6fBhviq8eRVRBkwe5yoZXd606nDSGNNsu2c+ppeJiFyTnPJQMfD
+xq7lrp8CIpGOSgYA+pNbQypb47NAMfiY/U/ajcm2ZGKhGqGfD7dkl7SdmjMhxHGn8ws3h4DfrTPj
+d9BwSFY0QC5ZQFOd4k5c/wCqqfs/bqgfit0MrECVzyLbiuVv5X4xxbEsxw5LOQOQ3P0+leyScVoi
+hjWfO037Y9/qDX91cuWEs7s7d8kOdx0x8/lSqSecDU80hXoGOr5GtZ7kNcOzrpBOw/o8B8KxbDE9
+7nyPjXPnLkzv44qC0tGD3BbmE/7RVDMXUqT7uVWaH+llNVEO+9IdlCozUHOAPhW6L3snkOlX0qgw
+QSfIVeCBpXJbaNAWbxwKJIFyPY5XWNhnHacx5Cti3ZQBQfaPy/WKHLgvnkOtZvL2pbfGOVHyoXxt
+hgnfUk6bFsnfx5H7++niSo1rbwMSC4Lrk53z9q56379syDd1w4HyP1Hwoqa403CxZx2ShQfMc6bi
+yVsVmxcnoYXEktrJHdQvp20vvsw8COo51nNDFelnjiQyj2kU4z5iq3zgWoI5A5I+H3oeCXMg0sAW
+Xly+dOlJcqfQmEXxtfBSXsSCHilBHMZH2qiyxxDMSOD5kfaimSR/5qiUf1DmPeKwkhUEaG3PIPsa
+VJNOx0WmqMZ5n1DsV0AjdRualZvI6MdQIPiRzqUrl+Rqj+De4XD6QpJHst/UPvQ2GJzj0o5ppHt8
+pp7m4IUcqx1StvqKrzONsUc0r0BFs8iilfHdO/u+dMv4cJAlcMQPZHIfegFm0EBdz1JG9UEhkDY3
+z8q2MlFaBlFy76GBvJZtQDafDfFE8MgmvL+KMHU5bnnVppSqHtBluddl+zcMXD7CfiEhxzVGPTA7
+x9wBp2Jub2SeTJYoXHt9BnGryOGP/h1sQEgg3x1ODj7/AArjbKQiC+mHNbYhT5scfTNEpdPc3N3M
+TvIA2PDIO1AREHht3oPtc/I717JO6/mZ42D0o8f0/wAiwntDiVcYPOvQmj+W2pfKswVYYdsE8mqh
+SWLfBA8Qags63E1Yqc4HwqqrnxFUE7n2lBbzXevHlPIIBWcjeJqzn+o1eGR42158t/DwoTtH6Ko9
+1WUMeu/ia9yPcDaZ1kZhHsoNZKSuSelU1AnC861iVpGWNRqJPOs5Nm1SGHA11XetvZ9jyLHYfPHw
+oMFmnDNkk7nyo2BlF5aW8JyiyqXI/EcjehpIyL+RB/eEe7NOapJCU/c3+Bhdt/yZJ54H1FLhJpVG
+9QaMvXCxHO42GP16UufaNeu5rcr2Dij7QuOVl2V2+NVkfVknBOOlCo2MA8vpWpdeQxg+P5UPK1sL
+hsgn0jGtvQgEfOpWDgA461KC2MUUMLSN8fxEJBGMEc6th9LKWVNPieVZgnL79fvQf/Wf0NNcqSFJ
+cmw6OJO8QdeOnIVUMACFwB5VkP7P+vGsjtjFZyo9xsbcOt3vJ440/E2keXnXS/tldLa8OWyg7qoB
+AoHuZ/8ASPfS/wDYoA8UTI/Cax/awktDk83lP/nVa9uG0c6S5+XGL6iA2Eg7Yg9UQ/ID6msrYtE9
+wG5AHY9cH/avbX+0p/8Aka8f+2z/AOT/AE0m/aiz+Ji2e3yWaE5VdmT8S+fmPOsFcpybA8jWhJEw
+IJBCg5HoKtxIBbg4AGUU7VI12yxP4M1c8zg+tVY78hVf+mKnU1l2bRNztUPdGOXvqNyrM8qFsJI3
+iieYhYV9TyA8ya2MyWyNFbPqY7PL4+Q8q34gdFnbKndBTJA2yaV0cvY6XYEferY34AnaXyu3sxjU
+TXtue0lknxnvEj3mrcH2sLkjnobf3Cq2+0Ix4mnwVRiTzfvkZ37jCLzzkk1iwBCpnpz8K8n3uSDy
+wPpVJ/5j+g+gpUnbY2K1R4QQdJG1eAge0CR4+FXXcHPjUk6VnwFeyu+PE+NSrQezXlEo2Y3TP//Z
+----
+
+smtp::sendmessage $m1 -servers {smtp.gmail.com} -ports {587} \
+  -username plaljahn -password $pass \
+  -header {From "plaljahn@gmail.com"} \
+  -header {To "plaljahn@gmail.com"} \
+  -header {Subject "test"}
+  #% 
+    # + zamiast -header mozna uzyc -recipients i -originator
+    # + Subject moze byc dolaczony bezp. do mime
+    # + dlaczego nr portu= 465 nie dziala, choc w seamonkey/mail dziala !?!?!
+
+mime::finalize $m1
+  #% 
+
+Zadanie D.15 -------------------------------------
+\\\wydruk
+s426228@lts:~/Desktop/SIK/D$ ping www.asu.edu
+PING www.asu.edu.cdn.cloudflare.net (104.16.50.14) 56(84) bytes of data.
+64 bytes from 104.16.50.14: icmp_seq=1 ttl=55 time=18.7 ms
+64 bytes from 104.16.50.14: icmp_seq=2 ttl=55 time=18.7 ms
+64 bytes from 104.16.50.14: icmp_seq=3 ttl=55 time=18.8 ms
+64 bytes from 104.16.50.14: icmp_seq=4 ttl=55 time=18.5 ms
+64 bytes from 104.16.50.14: icmp_seq=5 ttl=55 time=18.9 ms
+64 bytes from 104.16.50.14: icmp_seq=6 ttl=55 time=18.6 ms
+64 bytes from 104.16.50.14: icmp_seq=7 ttl=55 time=19.0 ms
+64 bytes from 104.16.50.14: icmp_seq=8 ttl=55 time=18.6 ms
+64 bytes from 104.16.50.14: icmp_seq=9 ttl=55 time=18.6 ms
+64 bytes from 104.16.50.14: icmp_seq=10 ttl=55 time=18.6 ms
+64 bytes from 104.16.50.14: icmp_seq=11 ttl=55 time=18.6 ms
+64 bytes from 104.16.50.14: icmp_seq=12 ttl=55 time=18.6 ms
+
+Nie pingowalismy serwera w Arizonie tylko serwer obsługujacy nasz kraj znajdujacy sie blizej nas.
+

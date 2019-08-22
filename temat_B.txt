@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
+<sprawozdanie przedmiot="SIK" temat="B">
+<imie_nazwisko>Jan Przybylski</imie_nazwisko>
+<nr_indeksu>426228</nr_indeksu>
+<liczba_pkt>13.0</liczba_pkt>
+<zadanie nr="B.1" pkt="0.5"></zadanie>
+<zadanie nr="B.2" pkt="0.5"></zadanie>
+<zadanie nr="60" pkt="1"></zadanie>
+<zadanie nr="61" pkt="1"></zadanie>
+<zadanie nr="62" pkt="3.0"></zadanie>
+<zadanie nr="63" pkt="1"></zadanie>
+<zadanie nr="64" pkt="1"></zadanie>
+<zadanie nr="65" pkt="1"></zadanie>
+<zadanie nr="66" pkt="1"></zadanie>
+<zadanie nr="67" pkt="3.0"></zadanie>
+<zadanie nr="45" pkt="3.5"></zadanie>
+</sprawozdanie>
+
+Zadanie B.1 -------------------------------------
+1.przegladarka
+s426228@pc15g:~/Desktop/SIK$ netstat -A inet -p
+/// wydruk
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47666 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:41468 a212-191-241-008.d:http ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:54308 wp.hit.gemius.pl:https  ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:35188 waw02s05-in-f2.1e:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:34682 2.18.13.87:https        ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:48120 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:42126 pr-bh.pbp.vip.ir2:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:40624 waw02s07-in-f162.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:47466 a184-31-10-237.de:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:43164 i.wp.pl:https           ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:47542 bud02s24-in-f2.1e:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:58694 waw02s14-in-f2.1e:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:36500 waw02s08-in-f195.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:49150 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:60976 waw02s08-in-f14.1e:http ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:36306 waw02s08-in-f195.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:34288 185.86.137.32:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:41626 wpcdn.pl:https          ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:49026 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:58896 ec2-34-241-138-12:https TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:42522 2.18.13.3:https         ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:59970 161.170.232.53:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:39938 waw02s17-in-f2.1e:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:54878 2.18.13.106:https       ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:55336 103.229.206.180:https   ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:51268 93.184.220.66:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:34590 wp.tv:https             ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:59312 212.77.106.5:https      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:55326 103.229.206.180:https   ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47756 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:42444 liveblog.wp.pl:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:55334 103.229.206.180:https   ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:37628 dot.wp.pl:https         ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47410 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:52376 server-52-222-250:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:48554 185.94.180.125:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:39940 waw02s17-in-f2.1e:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47502 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:44674 ut.o2.pl:https          ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:53648 ovhfr5.host.hit.g:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:38688 ec2-52-58-122-7.e:https TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:36538 trendy.wp.pl:https      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:45042 160.91.190.35.bc.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:42796 ec2-54-154-165-12:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:45238 www.wp.pl:https         ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:50944 ec2-54-154-187-14:https TIME_WAIT   -                   
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47724 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:48046 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:55958 198.47.127.27:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.:telnets nfs-ubuntu.wmi.amu.:nfs ESTABLISHED -                   
+tcp        0      0 pc15g.labs.wmi.am:54886 waw02s08-in-f202.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:43164 ec2-54-148-131-14:https TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:50830 104.244.43.113:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:43906 files.wmi.:microsoft-ds ESTABLISHED -                   
+tcp        0      0 pc15g.labs.wmi.am:54568 shell.wmi.amu.edu.:http TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:48978 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:49048 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:59770 waw02s08-in-f196.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:36142 37.157.2.234:https      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:54828 waw02s08-in-f198.:https ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:53530 199.16.156.21:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:60864 waw02s08-in-f14.1e:http ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:43166 ec2-54-148-131-14:https TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:45062 www.wp.pl:https         ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:35594 dc1-2016.labs.wmi.:ldap ESTABLISHED -                   
+tcp        0      0 pc15g.labs.wmi.am:43734 192.229.233.50:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:49050 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:38376 104.16.230.152:https    ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:56144 v.wpimg.pl:https        ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:55330 103.229.206.180:https   ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:48942 212.77.106.15:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:48720 i.wpimg.pl:https        ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:56312 13.107.21.200:https     ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:49062 93.184.220.29:http      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs.wmi.am:40892 62.67.193.75:https      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47920 TIME_WAIT   -                   
+tcp        0      0 pc15g.labs.wmi.am:40892 62.67.193.75:https      ESTABLISHED 4301/firefox        
+tcp        0      0 pc15g.labs:zabbix-agent monitoring.wmi.am:47920 TIME_WAIT   -                   
+2.sftp/ftp
+s426228@pc15g:~/Desktop/SIK$ netstat -A inet -p
+/// wydruk
+--sftp)tcp        0      1 pc15g.labs.wmi.am:35486 www.wp.pl:ssh           SYN_SENT    13847/ssh
+/// wydruk      
+--ftp)tcp        0      1 pc15g.labs.wmi.am:43648 www.wp.pl:ftp           SYN_SENT    13732/ftp
+
+3.ssh/telnet
+s426228@pc15g:~/Desktop/SIK$ netstat -A inet -p
+/// wydruk
+--ssh)    tcp        0      1 pc15g.labs.wmi.am:35480 www.wp.pl:ssh           SYN_SENT    13694/ssh
+/// wydruk        
+--telnet) tcp        0      1 pc15g.labs.wmi.am:59694 www.wp.pl:telnet        SYN_SENT    11441/telnet 
+
+
+Zadanie B.2 -------------------------------------
+s426228@pc15g:~/Desktop/SIK$ gcc sock01.cc
+/// wydruk
+sock01.cc: In function ‘int main()’:
+sock01.cc:71:24: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+     klient("1234567890");
+                        ^
+sock01.cc:75:24: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+     klient("QWERTYUIOP");
+                        ^
+s426228@pc15g:~/Desktop/SIK$ ./a.out
+/// wydruk
+klient: pid==4918
+serwer: pid==4919
+serwer: bind()=0
+serwer: czekam na klienta nr 1
+klient: pierwsze polaczenie ...
+klient: connect()=0
+klient: write()=10
+serwer: accept()=4
+serwer: poczatek obslugi klienta nr 1
+serwer: read()=10 buf=1234567890
+serwer: write()=10
+serwer: czekam na klienta nr 2
+klient: read()=10 buf=1234567890
+klient: drugie polaczenie ...
+klient: connect()=0
+klient: write()=10
+serwer: accept()=4
+serwer: poczatek obslugi klienta nr 2
+serwer: read()=10 buf=QWERTYUIOP
+serwer: write()=10
+klient: read()=10 buf=QWERTYUIOP
+klient: wait()=4919 0000
+
+Zadanie 60 -------------------------------------
+s426228@pc15g:~/Desktop/SIK$ ./a.out ls cat sort
+/// wydruk
+a.out
+potok
+potok.cc
+sock01.cc
+temat_A.txt
+temat_B.txt
+unix.h
+wait; pid=2552 status=0000
+wait; pid=2553 status=0000
+wait; pid=2554 status=0000
+
+s426228@pc15g:~/Desktop/SIK$ ./a.out ls cat sort
+/// wydruk
+a.out
+potok
+potok.cc
+sock01.cc
+temat_A.txt
+temat_B.txt
+unix.h
+wait; pid=2533 status=0000
+wait; pid=2534 status=0000
+wait; pid=2535 status=0000
+
+--kod potoku
+/* -------------------------------------------------------
+   program "potok"
+   -------------------------------------------------------
+
+   wywolanie : potok prog1 prog2 prog3 ...
+
+   program ten tworzy procesy potomne z podanymi programami
+   i laczy je "w potok" (dziala jak "prog1|prog2|prog3")
+
+   sposob uzycia :
+     potok ls cat sort sort
+     potok cat cat sort sort
+
+   PYTANIA:
+     -> co by sie stalo gdyby zostawic lacza otwarte ?
+        (odpowiedz na to pytanie jest b. istotna !)
+     -> jaki warunek musza spelniac argumenty
+        programu "potok" (filtry) ?
+*/
+
+#include "unix.h"
+
+struct Lacze {int do_czytania, do_pisania;};
+Lacze L[10];
+int IloscProg;
+
+void ZamknijLacza()
+{
+  for(int i=0;i<IloscProg-1;i++)
+  { close(L[i].do_czytania);
+    close(L[i].do_pisania);
+  }
+}
+
+
+//       potok prog1 prog2 prog3
+// argv: 0     1     2     3
+//
+main(int argc, char **argv)
+{
+  int i,j;
+  IloscProg=argc-1;
+
+  // tworzenie lacz ...
+  //
+  for(i=0;i<IloscProg-1;i++)
+  {
+    socketpair(1,1,1,(int*)&L[i]);
+  }
+
+  // tworzenie procesow potomnych
+  // oraz laczenie laczami ...
+  //
+  for(i=0;i<IloscProg;i++)
+  {
+     int pid;
+     pid=fork();
+     if(pid==0) // proces potomny
+       {
+         if(i==0) // pierwszy proces (przeadresowujemy tylko stdout)
+         {
+           dup2(L[i].do_pisania,1);
+           ZamknijLacza();
+           execlp(argv[i+1],argv[i+1],NULL);
+           fprintf(stderr,"Blad exec (pid==%i) !!!\n",getpid());
+           exit(1);
+         }
+         if(i!=0 && i!=IloscProg-1) // przeadresowujemy stdin i stdout
+         {
+           dup2(L[i].do_pisania,1);
+           dup2(L[i-1].do_czytania,0);
+           ZamknijLacza();
+           execlp(argv[i+1],argv[i+1],NULL);
+           fprintf(stderr,"Blad exec (pid==%i) !!!\n",getpid());
+           exit(1);
+         }
+         if(i==IloscProg-1) // ostatni proces (przeadresowujemy tylko stdin)
+         {
+           dup2(L[i-1].do_czytania,0);
+           ZamknijLacza();
+           execlp(argv[i+1],argv[i+1],NULL);
+           fprintf(stderr,"Blad exec (pid==%i) !!!\n",getpid());
+           exit(1);
+         }
+       }
+  }
+
+  // proces macierzysty zamyka wszystkie lacza ...
+  ZamknijLacza();
+
+  // czekamy na wszystkie procesy potomne ...
+  //
+  for(i=0;i<IloscProg;i++)
+  {
+    int pid,status;
+    pid=wait(&status);
+    fprintf(stderr,"wait; pid=%i status=%04X\n",pid,status);
+  }
+}
+
+Zadanie 61 -------------------------------------
+s426228@pc15g:~/Desktop/SIK$ ./a.out
+/// wydruk
+klient: pid==17797
+serwer: pid==17798
+serwer: bind()=0
+serwer: czekam na klienta nr 1
+klient: pierwsze polaczenie ...
+klient: connect()=0
+serwer: accept()=4
+serwer: poczatek obslugi klienta nr 1
+klient: write()=10
+serwer: read()=10 buf=1234567890
+serwer: write()=10
+serwer: czekam na klienta nr 2
+klient: read()=10 buf=1234567890
+klient: drugie polaczenie ...
+klient: connect()=0
+serwer: accept()=4
+serwer: poczatek obslugi klienta nr 2
+klient: write()=10
+serwer: read()=10 buf=QWERTYUIOP
+serwer: write()=10
+klient: read()=10 buf=QWERTYUIOP
+klient: wait()=17798 0000
+
+---kod programu
+/*
+   Gniazdka, najprostszy przyklad ...
+   ----------------------------------
+*/
+
+#include "unix.h"
+#include <sys/un.h>
+#define PORT 7000
+
+void ObsSygnalu(int)
+{ printf("pojawil sie sygnal SIGPIPE !!! (pid==%i)\n",getpid());
+}
+char *AdresCyfrowyKropkowy(char *name);
+
+main()
+{
+  signal(SIGPIPE,ObsSygnalu);
+    // na wszelki wypadek ...
+
+  int pid,status,i,j;
+  pid=fork();
+  if(pid==0) // pp: tutaj bedzie serwer ...
+  {
+    printf("serwer: pid==%i\n",getpid()); 
+     
+    int sock=socket (AF_UNIX,SOCK_STREAM,0);
+
+    struct sockaddr_un adres;
+	memset(&adres,0,sizeof(adres));
+    adres.sun_family=AF_UNIX;
+    //adres.sun_addr.s_addr=inet_addr(AdresCyfrowyKropkowy("venus"));
+    strcpy(adres.sun_path,"gniazdko");
+    i=bind(sock,(struct sockaddr *)&adres,sizeof(adres));
+    printf("serwer: bind()=%i\n",i);
+
+    listen(sock,5);
+
+    // czekamy na dokladnie 2 klientow !
+    //
+    for(int licznik=1;licznik<=2;licznik++)
+    {
+      printf("serwer: czekam na klienta nr %i\n",licznik);
+      int nowy_sock=accept(sock,NULL,NULL);
+      printf("serwer: accept()=%i\n",nowy_sock);
+      printf("serwer: poczatek obslugi klienta nr %i\n",licznik);
+      
+      char buf[100];
+      i=read(nowy_sock,buf,99);
+      buf[i]=0;
+      printf("serwer: read()=%i buf=%s\n",i,buf);
+
+      j=write(nowy_sock,buf,i);
+      printf("serwer: write()=%i\n",j);
+        // jak widac serwer dziala jak 'echo'
+        // odsyla to co przyszlo !
+        
+      close(nowy_sock);
+    }
+	unlink(adres.sun_path);
+    close(sock);
+    exit(0);
+  }
+  else // pm: tutaj bedzie klient ...
+  {
+    printf("klient: pid==%i\n",getpid()); 
+
+    extern void klient(char *);
+
+    sleep(1);
+    printf("klient: pierwsze polaczenie ...\n");
+    klient("1234567890");
+
+    sleep(1);
+    printf("klient: drugie polaczenie ...\n");
+    klient("QWERTYUIOP");
+
+    i=wait(&status);
+    printf("klient: wait()=%i %04X\n",i,status);
+  }
+}
+
+void klient(char *c)
+{
+  int i,j;
+  int sock=socket (AF_UNIX,SOCK_STREAM,0);
+
+  struct sockaddr_un adres;
+  memset(&adres,0,sizeof(adres));
+  adres.sun_family=AF_UNIX;
+  //adres.sun_addr.s_addr=inet_addr(AdresCyfrowyKropkowy("venus"));
+  //adres.sun_addr.s_addr=inet_addr("1.2.3.4");
+  strcpy(adres.sun_path,"gniazdko");
+  i=connect(sock,(struct sockaddr *)&adres,sizeof(adres));
+  printf("klient: connect()=%i\n",i);
+
+  i=write(sock,c,strlen(c));
+  printf("klient: write()=%i\n",i);
+
+  char buf[100];
+  i=read(sock,buf,99);
+  buf[i]=0;
+  printf("klient: read()=%i buf=%s\n",i,buf);
+  
+  close(sock);
+}
+
+char *AdresCyfrowyKropkowy(char *name)
+{
+  struct hostent *hostp;
+  if ((hostp=(struct hostent *)gethostbyname(name))!=NULL)
+  {
+    return inet_ntoa(*(in_addr*)*hostp->h_addr_list);
+       // jak dlugo ten wynik istnieje ??????
+  }
+}
+
+Zadanie 62 -------------------------------------
+s426228@lts:~/Desktop/SIK$ ./serwer 
+ABCD
+/// wydruk
+A.B.C.D.
+
+426228@lts:~/Desktop/SIK$ ps -Oppid
+/// wydruk
+  PID  PPID S TTY          TIME COMMAND
+ 7038  7028 S pts/4    00:00:00 bash
+14321     1 S pts/4    00:00:00 ./serwer
+17486     1 S pts/4    00:00:00 ./serwer
+18149     1 S pts/4    00:00:00 ./serwer
+22473  7038 R pts/4    00:00:00 ps -Oppid
+
+---po zamknięciu
+
+s426228@lts:~/Desktop/SIK$ ps -Oppid
+/// wydruk
+  PID  PPID S TTY          TIME COMMAND
+ 7038  7028 S pts/4    00:00:00 bash
+24929  7038 R pts/4    00:00:00 ps -Oppid
+
+---kod serwera
+#include "unix.h"
+#define PORT 10000
+
+main()
+{ 
+  signal(SIGCHLD, SIG_IGN);
+  signal(SIGHUP, SIG_IGN);
+  signal(SIGTTIN, SIG_IGN);
+  signal(SIGTTOU, SIG_IGN);
+  int pid,status,i,j;
+  pid=fork();
+  if(pid==0) // pp: tutaj bedzie serwer ...
+  {
+     
+    int sock=socket (AF_INET,SOCK_STREAM,0);
+
+    struct sockaddr_in adres;
+    memset(&adres,0,sizeof(adres));
+    adres.sin_family=AF_INET;
+    adres.sin_addr.s_addr=INADDR_ANY;
+    adres.sin_port=htons(PORT);
+    i=bind(sock,(struct sockaddr *)&adres,sizeof(adres));
+
+    listen(sock,300);
+    
+    for(int licznik=1;licznik<=300;licznik++)
+    {
+      int nowy_sock=accept(sock,NULL,NULL);
+      
+      char buf[100];
+      i=read(nowy_sock,buf,99);
+      buf[i]=0;
+
+      char t[100];
+      int a = 0;
+      int b = 0;
+
+            while(a < 99)
+            {
+                t[b] = buf[a];
+                b++;
+                t[b] = '.';
+                b++;
+                a++;
+            }
+
+      j=write(nowy_sock,t,i);
+  
+      close(nowy_sock);
+    }
+
+    close(sock);
+    exit(0);
+  }
+  else // pm: tutaj bedzie klient ...
+  {
+    sleep(1);
+    execl("/home/students/s426228/Desktop/SIK/kropka", "kropka",NULL);
+  }
+}
+---kod kropki
+#include "unix.h"
+#define PORT 10000
+
+main()
+{
+  int i,j;
+  char c[100];
+  int sock=socket (AF_INET,SOCK_STREAM,0);
+
+  struct sockaddr_in adres;
+  memset(&adres,0,sizeof(adres));
+  adres.sin_family=AF_INET;
+  adres.sin_addr.s_addr=INADDR_ANY;
+  adres.sin_port=htons(PORT);
+  i=connect(sock,(struct sockaddr *)&adres,sizeof(adres));
+  
+  read(STDIN_FILENO, c, 10);
+
+  i=write(sock,c,2*strlen(c));
+   
+  char buf[100];
+  i=read(sock,buf,99);
+  buf[i]=0;
+  write(1,buf,10);
+
+  close(sock);
+}
+
+Zadanie 63 -------------------------------------
+s426228@lts:~/Desktop/SIK$ ./a.out
+/// wydruk
+klient: pid==32104
+serwer: pid==32105
+serwer: bind()=0
+serwer: czekam na klienta nr 1
+serwer: poczatek obslugi klienta nr 1
+klient: pierwsze polaczenie ...
+klient: connect()=0
+klient: write()=10
+serwer: read()=10 buf=1234567890
+serwer: write()=10
+klient: read()=10 buf=1234567890
+serwer: czekam na klienta nr 2
+serwer: poczatek obslugi klienta nr 2
+klient: drugie polaczenie ...
+klient: connect()=0
+klient: write()=10
+serwer: read()=10 buf=QWERTYUIOP
+serwer: write()=10
+klient: read()=10 buf=QWERTYUIOP
+klient: wait()=32105 0000
+
+---Kod programu
+/*
+   Gniazdka, najprostszy przyklad ...
+   ----------------------------------
+*/
+
+#include "unix.h"
+#define PORT 7000
+
+void ObsSygnalu(int)
+{ printf("pojawil sie sygnal SIGPIPE !!! (pid==%i)\n",getpid());
+}
+char *AdresCyfrowyKropkowy(char *name);
+
+main()
+{
+
+  signal(SIGPIPE,ObsSygnalu);
+    // na wszelki wypadek ...
+
+  int pid,status,i,j;
+  pid=fork();
+  if(pid==0) // pp: tutaj bedzie serwer ...
+  {
+    printf("serwer: pid==%i\n",getpid()); 
+     
+    int sock=socket (AF_INET,SOCK_DGRAM,0);
+
+    struct sockaddr_in adres;
+    memset(&adres,0,sizeof(adres));
+    socklen_t adres_len = sizeof(adres);
+    adres.sin_family=AF_INET;
+    //adres.sin_addr.s_addr=inet_addr(AdresCyfrowyKropkowy("venus"));
+    adres.sin_addr.s_addr=INADDR_ANY;
+    adres.sin_port=htons(PORT);
+    i=bind(sock,(struct sockaddr *)&adres,adres_len);
+    printf("serwer: bind()=%i\n",i);
+
+    listen(sock,5);
+
+    // czekamy na dokladnie 2 klientow !
+    //
+    for(int licznik=1;licznik<=2;licznik++)
+    {
+      printf("serwer: czekam na klienta nr %i\n",licznik);
+      printf("serwer: poczatek obslugi klienta nr %i\n",licznik);
+      
+      char buf[100];
+      i=recvfrom(sock,buf,99,0,(struct sockaddr *)&adres,&adres_len);
+      buf[i]=0;
+      printf("serwer: read()=%i buf=%s\n",i,buf);
+
+      j=sendto(sock,buf,i,0,(struct sockaddr *)&adres,adres_len);
+      printf("serwer: write()=%i\n",j);
+        // jak widac serwer dziala jak 'echo'
+        // odsyla to co przyszlo !
+    }
+
+    close(sock);
+    exit(0);
+  }
+  else // pm: tutaj bedzie klient ...
+  {
+    printf("klient: pid==%i\n",getpid()); 
+
+    extern void klient(char *);
+
+    sleep(1);
+    printf("klient: pierwsze polaczenie ...\n");
+    klient("1234567890");
+
+    sleep(1);
+    printf("klient: drugie polaczenie ...\n");
+    klient("QWERTYUIOP");
+
+    i=wait(&status);
+    printf("klient: wait()=%i %04X\n",i,status);
+  }
+}
+
+void klient(char *c)
+{
+  int i,j;
+  int sock=socket (AF_INET,SOCK_DGRAM,0);
+  struct sockaddr_in adres;
+ 
+  memset(&adres,0,sizeof(adres));
+  socklen_t adres_len = sizeof(adres);
+  adres.sin_family=AF_INET;
+  //adres.sin_addr.s_addr=inet_addr(AdresCyfrowyKropkowy("venus"));
+  //adres.sin_addr.s_addr=inet_addr("1.2.3.4");
+  adres.sin_addr.s_addr=INADDR_ANY;
+  adres.sin_port=htons(PORT);
+  i=connect(sock,(struct sockaddr *)&adres,adres_len);
+  printf("klient: connect()=%i\n",i);
+    char buf[100];
+  i=sendto(sock,c,strlen(c),0,(struct sockaddr *)&adres,adres_len);
+  printf("klient: write()=%i\n",i);
+
+  
+  i=recvfrom(sock,buf,99,0,(struct sockaddr *)&adres,&adres_len);
+  buf[i]=0;
+  printf("klient: read()=%i buf=%s\n",i,buf);
+  
+  close(sock);
+}
+
+char *AdresCyfrowyKropkowy(char *name)
+{
+  struct hostent *hostp;
+  if ((hostp=(struct hostent *)gethostbyname(name))!=NULL)
+  {
+    return inet_ntoa(*(in_addr*)*hostp->h_addr_list);
+       // jak dlugo ten wynik istnieje ??????
+  }
+}
+
+Zadanie 64 -------------------------------------
+s426228@lts:~/Desktop/SIK$ ./serwer2
+ABCD
+/// wydruk
+A.B.C.D.
+
+---Kod serwera2
+
+#include "unix.h"
+#define PORT 10000
+
+main()
+{ 
+  signal(SIGCHLD, SIG_IGN);
+  signal(SIGHUP, SIG_IGN);
+  signal(SIGTTIN, SIG_IGN);
+  signal(SIGTTOU, SIG_IGN);
+  int pid,status,i,j;
+  pid=fork();
+  if(pid==0) // pp: tutaj bedzie serwer ...
+  {     
+    int sock=socket (AF_INET,SOCK_DGRAM,0);
+
+    struct sockaddr_in adres;
+    memset(&adres,0,sizeof(adres));
+    adres.sin_family=AF_INET;
+    socklen_t adres_len = sizeof(adres);
+    adres.sin_addr.s_addr=INADDR_ANY;
+    adres.sin_port=htons(PORT);
+    i=bind(sock,(struct sockaddr *)&adres,sizeof(adres));
+
+    listen(sock,300);
+    
+    for(int licznik=1;licznik<=300;licznik++)
+    {      
+      char buf[100];
+      i=recvfrom(sock,buf,99,0,(struct sockaddr *)&adres,&adres_len);
+      buf[i]=0;
+
+      char t[100];
+      int a = 0;
+      int b = 0;
+
+            while(a < 99)
+            {
+                t[b] = buf[a];
+                b++;
+                t[b] = '.';
+                b++;
+                a++;
+            }
+
+      j=sendto(sock,t,i,0,(struct sockaddr *)&adres,adres_len);
+  
+      close(sock);
+      exit(0);
+    }
+  }
+   execl("/home/students/s426228/Desktop/SIK/kropka2", "kropka2",NULL);
+}
+---kod kropki2
+
+#include "unix.h"
+#define PORT 10000
+
+main()
+{   
+  int i;
+  char c[100];
+  int sock=socket (AF_INET,SOCK_DGRAM,0);
+
+  struct sockaddr_in adres;
+  memset(&adres,0,sizeof(adres));
+  adres.sin_family=AF_INET;
+  socklen_t adres_len = sizeof(adres);
+  adres.sin_addr.s_addr=INADDR_ANY;
+  adres.sin_port=htons(PORT);
+  i=connect(sock,(struct sockaddr *)&adres,sizeof(adres));
+
+  read(STDIN_FILENO, c, 10);
+
+  i=sendto(sock,c,2*strlen(c),0,(struct sockaddr *)&adres,adres_len);
+
+  char buf[100];
+  i=recvfrom(sock,buf,99,0,(struct sockaddr *)&adres,&adres_len);
+  buf[i]=0;
+  write(1,buf,10);
+  
+  close(sock);
+}
+
+Zadanie 66 -------------------------------------
+1)Należy ustawić zmienną status na 1 dzięki temu ten program nie będzie zużywał zbyt wiele czasu procesora.
+2)Tak wystarczy zmienić 3 argument w funkcjach read() i write() wtedy będzie przepisywane więcej bajtów.
+
+Zadanie 67 -------------------------------------
+s426228@lts:~/Desktop/SIK$ ./telnetserwer
+/// wydruk
+Wprowadź hasło
+1836
+ls
+A	 kropka2.cc  potok.cc	 serwer.cc  telnet	  telnetserwer.cc
+kropka	 kropka.cc   serwer	 sock01.cc  telnet.cc	  temat_B.txt
+kropka2  potok4.cc   serwer2.cc  sock02.cc  telnetserwer  unix.h
+
+--klient
+#include "unix.h"
+#define PORT 10000
+
+main()
+{
+  int i,j;
+  char c[100];
+  int a;
+  
+  int sock=socket (AF_INET,SOCK_STREAM,0);
+
+  struct sockaddr_in adres;
+  memset(&adres,0,sizeof(adres));
+  adres.sin_family=AF_INET;
+  adres.sin_addr.s_addr=INADDR_ANY;
+  adres.sin_port=htons(PORT);
+  i=connect(sock,(struct sockaddr *)&adres,sizeof(adres));
+  //Sprawdzanie hasłem
+  printf("Wprowadź hasło\n");
+  scanf("%d",&a);
+
+  if(a==1836)
+  {
+  printf("Wprowadź polecenie\n");
+  read(STDIN_FILENO, c, 10);
+ 
+  i=write(sock,c,strlen(c));
+   
+  char buf[100];
+  i=read(sock,buf,99);
+  buf[i]=0;
+  write(1,buf,10);
+
+  close(sock);
+  }
+  else
+  {
+      printf("Błędne hasło\n");
+      exit(0);
+  }
+}
+--serwer
+#include "unix.h"
+#define PORT 10000
+
+main()
+{     
+  signal(SIGCHLD, SIG_IGN);
+  signal(SIGHUP, SIG_IGN);
+  signal(SIGTTIN, SIG_IGN);
+  signal(SIGTTOU, SIG_IGN);
+  int pid,status,i,j;
+  pid=fork();
+  if(pid==0) // pp: tutaj bedzie serwer ...
+  {
+     
+    int sock=socket (AF_INET,SOCK_STREAM,0);
+
+    struct sockaddr_in adres;
+    memset(&adres,0,sizeof(adres));
+    adres.sin_family=AF_INET;
+    adres.sin_addr.s_addr=INADDR_ANY;
+    adres.sin_port=htons(PORT);
+    i=bind(sock,(struct sockaddr *)&adres,sizeof(adres));
+
+    listen(sock,300);
+    
+    for(int licznik=1;licznik<=300;licznik++)
+    {
+      int nowy_sock=accept(sock,NULL,NULL);
+      
+      char buf[100];
+      i=read(nowy_sock,buf,99);
+      buf[i]=0;
+
+      int status = system(buf);
+
+      j=write(nowy_sock,buf,i);
+  
+      close(nowy_sock);
+    }
+
+    close(sock);
+    exit(0);
+  }
+  else // pm: tutaj bedzie klient ...
+  {
+    sleep(1);
+    execl("/home/students/s426228/Desktop/SIK/telnet", "telnet",NULL);
+  }
+}
+
+

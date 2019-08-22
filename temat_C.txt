@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
+<sprawozdanie przedmiot="SIK" temat="C">
+<imie_nazwisko>Jan Przybylski</imie_nazwisko>
+<nr_indeksu>426228</nr_indeksu>
+<liczba_pkt>7.0</liczba_pkt>
+<zadanie nr="opis(1)" pkt="3.0"></zadanie>
+<zadanie nr="opis(2)" pkt="2.0"></zadanie>
+<zadanie nr="opis(3)" pkt="2.0"></zadanie>
+</sprawozdanie>
+
+Opis(1) -------------------------------------
+\\\Przyklad 1
+---serwer
+s426228@lts:~/Desktop/SIK/C/Java$ java c5p1a 8080
+Oczekiwanie na odpowiedź (I am waiting)...
+Od: /127.0.0.1 (localhost)
+SIK 420
+
+---klient
+s426228@lts:~/Desktop/SIK/C/Java$ java c5p1b localhost 8080
+Serwer wyslal (server sent): Odebrano datagramy od serwera (Received datagrams from the server).
+\\\Przyklad 2
+---serwer
+Czekam na klienta (I am waiting)...
+Odebrano wiadomosc (received):
+1000
+Hello World!
+3.14159
+Serwer zakonczyl swoje dzialanie (server finished)!
+
+---klient
+s426228@lts:~/Desktop/SIK/C/Java$ java c5p2b localhost 8080
+Serwer powiedzial (server said): ODEBRANO POPRAWNIE WIADOMOSC (received correctly)
+Klient zakonczyl swoje dzialanie (klient finished)!
+
+\\\Przyklad 3
+import java.util.Scanner;
+public class Dodaj
+    implements Zadanie {
+    
+    public Object Wykonaj(Object params) {
+        int a,b,c;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj liczby!!!!");
+        a=scan.nextInt();
+        b=scan.nextInt();
+        c=a+b;
+        return c;
+    }
+}
+import java.net.*;
+import java.io.*;
+
+public class Klient {
+    private Socket s;
+    private InetAddress adresSerwera;
+    private int portSerwera;
+    private ZLiczbaLosowa zadanie1;
+    private ZSortuj zadanie2;
+    private int[] tablica;
+    private ObjectInputStream ois;
+    private ObjectOutputStream oos;
+    private Dodaj dodaj;
+    public Klient(InetAddress sa, int p) {
+        super();
+        adresSerwera = sa;
+        portSerwera = p;
+        tablica = new int[5];
+        for (int i = 0; i < 5; i++) {
+            tablica[i] = 5-i;
+        }
+        dodaj = new Dodaj();
+        zadanie2 = new ZSortuj();
+
+    }
+
+    public void OtworzPolaczenie() {
+        try {
+            System.out.println("Nawiazuje polaczenie ...");
+            s = new Socket(adresSerwera, portSerwera);
+            oos = new ObjectOutputStream(s.getOutputStream());
+            ois = new ObjectInputStream(s.getInputStream());
+            System.out.println("Polaczenie nawiazane.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+
+    public void ZamknijPolaczenie() {
+        try {
+            System.out.println("Zamykam polaczenie ...");
+            oos.close();
+            ois.close();
+            s.close();
+            System.out.println("Polaczenie zamkniete.");
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+
+    public Object WykonajZadanieNaSerwerze(
+        Zadanie z, Object par
+        ) {
+        Object wynik = null;
+        try {
+            oos.writeObject(z);
+            oos.writeObject(par);
+            wynik = ois.readObject();
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+        return wynik;
+    }
+
+    public void Menu() {
+        while (true) {
+            System.out.println();
+            System.out.println();
+            System.out.println(
+            "1. Dodawanie dwoch liczb");
+            System.out.println(
+            "2. Wykonaj na serwerze zadanie 2 (sortowanie)");
+            System.out.println(
+            "3. Koniec");
+            try {
+                BufferedReader klawiatura = new BufferedReader(
+                    new InputStreamReader(
+                        System.in
+                        )
+                    );
+                System.out.print("Wybor: ");
+                int opcja = Integer.parseInt(
+                    klawiatura.readLine());
+                if (opcja == 3) System.exit(0);
+                if (opcja == 1 || opcja == 2) {
+                    OtworzPolaczenie();
+                    if (opcja == 1) {
+                        int wynik = (int)
+                            WykonajZadanieNaSerwerze(
+                                dodaj,0);
+                        System.out.println(
+                        "Wynik zadania 1: "+wynik);
+                    } else {
+                        int[] wynik = (int[])
+                            WykonajZadanieNaSerwerze(
+                                zadanie2,
+                                tablica
+                            );
+                        System.out.print("Wynik zadania 2: [ ");
+                        for (int i = 0; i < wynik.length; i++) {
+                            System.out.print(wynik[i]+" ");
+                        }
+                        System.out.println("]");
+                    }
+                    ZamknijPolaczenie();
+                }
+            } catch (Exception e) {
+                System.out.println("NIE POWIODLO SIE");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        String host;
+        int port;
+        try {
+            BufferedReader klawiatura = new BufferedReader(
+                new InputStreamReader(
+                    System.in
+                    )
+                );
+            System.out.print("Host serwera obliczen: ");
+            host = klawiatura.readLine();
+            System.out.print("Numer portu serwera obliczen: ");
+            port = Integer.parseInt(klawiatura.readLine());
+            Klient k = new Klient(
+                InetAddress.getByName(host),
+                port
+                );
+            k.Menu();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+}
+
+---serwer
+s426228@lts:~/Desktop/SIK/C/Java$ java SerwerObliczen 
+Podaj numer portu (provide port number): 8080
+Czekam na zadanie (waiting for a task)...
+Polaczenie z (connection from) localhost
+Odczytywanie zadania (task reading) ...
+Odebrano zadanie typu (received task of the type)Dodaj
+Odczytywanie parametrow (reading parameters)...
+Parametry odczytane. Wykonuje zadanie (Parameters read. I am executing a task)...
+Podaj liczby!!!!
+1
+2
+Zadanie wykonane. Wysylam wyniki (task done, sending results)...
+Gotowe. Zamykam sesje z (ready, I am closing session with) localhost
+
+---klient
+s426228@lts:~/Desktop/SIK/C/Java$ java Klient
+Host serwera obliczen: localhost
+Numer portu serwera obliczen: 8080
+
+
+1. Dodawanie dwoch liczb
+2. Wykonaj na serwerze zadanie 2 (sortowanie)
+3. Koniec
+Wybor: 1
+Nawiazuje polaczenie ...
+Polaczenie nawiazane.
+Wynik zadania 1: 3
+Zamykam polaczenie ...
+Polaczenie zamkniete.
+
+Opis(2) -------------------------------------
+\\\wydruk
+Lacze sie..klient polaczony z serwerem.
+.Wyslano 12 bajtow.
+Odbieranie odpowiedzi od serwera...Otrzymano 10 bajtow: Goodbye :)
+
+Zamykanie polaczenia z serwera.
+Wysylanie danych do serwera.
+
+\\\Kod serwera
+using System;
+using System.Threading;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+public class Server
+{
+    // Przekazuje stan
+    internal class StateObject
+    {
+        internal byte[] sBuffer;
+        internal Socket sSocket;
+        internal StateObject(int size, Socket sock)
+        {
+            sBuffer = new byte[size];
+            sSocket = sock;
+        }
+    }
+    static void Main()
+    {
+        IPEndPoint ipEndpoint =
+          new IPEndPoint(IPAddress.Any, 1800);
+
+        Socket listenSocket =
+          new Socket(AddressFamily.InterNetwork,
+                     SocketType.Stream,
+                     ProtocolType.Tcp);
+
+        listenSocket.Bind(ipEndpoint);
+        listenSocket.Listen(1);
+
+        // Zamiast blokowac podaje metode do wywolania w przypadku
+        // polaczenia
+        IAsyncResult asyncAccept = listenSocket.BeginAccept(
+          new AsyncCallback(Server.acceptCallback),
+          listenSocket);
+
+        Console.Write("Trwa laczenie z klientem.");
+        if (writeDot(asyncAccept) == true)
+        {
+            Thread.Sleep(3000);
+        }
+    }
+
+    public static void acceptCallback(IAsyncResult asyncAccept)
+    {
+        Socket listenSocket = (Socket)asyncAccept.AsyncState;
+        Socket serverSocket =
+          listenSocket.EndAccept(asyncAccept);
+
+        if (serverSocket.Connected == false)
+        {
+            Console.WriteLine(".serwer nie polaczony z klientem.");
+            return;
+        }
+        else Console.WriteLine(".serwer polaczony z klientem.");
+
+        listenSocket.Close();
+
+        StateObject stateObject =
+          new StateObject(16, serverSocket);
+
+        // Przekazujemy StateObject, bo potrzeba zarowno gniazda,
+        // jak i bufora
+        IAsyncResult asyncReceive =
+          serverSocket.BeginReceive(
+            stateObject.sBuffer,
+            0,
+            stateObject.sBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(receiveCallback),
+            stateObject);
+
+        Console.Write("Odbieranie danych od klienta.");
+        writeDot(asyncReceive);
+    }
+
+    public static void receiveCallback(IAsyncResult asyncReceive)
+    {
+        StateObject stateObject =
+          (StateObject)asyncReceive.AsyncState;
+        int bytesReceived =
+          stateObject.sSocket.EndReceive(asyncReceive);
+
+        Console.WriteLine(
+          ".Otrzymano {0} bajtow: {1}",
+          bytesReceived.ToString(),
+          Encoding.ASCII.GetString(stateObject.sBuffer));
+
+        byte[] sendBuffer =
+          Encoding.ASCII.GetBytes("Goodbye :)");
+        IAsyncResult asyncSend =
+          stateObject.sSocket.BeginSend(
+            sendBuffer,
+            0,
+            sendBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(sendCallback),
+            stateObject.sSocket);
+
+        Console.Write("Wysylanie odpowiedzi do klienta.");
+        writeDot(asyncSend);
+    }
+
+    public static void sendCallback(IAsyncResult asyncSend)
+    {
+        Socket serverSocket = (Socket)asyncSend.AsyncState;
+        int bytesSent = serverSocket.EndSend(asyncSend);
+        Console.WriteLine(
+          ".Wyslano {0} bajtow.{1}{1}Zamykanie gniazdek.",
+          bytesSent.ToString(),
+          Environment.NewLine);
+
+        serverSocket.Shutdown(SocketShutdown.Both);
+        serverSocket.Close();
+    }
+
+    internal static bool writeDot(IAsyncResult ar)
+    {
+        int i = 0;
+        while (ar.IsCompleted == false)
+        {
+            if (i++ > 40)
+            {
+                Console.WriteLine("Przekroczony czas oczekiwania(Timeout).");
+                return false;
+            }
+            Console.Write(".");
+            Thread.Sleep(500);
+        }
+        return true;
+    }
+}
+
+\\\Kod klienta
+using System;
+using System.Threading;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+public class Client
+{
+
+    class StateObject
+    {
+        internal byte[] sBuffer;
+        internal Socket sSocket;
+        internal StateObject(int size, Socket sock)
+        {
+            sBuffer = new byte[size];
+            sSocket = sock;
+        }
+    }
+
+    static void Main()
+    {
+
+
+        IPAddress ipAddress =
+          IPAddress.Loopback;
+
+
+        IPEndPoint ipEndpoint =
+          new IPEndPoint(ipAddress, 1800);
+
+        Socket clientSocket = new Socket(
+          AddressFamily.InterNetwork,
+          SocketType.Stream,
+          ProtocolType.Tcp);
+
+        IAsyncResult asyncConnect = clientSocket.BeginConnect(
+        ipEndpoint,
+        new AsyncCallback(connectCallback),
+        clientSocket);
+
+        Console.Write("Lacze sie.");
+        if (writeDot(asyncConnect) == true)
+        {
+            Thread.Sleep(3000);
+        }
+
+    }
+
+    public static void connectCallback(IAsyncResult asyncConnect)
+    {
+        Socket clientSocket =
+          (Socket)asyncConnect.AsyncState;
+        clientSocket.EndConnect(asyncConnect);
+
+        if (clientSocket.Connected == false)
+        {
+            Console.WriteLine(".klient nie polaczony z serwerem.");
+            return;
+        }
+        else Console.WriteLine(".klient polaczony z serwerem.");
+
+        byte[] sendBuffer = Encoding.ASCII.GetBytes("Hello(Witam)");
+        IAsyncResult asyncSend = clientSocket.BeginSend(
+          sendBuffer,
+          0,
+          sendBuffer.Length,
+          SocketFlags.None,
+          new AsyncCallback(sendCallback),
+          clientSocket);
+
+        Console.Write("Wysylanie danych do serwera.");
+        writeDot(asyncSend);
+    }
+
+    public static void sendCallback(IAsyncResult asyncSend)
+    {
+        Socket clientSocket = (Socket)asyncSend.AsyncState;
+        int bytesSent = clientSocket.EndSend(asyncSend);
+        Console.WriteLine(
+          ".Wyslano {0} bajtow.",
+          bytesSent.ToString());
+
+        StateObject stateObject =
+          new StateObject(16, clientSocket);
+
+        IAsyncResult asyncReceive =
+          clientSocket.BeginReceive(
+            stateObject.sBuffer,
+            0,
+            stateObject.sBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(receiveCallback),
+            stateObject);
+
+        Console.Write("Odbieranie odpowiedzi od serwera.");
+        writeDot(asyncReceive);
+    }
+
+    public static void receiveCallback(IAsyncResult asyncReceive)
+    {
+        StateObject stateObject =
+         (StateObject)asyncReceive.AsyncState;
+
+        int bytesReceived =
+          stateObject.sSocket.EndReceive(asyncReceive);
+
+        Console.WriteLine(
+          ".Otrzymano {0} bajtow: {1}{2}{2}Zamykanie polaczenia z serwera.",
+          bytesReceived.ToString(),
+          Encoding.ASCII.GetString(stateObject.sBuffer),
+          Environment.NewLine);
+
+        stateObject.sSocket.Shutdown(SocketShutdown.Both);
+        stateObject.sSocket.Close();
+    }
+
+    internal static bool writeDot(IAsyncResult ar)
+    {
+        int i = 0;
+        while (ar.IsCompleted == false)
+        {
+            if (i++ > 20)
+            {
+                Console.WriteLine("Przekroczono czas polaczenia z serwerem (Timeout).");
+                return false;
+            }
+            Console.Write(".");
+            Thread.Sleep(100);
+        }
+        return true;
+    }
+}
+
+Zadanie 1
+\\\Serwer
+using System;
+using System.Threading;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+public class Server
+{
+    // Przekazuje stan
+    internal class StateObject
+    {
+        internal byte[] sBuffer;
+        internal Socket sSocket;
+        internal StateObject(int size, Socket sock)
+        {
+            sBuffer = new byte[size];
+            sSocket = sock;
+        }
+    }
+    static void Main()
+    {
+       
+        Byte[] data = new byte[1024];
+        IPAddress ipAddress = IPAddress.Loopback;
+
+        UdpClient listener = new UdpClient();
+        IPEndPoint ipEndpoint =
+        new IPEndPoint(IPAddress.Any, 8080);
+        
+        Socket listenSocket =
+          new Socket(AddressFamily.InterNetwork,
+                     SocketType.Dgram,
+                     ProtocolType.Udp);
+
+        Server.StateObject temp = new StateObject(1024, listenSocket);
+        listener.Client.Bind(new IPEndPoint(ipAddress, 8080));
+        
+        // Zamiast blokowac podaje metode do wywolania w przypadku
+        // polaczenia
+        IAsyncResult asyncAccept = listener.Client.BeginReceive(data, 0, data.Length, SocketFlags.None, 
+            new AsyncCallback(Server.acceptCallback),
+        temp);
+
+        Console.Write("Trwa laczenie z klientem.");
+      
+        if (writeDot(asyncAccept) == true)
+        {
+            Thread.Sleep(3000);
+        }
+    }
+
+    public static void acceptCallback(IAsyncResult asyncAccept)
+    {
+        
+        Socket listenSocket = (Socket)asyncAccept.AsyncState;
+        Socket serverSocket =
+          listenSocket.EndAccept(asyncAccept);
+
+        if (serverSocket.Connected == false)
+        {
+            Console.WriteLine(".serwer nie polaczony z klientem.");
+            return;
+        }
+        else Console.WriteLine(".serwer polaczony z klientem.");
+
+        listenSocket.Close();
+
+        StateObject stateObject =
+          new StateObject(16, serverSocket);
+
+        // Przekazujemy StateObject, bo potrzeba zarowno gniazda,
+        // jak i bufora
+        IAsyncResult asyncReceive =
+          serverSocket.BeginReceive(
+            stateObject.sBuffer,
+            0,
+            stateObject.sBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(receiveCallback),
+            stateObject);
+
+        Console.Write("Odbieranie danych od klienta.");
+        writeDot(asyncReceive);
+    }
+
+    public static void receiveCallback(IAsyncResult asyncReceive)
+    {
+        StateObject stateObject =
+          (StateObject)asyncReceive.AsyncState;
+        int bytesReceived =
+          stateObject.sSocket.EndReceive(asyncReceive);
+
+        Console.WriteLine(
+          ".Otrzymano {0} bajtow: {1}",
+          bytesReceived.ToString(),
+          Encoding.ASCII.GetString(stateObject.sBuffer));
+
+        byte[] sendBuffer =
+          Encoding.ASCII.GetBytes("Goodbye(Żegnam)");
+        IAsyncResult asyncSend =
+          stateObject.sSocket.BeginSend(
+            sendBuffer,
+            0,
+            sendBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(sendCallback),
+            stateObject.sSocket);
+
+        Console.Write("Wysylanie odpowiedzi do klienta.");
+        writeDot(asyncSend);
+    }
+
+    public static void sendCallback(IAsyncResult asyncSend)
+    {
+        Socket serverSocket = (Socket)asyncSend.AsyncState;
+        int bytesSent = serverSocket.EndSend(asyncSend);
+        Console.WriteLine(
+          ".Wyslano {0} bajtow.{1}{1}Zamykanie gniazd.",
+          bytesSent.ToString(),
+          Environment.NewLine);
+
+        serverSocket.Shutdown(SocketShutdown.Both);
+        serverSocket.Close();
+    }
+
+    internal static bool writeDot(IAsyncResult ar)
+    {
+        int i = 0;
+        while (ar.IsCompleted == false)
+        {
+            if (i++ > 40)
+            {
+                Console.WriteLine("Przekroczony czas oczekiwania(Timeout).");
+                return false;
+            }
+            Console.Write(".");
+            Thread.Sleep(500);
+        }
+        return true;
+    }
+}
+\\\Klient
+using System;
+using System.Threading;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+public class Client
+{
+
+    class StateObject
+    {
+        internal byte[] sBuffer;
+        internal Socket sSocket;
+        internal StateObject(int size, Socket sock)
+        {
+            sBuffer = new byte[size];
+            sSocket = sock;
+        }
+    }
+
+    static void Main()
+    {
+
+        IPAddress ipAddress =
+          IPAddress.Loopback;
+
+        //UdpClient listener = new UdpClient(8080);
+        IPEndPoint ipEndpoint =
+          new IPEndPoint(ipAddress, 8080);
+        
+        Socket clientSocket = new Socket(
+          AddressFamily.InterNetwork,
+          SocketType.Dgram,
+          ProtocolType.Udp);
+         
+        IAsyncResult asyncConnect = clientSocket.BeginConnect(
+        ipEndpoint,
+        new AsyncCallback(connectCallback),
+        clientSocket);
+
+        Console.Write("Lacze sie.");
+        if (writeDot(asyncConnect) == true)
+        {
+            Thread.Sleep(3000);
+        }
+
+    }
+
+    public static void connectCallback(IAsyncResult asyncConnect)
+    {
+        Socket clientSocket =
+          (Socket)asyncConnect.AsyncState;
+        clientSocket.EndConnect(asyncConnect);
+
+        if (clientSocket.Connected == false)
+        {
+            Console.WriteLine(".klient nie polaczony z serwerem.");
+            return;
+        }
+        else Console.WriteLine(".klient polaczony z serwerem.");
+
+        byte[] sendBuffer = Encoding.ASCII.GetBytes("Hello(Witam)");
+        IAsyncResult asyncSend = clientSocket.BeginSend(
+          sendBuffer,
+          0,
+          sendBuffer.Length,
+          SocketFlags.None,
+          new AsyncCallback(sendCallback),
+          clientSocket);
+
+        Console.Write("Wysylanie danych do serwera.");
+        writeDot(asyncSend);
+    }
+
+    public static void sendCallback(IAsyncResult asyncSend)
+    {
+        Socket clientSocket = (Socket)asyncSend.AsyncState;
+        int bytesSent = clientSocket.EndSend(asyncSend);
+        Console.WriteLine(
+          ".Wyslano {0} bajtow.",
+          bytesSent.ToString());
+
+        StateObject stateObject =
+          new StateObject(16, clientSocket);
+
+        IAsyncResult asyncReceive =
+          clientSocket.BeginReceive(
+            stateObject.sBuffer,
+            0,
+            stateObject.sBuffer.Length,
+            SocketFlags.None,
+            new AsyncCallback(receiveCallback),
+            stateObject);
+
+        Console.Write("Odbieranie odpowiedzi serwera.");
+        writeDot(asyncReceive);
+    }
+
+    public static void receiveCallback(IAsyncResult asyncReceive)
+    {
+        StateObject stateObject =
+         (StateObject)asyncReceive.AsyncState;
+
+        int bytesReceived =
+          stateObject.sSocket.EndReceive(asyncReceive);
+
+        Console.WriteLine(
+          ".Otrzymano {0} bajtow: {1}{2}{2}Zamykanie polaczenia.",
+          bytesReceived.ToString(),
+          Encoding.ASCII.GetString(stateObject.sBuffer),
+          Environment.NewLine);
+
+        stateObject.sSocket.Shutdown(SocketShutdown.Both);
+        stateObject.sSocket.Close();
+    }
+
+    internal static bool writeDot(IAsyncResult ar)
+    {
+        int i = 0;
+        while (ar.IsCompleted == false)
+        {
+            if (i++ > 20)
+            {
+                Console.WriteLine("Przekroczono czas polaczenia z serwerem (Timeout).");
+                return false;
+            }
+            Console.Write(".");
+            Thread.Sleep(100);
+        }
+        return true;
+    }
+}
+
+
+Opis(3) -------------------------------------
+Zadanie T.0 -------------------------------------
+\\\Przyklad 1
+## klient
+#
+set host "localhost"
+  #% localhost
+set s [socket $host 10000]
+  #% sock5
+_puts "Nawiązuje polaczenie z serwerem na porcie 10000!"
+  #% 
+  # tworzymy połączenie tcp z serwerem na maszynie $host, port=10000
+  # komenda socket zwraca gniazdko repr. koniec tego połączenia
+
+puts $s "A ku ku !!!"
+  #% 
+  # wysylamy dane przez gniazdko s
+flush $s
+  #% 
+  # flush to wypróżnienie buforów
+  #   !!! bardzo ważne bez tego dane nie zostaną "wypchnięte" !!!
+close $s
+  #% 
+_puts "Koniec polaczenia"
+  #% 
+
+## serwer 1
+#
+socket -server obsluga 10000
+_puts "Oczekuje na klienta"
+  #% sock5
+  # ustanawiamy serwer na porcie 10000, na lokalnej maszynie
+  # zgloszenie się klienta jest obsługiwane przez proc "obsluga"
+proc obsluga {s args} {
+    # s to socket klienta po stronie serwera
+  set linia [gets $s]
+  _puts "Wiadomosc od $s: $linia"
+  close $s
+  _puts "Koniec polaczenia"
+    # po jednokrotnym obslużeniu klienta zamykamy połączenie
+}
+
+## serwer 2
+# - pozwala klientowi wysłać dowolną liczbę linii
+# - obsluguje danego klienta tak dlugo, aż nie zamknie on gniazdka!!!
+#
+socket -server obsluga 10000 
+  #% sock5
+proc obsluga {s args} {
+  fileevent $s readable "obslugaKli $s"
+    _puts "Obsluguje klienta!"
+    # dla każdego zgłaszającego się klienta definiujemy 
+    # obsługę zdarzenia "readable" na gniazdku tego klienta ...
+    # uwaga: jeśli można odczytać 1 znak to można odczytać cały komunikat!
+}
+  #% 
+proc obslugaKli s {
+  if {[eof $s]} { close $s; return }
+    # "eof" pojawi się dokładnie wtedy, gdy klient zamknie gniazdko!
+    # wtedy po stronie serwera usuwamy zasoby związane z tym klientem
+  set linia [gets $s]
+  _puts "Wiadomosc od $s: $linia"
+}
+  #%
+\\\Przyklad 2
+## klient używający proc _msg
+#
+set host "localhost"
+  #% localhost
+set s [podlacz $host 10000]
+  #% sock5
+proc podlacz {host port} { 
+  set s [socket $host $port]
+  fconfigure $s -translation binary
+  fconfigure $s -encoding utf-8
+  return $s
+}
+  #% 
+  # uwaga: nie ma proc podlacz!, trzeba ją napisać, pamiętać o odp. konfiguracji kanału!!
+proc send_msg {s msg} {
+  set len [string length $msg]
+  set send [binary format i $len]
+  append send $msg
+  puts -nonewline $s $send; 
+  flush $s
+}
+  #% 
+
+proc recv_msg {s msg} {
+  set a [read $s 4]
+  if {$a=="" && [eof $s]} return
+  if {[string length $a]!=4} {error "blad"}
+  binary scan $a i len
+  set b [read $s $len]
+  if {[string length $b]!=$len} {error "blad"}
+  upvar $msg c; 
+  set c $b
+}
+  #% 
+
+send_msg $s "a ku ku !!!"
+send_msg $s {"a ku ku !!!" 1 2 3 4 5}
+send_msg $s [list "zapisz" "plik.gif" {...gif...}]
+  #%
+  # w tym przypadku komunikat to lista 3 elementow;
+  # 3 element to zawartość pliku gif, czyli "dane binarne"
+  # mozna to traktowac jako rozkaz "zapisz" wysłany do serwera
+  #   z 2 parametrami: nazwą pliku i danymi które mają być w tym pliku zapisane
+
+recv_msg $s odpowiedz
+  #%
+   # 2 parametr recv_msg to nazwa zmiennej, w której ma być zapisany komunikat
+_puts "przyszła następująca wiadomosc od serwera: $odpowiedz"
+  #%
+
+
+## serwer używający proc _msg
+#
+socket -server obsluga 10000
+  #% sock5
+proc obsluga {s args} {
+  fconfigure $s -translation binary
+  fconfigure $s -encoding utf-8
+  fileevent $s readable "obslugaKli $s"
+}
+  #%
+proc recv_msg {s msg} {
+  set a [read $s 4]
+  if {$a=="" && [eof $s]} return
+  if {[string length $a]!=4} {error "Blad"}
+  binary scan $a i len
+  set b [read $s $len]
+  if {[string length $b]!=$len} {error "Blad"}
+  upvar $msg c; set c $b
+}
+  #%
+proc obslugaKli {s} {
+  upvar ::dane,$s dane
+    # z kazdym gniazdkiem klienta po stronie serwera łączymy 
+    # zmienna globalną o nazwie dane,$s 
+    #   (może to być tablica, czyli zbiór zmiennych -tak jak w tym przykładzie)
+    # dla tej zmiennej tworzymy alias "dane" ...
+
+  recv_msg $s msg
+    # odbieramy pojedynczy komunikat
+  if {[eof $s]} { close $s; unset dane; return }
+    # czyszczenie, jeśli klient zamknął gniazdko
+
+  switch [lindex $msg 0] {
+      # obsluga komuniaktu; tutaj zakłądamy, że jest to lista,
+      # w której pierwszy element to nazwa rozkazu ...
+    rozkaz1 {
+      # wykonujemy rozkaz 1 ...
+      set dane(jakies_pole) "???"
+        # mamy wygodny dostęp do prywatnych danych klienta po stronie serwera!!!
+    }
+    rozkaz2 {
+      # wykonujemy rozkaz 2 ...
+    }
+    rozkaz3 {
+      # wykonujemy rozkaz 3 ...
+    }
+  }
+}
+  #% 
+
+Zadanie T.1 -------------------------------------
+\\\Kod Java
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+public class mh_kom {
+
+    static public String recv_msg(java.io.InputStreamReader r) {
+        try {
+            java.nio.ByteBuffer bb= java.nio.ByteBuffer.allocateDirect(4);
+            bb.put(3, new Integer(r.read()).byteValue());
+            bb.put(2, new Integer(r.read()).byteValue());
+            bb.put(1, new Integer(r.read()).byteValue());
+            bb.put(0, new Integer(r.read()).byteValue());
+            int len= bb.getInt(0);
+            char[] buf= new char[len];
+            //r.read(buf); // !!! blad !!!
+            // nie zawsze wczytuje sie wszystko! czyta po okolo 20KB...
+            int i,j,k; j=len; k=0;
+            while(j>0) {
+                i= r.read(buf, k, j); j-=i; k+=i;
+            }
+            return new String(buf, 0, len);
+        } catch (java.io.IOException e) {
+            System.out.println("blad recv_msg !!!");
+        }
+        return "";
+    }
+
+    static public void send_msg(java.io.OutputStreamWriter w, String s) {
+        try {
+            int len= s.length();
+            java.nio.ByteBuffer bb= java.nio.ByteBuffer.allocateDirect(4);
+            bb.putInt(0, len);
+            w.write(bb.get(3));
+            w.write(bb.get(2));
+            w.write(bb.get(1));
+            w.write(bb.get(0));
+            w.write(s);
+        } catch (java.io.IOException e) {
+            System.out.println("blad send_msg !!!");
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+
+// zapis komunikatow do pliku
+        /*java.io.FileOutputStream os= new java.io.FileOutputStream("qqq.txt");
+        java.io.OutputStreamWriter w= new java.io.OutputStreamWriter(os, "utf-8");
+        mh_kom.send_msg(w, "A ku ku !!! 1");
+        w.flush();
+        mh_kom.send_msg(w, "A ku ku !!! 2");
+        w.flush();
+        w.close();*/
+
+// odczyt komunikatow z pliku
+        java.io.FileInputStream is= new java.io.FileInputStream("qqq.txt");
+        java.io.InputStreamReader r= new java.io.InputStreamReader(is, "utf-8");
+        System.out.println(mh_kom.recv_msg(r));
+        System.out.println(mh_kom.recv_msg(r));
+        r.close();
+
+    }
+
+}
+s426228@lts:~/Desktop/SIK/C/TCL$ java mh_kom
+\\\wydruk
+ęą
+ćń
+
+
+

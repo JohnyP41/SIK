@@ -1,0 +1,2567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
+<sprawozdanie przedmiot="SIK" temat="E">
+<imie_nazwisko>Jan Przybylski</imie_nazwisko>
+<nr_indeksu>426228</nr_indeksu>
+<liczba_pkt>20.5</liczba_pkt>
+<zadanie nr="opis(1) Przyklad 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 3" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 4" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 5" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 6" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 7" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 8" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Przyklad 9" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Zadanie 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Zadanie 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(1) Zadanie 3" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 3" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 4" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 5" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 6" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 7" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 8" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 9" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 10" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 11" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Przyklad 12" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Zadanie 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(2) Zadanie 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Przyklad 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Przyklad 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Przyklad 3" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Zadanie 1" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Zadanie 2" pkt="0.5"></zadanie>
+<zadanie nr="opis(3) Zadanie 3" pkt="1.0"></zadanie>
+<zadanie nr="opis(3) Zadanie 4" pkt="0.5"></zadanie>
+<zadanie nr="E.1" pkt="2.0"></zadanie>
+<zadanie nr="E.3" pkt="1.5"></zadanie>
+</sprawozdanie>
+
+opis(1) -------------------------------------
+Przyklad 1
+\\\
+Idzie komunikat w 1 strone i wraca odpowiedz.
+Odpowiedz w ICMP.
+ICMP jest w srodku ramki IP.
+
+Przyklad 2
+\\\
+Wysylane sa datagramy UDP.
+Wysylane są 3 pakiety z tą samą wartością TTL.
+
+Przyklad 3
+\\\
+Wysylamy 10000 bajtów.Nawiazujemy polaczenie TCP.
+Dane sa wysylane w segmentach o dlugosci 1,5kb.
+Najpierw mamy flagę SYN odbiorca i nadawca sie synchronizuja.
+Potem sa wysylane zostaja segmenty z flaga ACK.Segment doszedł do odbiorcy.Flaga ACK to potwierdzenie dostarczenia.
+
+Przyklad 4
+\\\
+Wysyłamy 1000 bajtów protokołem TCP.
+Nie ma fragmentacji.
+Dane wysłane są w jednym 1000 b, segmencie. Na końcu zostaje wysłane potwierdzenie (jeśli segment dotarł do odbiorcy) z flagą ACK.
+
+Przyklad 5
+\\\
+Wysylamy 1000 bajtów protokołem UDP.
+Następuje fragmentacja na poziome IP.
+Nie mieszczacy sie pakiet jest ciety na kawałki.
+Offsety maleją. Flagi sa postaci 0x03 i są takie same.
+Kawałki sa wysylane od konca.
+
+Przyklad 6
+\\\
+Nie ma fragmentacji.
+Wysylamy 1000 bajtów protokołem UDP w jednym datagramie.
+
+Przyklad 7
+\\\
+Numery sekwencji to kolejno 0,0,1,1,1,2
+Numery akceptacji to kolejno 1,1,1,2,2
+Wystepuja krótkie komunikaty z flaga ACK i FIN.
+
+Przylady 8
+\\\
+Numery sekwencji to kolejno 0,0,1,1,1,2
+Numery akceptacji to kolejno 1,1,1,2,2
+Serwer nie moze odebrac danych od klienta, poniewaz on zakonczyl polaczenie.
+
+Przyklad 9
+\\\
+Proba podlaczenia sie pod serwer ktorego nie ma przez TCP.
+Pojawia sie nowa flaga RST - odrzucenie polaczenia przez serwer.
+
+Zadanie 1
+\\\
+TCP-1646
+UDP-1042
+W przykladzie 4 wysylane jest wiecej bajtow.
+
+Zadanie 2
+\\\
+Klient wywołał funkcję send 2 razy.
+
+Zadanie 3
+\\\
+Echo reply(Zwrot echa) ma typ 0 tak jak w Wireshark.
+Echo request(Żądanie echa) ma typ 8 tak jak w Wireshark.
+
+opis(2) -------------------------------------
+Przyklad 1
+\\\
+Ustanawiane jest polaczenie na telnecie, ktore pozniej zostaje nagle przerwane.
+Dane(login) sa wysylane po jednym znaku przez protokól telnet.
+
+Przyklad 2
+\\\
+Zostaje ustawnowione polaczenie ssh, wyswietlane wersje protokolow serwera i klienta. Nastepuje wymiana kluczy miedzy serwerem i klientem.
+Pozniej klient i serwer wysylaja zaszyfrowane pakiety do siebie.
+
+Przyklad 3
+\\\
+Uzytkownik podaje swoj login i haslo do ftp. 
+Zmienia katalog na sik, wylistowuje katalog.Nastepuje zmiana na tryb binarny i zostaje pobrany plik o nazwie plik.txt.
+
+Przyklad 4
+\\\
+Klient oraz serwer wymieniaja sie kluczami. Serwer i klient wysylaja zaszyfrowane pakiety do siebie.
+Które są różnej wielkości.
+
+Przyklad 5
+\\\
+Uzytkownik ttomek loguje sie podajac swoje haslo na swoje konto pocztowe. Wyswietla 0 wiadomosci na skrzynce pocztowej.
+Probuje wyswietlic pierwszego maila lecz nie moze tego zrobic.
+
+Przyklad 6
+\\\
+Otrzymano odpowiedz od  PTR 13.79.254.150.in-addr.arpa PTR atlas.olimp.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.wp.pl.sci.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.wp.pl.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.wp.pl.amu.edu.pl SOA dns.amu.edu.pl
+Otrzymano odpowiedz od www.wp.pl A 212.77.100.101
+
+Przyklad 7
+\\\
+Otrzymano odpowiedz od PTR 13.79.254.150.in-addr.arpa PTR atlas.olimp.wmid.amu.edu.pl
+Otrzymano odpowiedz od PTR 2.78.254.150.in-addr.arpa PTR atos.olimp.wmid.amu.edu.pl
+Otrzymano odpowiedz od PTR 10.76.254.150.in-addr.arpa PTR ttomek.sci.wmid.amu.edu.pl
+
+Przyklad 8
+\\\
+Otrzymano odpowiedz od PTR 13.79.254.150.in-addr.arpa PTR atlas.olimp.wmid.amu.edu.pl
+Otrzymano odpowiedz od PTR 101.100.77.212.in-addr.arpa PTR www.wp.pl
+
+Przyklad 9
+\\\
+Otrzymano odpowiedz od PTR 13.79.254.150.in-addr.arpa PTR atlas.olimp.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.microsoft.com.sci.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.microsoft.com.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak www.microsoft.com.amu.edu.pl SOA dns.amu.edu.pl
+Otrzymano odpowiedz od  www.microsoft.com CNAME toggle.www.ms.akadns.net CNAME g.www.ms.akadns.net CNAME lb1.www.ms.akadns.net A 207.46.19.60 A 207.46.225.60 A 207.46.19.30 A 207.46.198.30 A 207.46.20.60 A 207.46.20.30 A 207.46.198.60 A 207.46.199.30
+Nie ma takiego hosta jak quit.sci.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak quit.wmid.amu.edu.pl SOA atos.wmid.amu.edu.pl
+Nie ma takiego hosta jak quit.amu.edu.pl SOA dns.amu.edu.pl
+
+Przyklad 10
+\\\
+Najpierw pobrany jest tekst ze strony potem obrazek a na koncu ikona.
+
+Przyklad 11
+\\\
+Pobrany jest tekst i obrazek po odswiezeniu nic nie jest modyfikowane, potem jest pobrana ikona.
+
+Przyklad 12
+\\\
+Pobrany jest tekst,obrazek,ikona nic nie znajduje sie w cashu. Przez to ze nic nie ma w cashu nie ma komunikatu o braku modyfikacji.
+
+Zadanie 1
+\\\
+Ze strony sa pobierane: tekst/html,css,javascript,pliki jpg,pliki png, ikony,gify.
+Użyto przegladarki Mozilla Firefox. Witryna jest pobierana w 14 sesjach TCP.
+Nazwa kanoniczna:hosting.wmi.amu.edu.pl
+
+Zadanie 2
+\\\
+login:testek2
+hasło:poprostuXML
+
+opis(3) -------------------------------------
+Przyklad 1
+\\\
+Strona która załadowała się poraz drugi nie jest modyfikowana.
+
+Przyklad 2
+\\\
+Klient wysyla dodatkowe polecenie PSV i to klient nawiazuje nowe polaczenie do serwera laczac sie na port otrzymany od serwera po komendzie PSV.
+
+Przyklad 3
+\\\
+Nie ma takiego hosta jak atos.sci.wmid.amu.edu.pl
+Serwer jest nieosiagalny o nazwie atos.
+
+Zadanie 1
+\\\
+1. Nie wymaga hasła.
+2. Tak użyto trybu pasywnego.
+3. Plik został przesłany w trybie binarnym.
+
+Zadanie 2
+\\\
+s426228@pc15d:~/Desktop$ telnet ftp.gnu.org 21
+Trying 208.118.235.20...
+Connected to ftp.gnu.org.
+Escape character is '^]'.
+220 GNU FTP server ready.
+user anonymous
+230-NOTICE (Updated October 13 2017):
+230-
+230-Because of security concerns with plaintext protocols, we still
+230-intend to disable the FTP protocol for downloads on this server
+230-(downloads would still be available over HTTP and HTTPS), but we
+230-will not be doing it on November 1, 2017, as previously announced
+230-here. We will be sharing our reasons and offering a chance to
+230-comment on this issue soon; watch this space for details.
+230-
+230-If you maintain scripts used to access ftp.gnu.org over FTP,
+230-we strongly encourage you to change them to use HTTPS instead.
+230-
+230----
+230-
+230-Due to U.S. Export Regulations, all cryptographic software on this
+230-site is subject to the following legal notice:
+230-
+230-    This site includes publicly available encryption source code
+230-    which, together with object code resulting from the compiling of
+230-    publicly available source code, may be exported from the United
+230-    States under License Exception "TSU" pursuant to 15 C.F.R. Section
+230-    740.13(e).
+230-
+230-This legal notice applies to cryptographic software only. Please see
+230-the Bureau of Industry and Security (www.bxa.doc.gov) for more
+230-information about current U.S. regulations.
+230 Login successful.
+cwd gnu
+250-If you have problems downloading and are seeing "Access denied" or
+250-"Permission denied", please make sure that you started your FTP client
+250-in a directory to which you have write permission.
+250-
+250-Please note that all files ending in `.gz' are compressed with `gzip',
+250-not with the unix `compress' program.  Get the file below for more
+250-info.
+250-
+250-For a list of mirrors and other ways of getting GNU software, FTP the
+250-file /pub/gnu/GNUinfo/FTP from ftp.gnu.org or one of its mirror sites.
+250-
+250-Programs that are directly in this directory are actually GNU
+250-programs, developed under the auspices of GNU.
+250-
+250-We do, however, distribute some non-GNU programs through our FTP
+250-server, or provide pointers to where they are.  We put these
+250-programs/pointers in the subdirectory non-gnu since they are not
+250-developed by the GNU project.  They are, of course, part of the GNU
+250-system. See:
+250-http://www.gnu.org/philosophy/categories.html#TheGNUsystem
+250 Directory successfully changed.
+pwd
+257 "/gnu"
+
+Zadanie 3 -------------------------------------
+\\\komendy
+set s [socket ftp.gnu.org 21]
+  #% sock5
+fconfigure $s -blocking 0
+  #% 
+puts $s "user anonymous";flush $s
+  #% 
+puts $s "pasv";flush $s
+  #% 
+puts $s "list";
+  #% 
+  #% 
+read $s
+  #% 150 Here comes the directory listing.
+226 Directory send OK.
+
+  #% 227 Entering Passive Mode (208,118,235,20,94,204).
+
+  #% 220 GNU FTP server ready.
+230-NOTICE (Updated October 13 2017):
+230-
+230-Because of security concerns with plaintext protocols, we still
+230-intend to disable the FTP protocol for downloads on this server
+230-(downloads would still be available over HTTP and HTTPS), but we
+230-will not be doing it on November 1, 2017, as previously announced
+230-here. We will be sharing our reasons and offering a chance to
+230-comment on this issue soon; watch this space for details.
+230-
+230-If you maintain scripts used to access ftp.gnu.org over FTP,
+230-we strongly encourage you to change them to use HTTPS instead.
+230-
+230----
+230-
+230-Due to U.S. Export Regulations, all cryptographic software on this
+230-site is subject to the following legal notice:
+230-
+230-    This site includes publicly available encryption source code
+230-    which, together with object code resulting from the compiling of
+230-    publicly available source code, may be exported from the United
+230-    States under License Exception "TSU" pursuant to 15 C.F.R. Section
+230-    740.13(e).
+230-
+230-This legal notice applies to cryptographic software only. Please see
+230-the Bureau of Industry and Security (www.bxa.doc.gov) for more
+230-information about current U.S. regulations.
+230 Login successful.
+
+
+\\\Dane
+set s [socket ftp.gnu.org 24268]
+  #% sock5
+fconfigure $s -blocking 0
+  #%
+read $s
+  #% lrwxrwxrwx    1 0        0               8 Aug 20  2004 CRYPTO.README -> .message
+-rw-r--r--    1 0        0           17864 Oct 23  2003 MISSING-FILES
+-rw-r--r--    2 0        0            4178 Aug 13  2003 MISSING-FILES.README
+-rw-r--r--    1 0        0            2509 Oct 13  2017 README
+-rw-r--r--    1 0        0          405121 Oct 23  2003 before-2003-08-01.md5sums.asc
+-rw-r--r--    1 0        0          254452 May 16 10:25 find.txt.gz
+drwxrwxr-x  316 0        3003        12288 Jan 03 15:57 gnu
+drwxrwxr-x    3 0        3003         4096 Mar 10  2011 gnu+linux-distros
+-rw-r--r--    1 0        0          466840 May 16 10:25 ls-lrRt.txt.gz
+drwxr-xr-x    3 0        0            4096 Apr 20  2005 mirrors
+lrwxrwxrwx    1 0        0              11 Apr 15  2004 non-gnu -> gnu/non-gnu
+drwxr-xr-x   90 0        0            4096 Mar 31  2015 old-gnu
+lrwxrwxrwx    1 0        0               1 Aug 05  2003 pub -> .
+drwxr-xr-x    2 0        0            4096 Nov 08  2007 savannah
+drwxr-xr-x    2 0        0            4096 Aug 02  2003 third-party
+drwxr-xr-x    2 0        0            4096 Apr 07  2009 tmp
+drwxr-xr-x    2 0        0            4096 May 07  2013 video
+-rw-r--r--    1 0        0            1344 Oct 13  2017 welcome.msg
+
+Zadanie 4
+\\\
+Dane przesyłane przez protokuł HTTPS są szyfrowane.
+Na początku serwer i klient się witają. Pobierany jest certfikat od serwera i sprawdzany.
+Następuje wymiana klucza klienta,zmiana specyfikacji szyfru oraz zostaje zaszyfrowana wiadomosc uzgadniania.
+
+Zadanie E.1
+\\\
+12:10:02 localhost:8016 <--> localhost:8015
+12:10:02 waiting for new connection...
+12:10:09 connect from 127.0.0.1 localhost 8016 44552
+12:10:09 connecting to localhost:8015
+12:10:09 GET / HTTP/1.1
+12:10:09 Host: localhost:8016
+12:10:09 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:10:09 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:10:09 Accept-Language: en-US,en;q=0.5
+12:10:09 Accept-Encoding: gzip, deflate
+12:10:09 Connection: keep-alive
+12:10:09 Upgrade-Insecure-Requests: 1
+12:10:09 
+12:10:09 
+12:10:09 HTTP/1.1 200 Data follows
+12:10:09 Date: Wed, 23 May 2018 10:10:09 GMT
+12:10:09 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:10:09 Content-Type: text/html
+12:10:09 Content-Length: 5024
+12:10:09 
+12:10:09 
+12:10:09 
+12:10:09 
+12:10:09 <html><head>
+12:10:09 	<title>TclHttpd Home Page</title>
+12:10:09 	<!-- Brent Welch -->
+12:10:09 	<meta name="description" content="TclHttpd, the Tcl Web Server, is an extensible
+12:10:09 platform for web application development.">
+12:10:09 	<meta name="keywords" content="Tcl, TclHttpd, Tcl/Tk, Tcl Web Server, Web Server">
+12:10:09 </head>
+12:10:09 
+12:10:09 <body bgcolor="white" text="black">
+12:10:09 
+12:10:09 <table cellpadding=0 cellspacing=0 border=0 width=100%>
+12:10:09 <tr>  <td align=left><font face="arial"><a href=/><img src=/images/tclp.gif border=0 alt="Home"></a></font></td>  <td><font face="arial"><h2>TclHttpd Home Page</h2></font></td>  </tr><tr><td colspan=2  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:10:09 </table><font face="arial">
+12:10:09 
+12:10:09 <!-- DynamicOnly -->
+12:10:09 
+12:10:09 
+12:10:09 <!-- Two Column Format -->
+12:10:09 <table border=0 cellpadding=4>
+12:10:09 <tr><td valign=top>
+12:10:09 <!-- Left Column -->
+12:10:09 
+12:10:09 May 23, 2018 12:10:09
+12:10:09 
+12:10:09 
+12:10:09 <p>
+12:10:09 The TclHttpd is a pure Tcl implementation of a Web server.
+12:10:09 It runs as a Tcl script on top of
+12:10:09 <a href=http://www.tcl.tk/software/tcltk/>Tcl</a>.
+12:10:09 This server is running Tcl 8.4.8.
+12:10:09 There is more <a href=version_history.html>TclHttpd version information</a>
+12:10:09 about using other versions of Tcl and the Standard Tcl Library (tcllib).
+12:10:09 <p>
+12:10:09 
+12:10:09 While this server works fine as a stand alone web server, the
+12:10:09 intent is to embed the server in other applications in order to
+12:10:09 "web enable" them.
+12:10:09 A Tcl-based web server is ideal for embedding
+12:10:09 because Tcl was designed from the start
+12:10:09 to support embedding into other applications.
+12:10:09 The interpreted nature of Tcl allows dynamic reconfiguration of the
+12:10:09 server. Once the core interface between the web server and the hosting
+12:10:09 application is defined, it is possible to manage the web server, upload
+12:10:09 Safe-Tcl control scripts, download logging information, and otherwise
+12:10:09 debug the Tcl part of the application without restarting the hosting
+12:10:09 application.
+12:10:09 <p>
+12:10:09 
+12:10:09   The server is distributed under a <a href=license.terms>copyright</a> that allows free use.
+12:10:09 
+12:10:09 
+12:10:09 <p>
+12:10:09 The <a href="mailto:tclhttpd-users@lists.sourceforge.net">tclhttpd-users@lists.sourceforge.net</a> mailing list is the best source of current
+12:10:09 information about TclHttpd.
+12:10:09 
+12:10:09 <!--
+12:10:09 Please <a href=register.html>Register Your Software</a> so
+12:10:09 we can see how widely used the server is.
+12:10:09  -->
+12:10:09 
+12:10:09 <h4>Related Articles</h4>
+12:10:09 
+12:10:09 <ul><li><a href=/links/INSTALL.txt>INSTALL.txt</a>
+12:10:09 <li><a href=/links/README.ssl.txt>README.ssl.txt</a>
+12:10:09 <li><a href=/links/README.txt>README.txt</a>
+12:10:09 <li><a href=/links/WHATSNEW.txt>WHATSNEW.txt</a>
+12:10:09 </ul>
+12:10:09 
+12:10:09 <a href=http://www.tcl.tk/software/tclhttpd/>The main TclHttpd Information Page</a>.
+12:10:09 <p>
+12:10:09 A <a href=book/TCLHTTPD.html>Tcl Httpd Book Chapter</a> from the
+12:10:09 3rd Edition of
+12:10:09 <em><a href=http://www.beedub.com/book>Practical Programming in Tcl and Tk</a></em>
+12:10:09 by Brent Welch.
+12:10:09 <p>
+12:10:09 The <a HREF="http://www.tcl.tk/software/tclhttpd/server.html">white
+12:10:09 paper</a> presents a case for an embedded web server from more of a
+12:10:09 business angle.
+12:10:09 
+12:10:09 <!-- End Left Column -->
+12:10:09 </td><td valign=top>
+12:10:09 <!-- Right Column -->
+12:10:09 
+12:10:09 <h4>Control/Status Pages</h4>
+12:10:09 <ul>
+12:10:09 <li><a HREF="/status/">Server statistics</a>.
+12:10:09 Home hits: 4
+12:10:09 <li><!--- <a HREF="hacks.html">Control panel</a> -->
+12:10:09 <a HREF="hacks.tml">Control panel</a>
+12:10:09 </ul>
+12:10:09 <h4>Documentation</h4>
+12:10:09 <ul>
+12:10:09 <li>
+12:10:09 <a href=man/>Manual pages</a>.
+12:10:09 <li>
+12:10:09 <a HREF="templates/">Templates with inline Tcl</a>.
+12:10:09 <li>
+12:10:09 <a HREF="access/">Access control schemes</a>.
+12:10:09 <li>
+12:10:09 
+12:10:09   <a href="/learn/">Learn</a> 
+12:10:09 <li><a href="/learn/setup.tml">Basic Setup</a>
+12:10:09 <li><a href="/templates/">Templates</a>
+12:10:09 <li><a href="/learn/security.tml">Server Security</a>
+12:10:09 <li><a href="/learn/direct.tml">Direct URLs</a>
+12:10:09 <li><a href="/learn/domain.tml">URL Domains</a>
+12:10:09 
+12:10:09 </ul>
+12:10:09 
+12:10:09 <h4>Test Pages</h4>
+12:10:09 <ul>
+12:10:09 <li><a href="guestbook/guestbook.cgi">View Guest Book</a>
+12:10:09 <li><a href="guestbook/newguest.html">Update Guest Book</a>
+12:10:09 <li><a HREF="include.shtml">Server includes</a>
+12:10:09 <li><a HREF="forms/">CGI</a>  You probably need to install the Standard Tcl Library for this.
+12:10:09 <li><a HREF="map/">Imagemaps</a>
+12:10:09 <li><a HREF="/xyzzy">Sample missing page</a>
+12:10:09 <li><a HREF="/debug/raise?message=This+page+raises+errors!">A page that raises an error</a>
+12:10:09 <li><a HREF="images">A directory listing page</a>
+12:10:09 </ul>
+12:10:09 
+12:10:09 <!-- End Right Column -->
+12:10:09 </td></tr>
+12:10:09 <!-- End Two Column Format -->
+12:10:09 </table>
+12:10:09 
+12:10:09 
+12:10:09 <!-- 
+12:10:09     Home		/
+12:10:09     Status		/status	
+12:10:09     "Learn"     	/learn/
+12:10:09     "CGI Tests"		/forms/
+12:10:09     "Templates"		/templates/
+12:10:09     "Access Control"	/access/
+12:10:09     "Reference Manual"	/man/
+12:10:09  -->
+12:10:09 <table cellpadding=0 cellspacing=2 border=0 width=100%>
+12:10:09 <tr><td colspan=7  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:10:09 <tr><td><font face="arial">Home</font></td><td><font face="arial"><a href="/status">Status</a></font></td><td><font face="arial"><a href="/learn/">Learn</a></font></td><td><font face="arial"><a href="/forms/">CGI Tests</a></font></td><td><font face="arial"><a href="/templates/">Templates</a></font></td><td><font face="arial"><a href="/access/">Access Control</a></font></td><td><font face="arial"><a href="/man/">Reference Manual</a></font></td></tr>
+12:10:09 </table>
+12:10:09 </body>
+12:10:09 </html>
+12:10:09 
+12:10:09 
+12:10:09 GET /images/tclp.gif HTTP/1.1
+12:10:09 Host: localhost:8016
+12:10:09 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:10:09 Accept: */*
+12:10:09 Accept-Language: en-US,en;q=0.5
+12:10:09 Accept-Encoding: gzip, deflate
+12:10:09 Referer: http://localhost:8016/
+12:10:09 Connection: keep-alive
+12:10:09 
+12:10:09 
+12:10:09 HTTP/1.1 200 Data follows
+12:10:09 Date: Wed, 23 May 2018 10:10:09 GMT
+12:10:09 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:10:09 Content-Type: image/gif
+12:10:09 Content-Length: 1294
+12:10:09 Last-Modified: Tue, 18 Apr 2000 16:02:40 GMT
+12:10:09 
+12:10:09 GIF89a*.@...........................f..............f.ff.f..3...........f..ff.f3.33f..ff.ff.ffff3ff333f.33f.3.!. Made with GIMP by L@Demailly.com.!...d...,....*.@....` .dI2L.6....#.t]7o..r...A.G..x..L.......'C ..G.4.)y...h.>.....0d[R..K.$..I.y .~.t2......X0D.N3......&{6....Y.]4
+12:10:09 ...5.igf..4....J.2..$.5f2....f...%.4.Z.....{T...'D....
+12:10:09 .6..#.E...a....%.Y.....a.4..~E....2.3..\d.7...G5.
+12:10:09 .BP..'...#")..7O<H.....I..xH7......$H*.....u.D..r....y.h....*...Rd@2..:....	.C.xe...$.G....p..{.....A...^k.X...J...-HK...(....Kw...O&.Z..P.J&(`....;.D^$.b.1..~].*..raJb^l.....f....Y.....4Ci.....b.....H...(.b.....D.!*.W......i.A....... .L....k'.].I.....Q.<..9.h.\|....(.._.....'C	q.......".j$....	>..v.<....@....`.....f...j! .%.H^.3X."..l...4...........@.Od.#......~.X'..H"...OZ7..G>i..W&..!XN..6Nb	e.J*i..`j.d.YJ...ij.f.W6).......|J....a...............EB..!.......,............'.......i...!.......,....
+12:10:09 ......  ....%P.k.~...p;.g..!.......,....	.............y..Z.....g.!.!...
+12:10:09 ...,.........;  >...$J.).....i9.s...c....C,~..$..T....G
+12:10:09 .T.L.V..J...6..ZC.!...
+12:10:09 ...,..7......... |..........;.f..!...
+12:10:09 ...,..7.........'|.S........9.e..!...
+12:10:09 ...,..7...........O)..(....p...!...
+12:10:09 ...,..7......... ~..	_j>#i.*).k..!...
+12:10:09 ...,..7......... |.c..C.......f..!...
+12:10:09 ...,..7......... ~..	_j>#I..;._..!...
+12:10:09 ...,..7......... |.H.f..;
+12:10:09 connect from 127.0.0.1 localhost 8016 44556
+12:10:09 connecting to localhost:8015
+12:10:09 GET /images/Space.gif HTTP/1.1
+12:10:09 Host: localhost:8016
+12:10:09 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:10:09 Accept: */*
+12:10:09 Accept-Language: en-US,en;q=0.5
+12:10:09 Accept-Encoding: gzip, deflate
+12:10:09 Referer: http://localhost:8016/
+12:10:09 Connection: keep-alive
+12:10:09 
+12:10:09 
+12:10:09 HTTP/1.1 200 Data follows
+12:10:09 Date: Wed, 23 May 2018 10:10:09 GMT
+12:10:09 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:10:09 Content-Type: image/gif
+12:10:09 Content-Length: 49
+12:10:09 Last-Modified: Tue, 09 May 2000 17:10:44 GMT
+12:10:09 
+12:10:09 GIF89a	.
+12:10:09 ..........!.......,....	.
+12:10:09 ..........a..;
+12:10:09 GET /favicon.ico HTTP/1.1
+12:10:09 Host: localhost:8016
+12:10:09 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:10:09 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:10:09 Accept-Language: en-US,en;q=0.5
+12:10:09 Accept-Encoding: gzip, deflate
+12:10:09 Connection: keep-alive
+12:10:09 
+12:10:09 
+12:10:09 HTTP/1.1 200 Data follows
+12:10:09 Date: Wed, 23 May 2018 10:10:09 GMT
+12:10:09 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:10:09 Content-Type: text/html
+12:10:09 Content-Length: 455
+12:10:09 
+12:10:09 <!Doctype HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+12:10:09 <Html>
+12:10:09 <Head>
+12:10:09 <Title>URL Not Found</Title>
+12:10:09 <!-- Author: bwelch -->
+12:10:09 <META HTTP-Equiv=Editor Content="SunLabs WebTk 1.0demo 3/10/97">
+12:10:09 </Head>
+12:10:09 <Body>
+12:10:09 
+12:10:09 
+12:10:09 
+12:10:09 <h1>URL:/favicon.ico<br>Not Found</h1>
+12:10:09 <p>
+12:10:09 The server was not able to locate the specified URL.
+12:10:09 <h4>/favicon.ico</h4>
+12:10:09 <p>
+12:10:09 <a HREF="index.html">Home</a>
+12:10:09 <p>
+12:10:09 <a HREF=mailto:webmaster@pc15k.labs.wmi.amu.edu.pl>Send email to webmaster</a>.
+12:10:09 
+12:10:09 </Body>
+12:10:09 </Html>
+12:10:09 
+12:10:09 
+12:12:04 ----- closed connection -----
+12:12:04 waiting for new connection...
+12:12:05 ----- closed connection -----
+12:12:05 waiting for new connection...
+12:35:14 connect from 127.0.0.1 localhost 8016 44612
+12:35:14 connecting to localhost:8015
+12:35:14 connect from 127.0.0.1 localhost 8016 44614
+12:35:14 connecting to localhost:8015
+12:35:14 connect from 127.0.0.1 localhost 8016 44616
+12:35:14 connecting to localhost:8015
+12:35:14 GET / HTTP/1.1
+12:35:14 Host: localhost:8016
+12:35:14 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:35:14 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:35:14 Accept-Language: en-US,en;q=0.5
+12:35:14 Accept-Encoding: gzip, deflate
+12:35:14 Connection: keep-alive
+12:35:14 Upgrade-Insecure-Requests: 1
+12:35:14 Cache-Control: max-age=0
+12:35:14 
+12:35:14 
+12:35:14 HTTP/1.1 200 Data follows
+12:35:14 Date: Wed, 23 May 2018 10:35:14 GMT
+12:35:14 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:35:14 Content-Type: text/html
+12:35:14 Content-Length: 5024
+12:35:14 
+12:35:14 
+12:35:14 
+12:35:14 
+12:35:14 <html><head>
+12:35:14 	<title>TclHttpd Home Page</title>
+12:35:14 	<!-- Brent Welch -->
+12:35:14 	<meta name="description" content="TclHttpd, the Tcl Web Server, is an extensible
+12:35:14 platform for web application development.">
+12:35:14 	<meta name="keywords" content="Tcl, TclHttpd, Tcl/Tk, Tcl Web Server, Web Server">
+12:35:14 </head>
+12:35:14 
+12:35:14 <body bgcolor="white" text="black">
+12:35:14 
+12:35:14 <table cellpadding=0 cellspacing=0 border=0 width=100%>
+12:35:14 <tr>  <td align=left><font face="arial"><a href=/><img src=/images/tclp.gif border=0 alt="Home"></a></font></td>  <td><font face="arial"><h2>TclHttpd Home Page</h2></font></td>  </tr><tr><td colspan=2  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:35:14 </table><font face="arial">
+12:35:14 
+12:35:14 <!-- DynamicOnly -->
+12:35:14 
+12:35:14 
+12:35:14 <!-- Two Column Format -->
+12:35:14 <table border=0 cellpadding=4>
+12:35:14 <tr><td valign=top>
+12:35:14 <!-- Left Column -->
+12:35:14 
+12:35:14 May 23, 2018 12:35:14
+12:35:14 
+12:35:14 
+12:35:14 <p>
+12:35:14 The TclHttpd is a pure Tcl implementation of a Web server.
+12:35:14 It runs as a Tcl script on top of
+12:35:14 <a href=http://www.tcl.tk/software/tcltk/>Tcl</a>.
+12:35:14 This server is running Tcl 8.4.8.
+12:35:14 There is more <a href=version_history.html>TclHttpd version information</a>
+12:35:14 about using other versions of Tcl and the Standard Tcl Library (tcllib).
+12:35:14 <p>
+12:35:14 
+12:35:14 While this server works fine as a stand alone web server, the
+12:35:14 intent is to embed the server in other applications in order to
+12:35:14 "web enable" them.
+12:35:14 A Tcl-based web server is ideal for embedding
+12:35:14 because Tcl was designed from the start
+12:35:14 to support embedding into other applications.
+12:35:14 The interpreted nature of Tcl allows dynamic reconfiguration of the
+12:35:14 server. Once the core interface between the web server and the hosting
+12:35:14 application is defined, it is possible to manage the web server, upload
+12:35:14 Safe-Tcl control scripts, download logging information, and otherwise
+12:35:14 debug the Tcl part of the application without restarting the hosting
+12:35:14 application.
+12:35:14 <p>
+12:35:14 
+12:35:14   The server is distributed under a <a href=license.terms>copyright</a> that allows free use.
+12:35:14 
+12:35:14 
+12:35:14 <p>
+12:35:14 The <a href="mailto:tclhttpd-users@lists.sourceforge.net">tclhttpd-users@lists.sourceforge.net</a> mailing list is the best source of current
+12:35:14 information about TclHttpd.
+12:35:14 
+12:35:14 <!--
+12:35:14 Please <a href=register.html>Register Your Software</a> so
+12:35:14 we can see how widely used the server is.
+12:35:14  -->
+12:35:14 
+12:35:14 <h4>Related Articles</h4>
+12:35:14 
+12:35:14 <ul><li><a href=/links/INSTALL.txt>INSTALL.txt</a>
+12:35:14 <li><a href=/links/README.ssl.txt>README.ssl.txt</a>
+12:35:14 <li><a href=/links/README.txt>README.txt</a>
+12:35:14 <li><a href=/links/WHATSNEW.txt>WHATSNEW.txt</a>
+12:35:14 </ul>
+12:35:14 
+12:35:14 <a href=http://www.tcl.tk/software/tclhttpd/>The main TclHttpd Information Page</a>.
+12:35:14 <p>
+12:35:14 A <a href=book/TCLHTTPD.html>Tcl Httpd Book Chapter</a> from the
+12:35:14 3rd Edition of
+12:35:14 <em><a href=http://www.beedub.com/book>Practical Programming in Tcl and Tk</a></em>
+12:35:14 by Brent Welch.
+12:35:14 <p>
+12:35:14 The <a HREF="http://www.tcl.tk/software/tclhttpd/server.html">white
+12:35:14 paper</a> presents a case for an embedded web server from more of a
+12:35:14 business angle.
+12:35:14 
+12:35:14 <!-- End Left Column -->
+12:35:14 </td><td valign=top>
+12:35:14 <!-- Right Column -->
+12:35:14 
+12:35:14 <h4>Control/Status Pages</h4>
+12:35:14 <ul>
+12:35:14 <li><a HREF="/status/">Server statistics</a>.
+12:35:14 Home hits: 6
+12:35:14 <li><!--- <a HREF="hacks.html">Control panel</a> -->
+12:35:14 <a HREF="hacks.tml">Control panel</a>
+12:35:14 </ul>
+12:35:14 <h4>Documentation</h4>
+12:35:14 <ul>
+12:35:14 <li>
+12:35:14 <a href=man/>Manual pages</a>.
+12:35:14 <li>
+12:35:14 <a HREF="templates/">Templates with inline Tcl</a>.
+12:35:14 <li>
+12:35:14 <a HREF="access/">Access control schemes</a>.
+12:35:14 <li>
+12:35:14 
+12:35:14   <a href="/learn/">Learn</a> 
+12:35:14 <li><a href="/learn/setup.tml">Basic Setup</a>
+12:35:14 <li><a href="/templates/">Templates</a>
+12:35:14 <li><a href="/learn/security.tml">Server Security</a>
+12:35:14 <li><a href="/learn/direct.tml">Direct URLs</a>
+12:35:14 <li><a href="/learn/domain.tml">URL Domains</a>
+12:35:14 
+12:35:14 </ul>
+12:35:14 
+12:35:14 <h4>Test Pages</h4>
+12:35:14 <ul>
+12:35:14 <li><a href="guestbook/guestbook.cgi">View Guest Book</a>
+12:35:14 <li><a href="guestbook/newguest.html">Update Guest Book</a>
+12:35:14 <li><a HREF="include.shtml">Server includes</a>
+12:35:14 <li><a HREF="forms/">CGI</a>  You probably need to install the Standard Tcl Library for this.
+12:35:14 <li><a HREF="map/">Imagemaps</a>
+12:35:14 <li><a HREF="/xyzzy">Sample missing page</a>
+12:35:14 <li><a HREF="/debug/raise?message=This+page+raises+errors!">A page that raises an error</a>
+12:35:14 <li><a HREF="images">A directory listing page</a>
+12:35:14 </ul>
+12:35:14 
+12:35:14 <!-- End Right Column -->
+12:35:14 </td></tr>
+12:35:14 <!-- End Two Column Format -->
+12:35:14 </table>
+12:35:14 
+12:35:14 
+12:35:14 <!-- 
+12:35:14     Home		/
+12:35:14     Status		/status	
+12:35:14     "Learn"     	/learn/
+12:35:14     "CGI Tests"		/forms/
+12:35:14     "Templates"		/templates/
+12:35:14     "Access Control"	/access/
+12:35:14     "Reference Manual"	/man/
+12:35:14  -->
+12:35:14 <table cellpadding=0 cellspacing=2 border=0 width=100%>
+12:35:14 <tr><td colspan=7  bgcolor="#cc3300"><font face="arial"><img src=/images/Space.gif width=2 height=2></font></td></tr>
+12:35:14 <tr><td><font face="arial">Home</font></td><td><font face="arial"><a href="/status">Status</a></font></td><td><font face="arial"><a href="/learn/">Learn</a></font></td><td><font face="arial"><a href="/forms/">CGI Tests</a></font></td><td><font face="arial"><a href="/templates/">Templates</a></font></td><td><font face="arial"><a href="/access/">Access Control</a></font></td><td><font face="arial"><a href="/man/">Reference Manual</a></font></td></tr>
+12:35:14 </table>
+12:35:14 </body>
+12:35:14 </html>
+12:35:14 
+12:35:14 
+12:35:14 GET /images/tclp.gif HTTP/1.1
+12:35:14 Host: localhost:8016
+12:35:14 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:35:14 Accept: */*
+12:35:14 Accept-Language: en-US,en;q=0.5
+12:35:14 Accept-Encoding: gzip, deflate
+12:35:14 Referer: http://localhost:8016/
+12:35:14 Connection: keep-alive
+12:35:14 If-Modified-Since: Tue, 18 Apr 2000 16:02:40 GMT
+12:35:14 Cache-Control: max-age=0
+12:35:14 
+12:35:14 
+12:35:14 GET /images/Space.gif HTTP/1.1
+12:35:14 Host: localhost:8016
+12:35:14 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:35:14 Accept: */*
+12:35:14 Accept-Language: en-US,en;q=0.5
+12:35:14 Accept-Encoding: gzip, deflate
+12:35:14 Referer: http://localhost:8016/
+12:35:14 Connection: keep-alive
+12:35:14 If-Modified-Since: Tue, 09 May 2000 17:10:44 GMT
+12:35:14 Cache-Control: max-age=0
+12:35:14 
+12:35:14 
+12:35:14 HTTP/1.1 304 Not Modified
+12:35:14 Date: Wed, 23 May 2018 10:35:14 GMT
+12:35:14 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:35:14 Connection: Close
+12:35:14 Content-Type: text/html
+12:35:14 Content-Length: 12
+12:35:14 
+12:35:14 Not Modified
+12:35:14 ----- closed connection -----
+12:35:14 waiting for new connection...
+12:35:14 HTTP/1.1 304 Not Modified
+12:35:14 Date: Wed, 23 May 2018 10:35:14 GMT
+12:35:14 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:35:14 Connection: Close
+12:35:14 Content-Type: text/html
+12:35:14 Content-Length: 12
+12:35:14 
+12:35:14 Not Modified
+12:35:14 ----- closed connection -----
+12:35:14 waiting for new connection...
+12:37:10 ----- closed connection -----
+12:37:10 waiting for new connection...
+12:45:50 connect from 127.0.0.1 localhost 8016 44654
+12:45:50 connecting to localhost:8015
+12:45:50 GET /status/size HTTP/1.1
+12:45:50 Host: localhost:8016
+12:45:50 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:45:50 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:45:50 Accept-Language: en-US,en;q=0.5
+12:45:50 Accept-Encoding: gzip, deflate
+12:45:50 Connection: keep-alive
+12:45:50 Upgrade-Insecure-Requests: 1
+12:45:50 
+12:45:50 
+12:45:50 HTTP/1.1 401 Authorization Required
+12:45:50 Date: Wed, 23 May 2018 10:45:50 GMT
+12:45:50 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:45:50 Content-Type: text/html
+12:45:50 Content-Length: 395
+12:45:50 Www-Authenticate: Basic realm="TclHttpd Debug Hooks" 
+12:45:50 
+12:45:50 
+12:45:50     <HTML><HEAD>
+12:45:50     <TITLE>401 Authorization Required</TITLE>
+12:45:50     </HEAD><BODY>
+12:45:50     <H1>Authorization Required</H1>
+12:45:50     This server could not verify that you
+12:45:50     are authorized to access the document you
+12:45:50     requested.  Either you supplied the wrong
+12:45:50     credentials (e.g., bad password), or your
+12:45:50     browser doesn't understand how to supply
+12:45:50     the credentials required.<P>
+12:45:50     </BODY></HTML>
+12:45:50 
+12:45:54 GET /status/size HTTP/1.1
+12:45:54 Host: localhost:8016
+12:45:54 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+12:45:54 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+12:45:54 Accept-Language: en-US,en;q=0.5
+12:45:54 Accept-Encoding: gzip, deflate
+12:45:54 Connection: keep-alive
+12:45:54 Upgrade-Insecure-Requests: 1
+12:45:54 Authorization: Basic ZGVidWc6ajE3OTdjK2UuMmFz
+12:45:54 
+12:45:54 
+12:45:54 HTTP/1.1 200 Data follows
+12:45:54 Date: Wed, 23 May 2018 10:45:54 GMT
+12:45:54 Server: Tcl-Webserver/3.5.1 May 27, 2004
+12:45:54 Content-Type: text/html
+12:45:54 Content-Length: 7579
+12:45:54 
+12:45:54 <html><head>
+12:45:54     <title>Memory Size</title>
+12:45:54     </head>
+12:45:54     <body bgcolor=white text=black>
+12:45:54     <h1>Memory Size</h1>
+12:45:54 <p>
+12:45:54 <a href=/>Home</a>
+12:45:54  | <a href=/status/>Graphical Status</a>
+12:45:54  | <a href=/status/text>Text Status</a>
+12:45:54  | <a href=/status/domain>Domains</a>
+12:45:54  | <a href=/status/doc>Documents</a>
+12:45:54  | <a href=/status/notfound>Not Found</a>
+12:45:54  | <a href=/status/threads>Threads</a>
+12:45:54  | <a href=/status/size>Memory Size</a>
+12:45:54 </p>
+12:45:54 
+12:45:54 <h2>Grand Total</h3>Bytes 801441<h2>Total Data Size</h2>
+12:45:54 
+12:45:54 	Num Variables 352<br>
+12:45:54  Num Values 2531<br>
+12:45:54  Data Bytes 102818<html><head>
+12:45:54     <title>Data Size</title>
+12:45:54     </head>
+12:45:54     <body bgcolor=white text=black>
+12:45:54     <h1>Data Size</h1>
+12:45:54 <h3>::</h3>
+12:45:54  Num Variables 79<br>
+12:45:54  Num Values 957<br>
+12:45:54  Data Bytes 46907<ul><h3>::uri</h3>
+12:45:54  Num Variables 5<br>
+12:45:54  Num Values 13<br>
+12:45:54  Data Bytes 5778<ul><h3>::uri::wais</h3>
+12:45:54  Num Variables 11<br>
+12:45:54  Num Values 11<br>
+12:45:54  Data Bytes 2170<ul></ul><h3>::uri::http</h3>
+12:45:54  Num Variables 9<br>
+12:45:54  Num Values 9<br>
+12:45:54  Data Bytes 1286<ul></ul><h3>::uri::file</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 4<br>
+12:45:54  Data Bytes 848<ul></ul><h3>::uri::ldap</h3>
+12:45:54  Num Variables 7<br>
+12:45:54  Num Values 7<br>
+12:45:54  Data Bytes 690<ul></ul><h3>::uri::news</h3>
+12:45:54  Num Variables 10<br>
+12:45:54  Num Values 10<br>
+12:45:54  Data Bytes 1119<ul></ul><h3>::uri::gopher</h3>
+12:45:54  Num Variables 8<br>
+12:45:54  Num Values 8<br>
+12:45:54  Data Bytes 1377<ul></ul><h3>::uri::prospero</h3>
+12:45:54  Num Variables 10<br>
+12:45:54  Num Values 10<br>
+12:45:54  Data Bytes 1560<ul></ul><h3>::uri::mailto</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 4<br>
+12:45:54  Data Bytes 666<ul></ul><h3>::uri::ftp</h3>
+12:45:54  Num Variables 10<br>
+12:45:54  Num Values 10<br>
+12:45:54  Data Bytes 1521<ul></ul><h3>::uri::basic</h3>
+12:45:54  Num Variables 31<br>
+12:45:54  Num Values 31<br>
+12:45:54  Data Bytes 1905<ul></ul></ul><h3>::mk</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul><h3>::counter</h3>
+12:45:54  Num Variables 35<br>
+12:45:54  Num Values 167<br>
+12:45:54  Data Bytes 925<ul></ul><h3>::mypage</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 190<ul></ul><h3>::textutil</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul><h3>::textutil::expander</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 26<ul></ul></ul><h3>::SASL</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 4<br>
+12:45:54  Data Bytes 481<ul><h3>::SASL::NTLM</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 20<br>
+12:45:54  Data Bytes 389<ul></ul></ul><h3>::mk4vfs</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 4<br>
+12:45:54  Data Bytes 75<ul><h3>::mk4vfs::v</h3>
+12:45:54  Num Variables 5<br>
+12:45:54  Num Values 153<br>
+12:45:54  Data Bytes 2647<ul></ul></ul><h3>::DES</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 3<br>
+12:45:54  Data Bytes 103<ul></ul><h3>::des</h3>
+12:45:54  Num Variables 29<br>
+12:45:54  Num Values 29<br>
+12:45:54  Data Bytes 6684<ul></ul><h3>::cmdline</h3>
+12:45:54  Num Variables 1<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 139<ul></ul><h3>::md4</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 5<br>
+12:45:54  Data Bytes 113<ul></ul><h3>::md5</h3>
+12:45:54  Num Variables 1<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 10<ul></ul><h3>::config</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 37<br>
+12:45:54  Data Bytes 1100<ul></ul><h3>::doctools</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 3<br>
+12:45:54  Data Bytes 258<ul></ul><h3>::msgcat</h3>
+12:45:54  Num Variables 4<br>
+12:45:54  Num Values 366<br>
+12:45:54  Data Bytes 4214<ul></ul><h3>::mime</h3>
+12:45:54  Num Variables 15<br>
+12:45:54  Num Values 268<br>
+12:45:54  Data Bytes 7823<ul></ul><h3>::ncgi</h3>
+12:45:54  Num Variables 11<br>
+12:45:54  Num Values 202<br>
+12:45:54  Data Bytes 943<ul></ul><h3>::learn</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 2<br>
+12:45:54  Data Bytes 212<ul></ul><h3>::pkg</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul><h3>::tcl</h3>
+12:45:54  Num Variables 1<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 24<ul></ul><h3>::hello</h3>
+12:45:54  Num Variables 1<br>
+12:45:54  Num Values 1<br>
+12:45:54  Data Bytes 42<ul></ul><h3>::smtp</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 3<br>
+12:45:54  Data Bytes 36<ul></ul><h3>::auto_mkindex_parser</h3>
+12:45:54  Num Variables 6<br>
+12:45:54  Num Values 6<br>
+12:45:54  Data Bytes 2202<ul></ul><h3>::mh</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 3<br>
+12:45:54  Data Bytes 423<ul></ul><h3>::base64</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 2<br>
+12:45:54  Data Bytes 520<ul></ul><h3>::html</h3>
+12:45:54  Num Variables 5<br>
+12:45:54  Num Values 22<br>
+12:45:54  Data Bytes 5528<ul></ul><h3>::fileutil</h3>
+12:45:54  Num Variables 3<br>
+12:45:54  Num Values 8<br>
+12:45:54  Data Bytes 257<ul></ul><h3>::vfs</h3>
+12:45:54  Num Variables 8<br>
+12:45:54  Num Values 94<br>
+12:45:54  Data Bytes 1225<ul><h3>::vfs::mk4</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul></ul><h3>::tk</h3>
+12:45:54  Num Variables 2<br>
+12:45:54  Num Values 50<br>
+12:45:54  Data Bytes 402<ul><h3>::tk::panedwindow</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul><h3>::tk::spinbox</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul><h3>::tk::msgcat</h3>
+12:45:54  Num Variables 0<br>
+12:45:54  Num Values 0<br>
+12:45:54  Data Bytes 0<ul></ul></ul></ul>
+12:45:54 <h2>Total Code Size</h2>
+12:45:54 
+12:45:54 	Num Procs 1070<br>
+12:45:54  Code Bytes 698623<html><head>
+12:45:54     <title>Code Size</title>
+12:45:54     </head>
+12:45:54     <body bgcolor=white text=black>
+12:45:54     <h1>Code Size</h1>
+12:45:54 <h3>::</h3>
+12:45:54  Num Procs 418<br>
+12:45:54  Code Bytes 213653<ul><h3>::uri</h3>
+12:45:54  Num Procs 28<br>
+12:45:54  Code Bytes 17600<ul><h3>::uri::wais</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::http</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::file</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::ldap</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::news</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::gopher</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::prospero</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::mailto</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::ftp</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::uri::basic</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul></ul><h3>::mk</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul><h3>::counter</h3>
+12:45:54  Num Procs 14<br>
+12:45:54  Code Bytes 28567<ul></ul><h3>::mypage</h3>
+12:45:54  Num Procs 6<br>
+12:45:54  Code Bytes 1564<ul></ul><h3>::textutil</h3>
+12:45:54  Num Procs 1<br>
+12:45:54  Code Bytes 75<ul><h3>::textutil::expander</h3>
+12:45:54  Num Procs 35<br>
+12:45:54  Code Bytes 14218<ul></ul></ul><h3>::SASL</h3>
+12:45:54  Num Procs 26<br>
+12:45:54  Code Bytes 15759<ul><h3>::SASL::NTLM</h3>
+12:45:54  Num Procs 14<br>
+12:45:54  Code Bytes 9551<ul></ul></ul><h3>::mk4vfs</h3>
+12:45:54  Num Procs 13<br>
+12:45:54  Code Bytes 7471<ul><h3>::mk4vfs::v</h3>
+12:45:54  Num Procs 0<br>
+12:45:54  Code Bytes 0<ul></ul></ul><h3>::DES</h3>
+12:45:54  Num Procs 14<br>
+12:45:54  Code Bytes 6333<ul></ul><h3>::des</h3>
+12:45:54  Num Procs 6<br>
+12:45:54  Code Bytes 30425<ul></ul><h3>::cmdline</h3>
+12:45:54  Num Procs 12<br>
+12:45:54  Code Bytes 15099<ul></ul><h3>::md4</h3>
+12:45:54  Num Procs 19<br>
+12:45:54  Code Bytes 14939<ul></ul><h3>::md5</h3>
+12:45:54  Num Procs 9<br>
+12:45:54  Code Bytes 13349<ul></ul><h3>::config</h3>
+12:45:54  Num Procs 3<br>
+12:45:54  Code Bytes 2505<ul></ul><h3>::doctools</h3>
+12:45:54  Num Procs 43<br>
+12:45:54  Code Bytes 24277<ul></ul><h3>::msgcat</h3>
+12:45:54  Num Procs 10<br>
+12:45:54  Code Bytes 4923<ul></ul><h3>::mime</h3>
+12:45:54  Num Procs 46<br>
+12:45:54  Code Bytes 76204<ul></ul><h3>::ncgi</h3>
+12:45:54  Num Procs 27<br>
+12:45:54  Code Bytes 15303<ul></ul><h3>::learn</h3>
+12:45:54  Num Procs 3<br>
+12:45:54  Code Bytes 682<ul></ul><h3>::pkg</h3>
+12:45:54  Num Procs 1<br>
+12:45:54  Code Bytes 2472<ul></ul><h3>::tcl</h3>
+12:45:54  Num Procs 4<br>
+12:45:54  Code Bytes 4957<ul></ul><h3>::hello</h3>
+12:45:54  Num Procs 2<br>
+12:45:54  Code Bytes 134<ul></ul><h3>::smtp</h3>
+12:45:54  Num Procs 18<br>
+12:45:54  Code Bytes 33060<ul></ul><h3>::auto_mkindex_parser</h3>
+12:45:54  Num Procs 8<br>
+12:45:54  Code Bytes 4433<ul></ul><h3>::mh</h3>
+12:45:54  Num Procs 4<br>
+12:45:54  Code Bytes 943<ul></ul><h3>::base64</h3>
+12:45:54  Num Procs 3<br>
+12:45:54  Code Bytes 4355<ul></ul><h3>::html</h3>
+12:45:54  Num Procs 63<br>
+12:45:54  Code Bytes 15579<ul></ul><h3>::fileutil</h3>
+12:45:54  Num Procs 43<br>
+12:45:54  Code Bytes 38258<ul></ul><h3>::vfs</h3>
+12:45:54  Num Procs 30<br>
+12:45:54  Code Bytes 9578<ul><h3>::vfs::mk4</h3>
+12:45:54  Num Procs 15<br>
+12:45:54  Code Bytes 6547<ul></ul></ul><h3>::tk</h3>
+12:45:54  Num Procs 115<br>
+12:45:54  Code Bytes 57821<ul><h3>::tk::panedwindow</h3>
+12:45:54  Num Procs 6<br>
+12:45:54  Code Bytes 2477<ul></ul><h3>::tk::spinbox</h3>
+12:45:54  Num Procs 9<br>
+12:45:54  Code Bytes 4597<ul></ul><h3>::tk::msgcat</h3>
+12:45:54  Num Procs 2<br>
+12:45:54  Code Bytes 915<ul></ul></ul></ul>
+
+Dziwny string:ZGVidWc6ajE3OTdjK2UuMmFz
+Po zdekodowaniu:debug:j1797c+e.2as
+
+Zadanie E.3
+\\\
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       192.168.1.11          23.211.149.25         TCP      66     2439 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1432 WS=256 SACK_PERM=1
+
+Frame 1: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 0, Len: 0
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...0 .... = Acknowledgment: Not set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ··········S·]
+    Window size value: 65535
+    [Calculated window size: 65535]
+    Checksum: 0x4431 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.046047       23.211.149.25         192.168.1.11          TCP      66     443 → 2439 [SYN, ACK] Seq=0 Ack=1 Win=29200 Len=0 MSS=1460 SACK_PERM=1 WS=128
+
+Frame 2: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 23.211.149.25, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2439, Seq: 0, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 2439
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A··S·]
+    Window size value: 29200
+    [Calculated window size: 29200]
+    Checksum: 0x8006 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.046137       192.168.1.11          23.211.149.25         TCP      54     2439 → 443 [ACK] Seq=1 Ack=1 Win=262144 Len=0
+
+Frame 3: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 1, Ack: 1, Len: 0
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x2ee9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.046359       192.168.1.11          23.211.149.25         TLSv1.2  417    Client Hello
+
+Frame 4: 417 bytes on wire (3336 bits), 417 bytes captured (3336 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 1, Ack: 1, Len: 363
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 363]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 364    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0xc84e [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (363 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 358
+        Handshake Protocol: Client Hello
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.095598       23.211.149.25         192.168.1.11          TCP      54     443 → 2439 [ACK] Seq=1 Ack=364 Win=30336 Len=0
+
+Frame 5: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 23.211.149.25, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2439, Seq: 1, Ack: 364, Len: 0
+    Source Port: 443
+    Destination Port: 2439
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 364    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 237
+    [Calculated window size: 30336]
+    [Window size scaling factor: 128]
+    Checksum: 0x3091 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.096879       23.211.149.25         192.168.1.11          TLSv1.2  159    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 6: 159 bytes on wire (1272 bits), 159 bytes captured (1272 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 23.211.149.25, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2439, Seq: 1, Ack: 364, Len: 105
+    Source Port: 443
+    Destination Port: 2439
+    [Stream index: 0]
+    [TCP Segment Len: 105]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 106    (relative sequence number)]
+    Acknowledgment number: 364    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 237
+    [Calculated window size: 30336]
+    [Window size scaling factor: 128]
+    Checksum: 0x903e [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (105 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 49
+        Handshake Protocol: Server Hello
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 40
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.096907       192.168.1.11          23.211.149.25         TCP      54     2439 → 443 [ACK] Seq=364 Ack=106 Win=261888 Len=0
+
+Frame 7: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 364, Ack: 106, Len: 0
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 364    (relative sequence number)
+    [Next sequence number: 364    (relative sequence number)]
+    Acknowledgment number: 106    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1023
+    [Calculated window size: 261888]
+    [Window size scaling factor: 256]
+    Checksum: 0x2d16 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.097419       192.168.1.11          23.211.149.25         TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 8: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 364, Ack: 106, Len: 51
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 51]
+    Sequence number: 364    (relative sequence number)
+    [Next sequence number: 415    (relative sequence number)]
+    Acknowledgment number: 106    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1023
+    [Calculated window size: 261888]
+    [Window size scaling factor: 256]
+    Checksum: 0x465e [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (51 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 40
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.097983       192.168.1.11          23.211.149.25         TLSv1.2  542    Application Data
+
+Frame 9: 542 bytes on wire (4336 bits), 542 bytes captured (4336 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 415, Ack: 106, Len: 488
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 488]
+    Sequence number: 415    (relative sequence number)
+    [Next sequence number: 903    (relative sequence number)]
+    Acknowledgment number: 106    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1023
+    [Calculated window size: 261888]
+    [Window size scaling factor: 256]
+    Checksum: 0xbc9f [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (488 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 483
+        Encrypted Application Data: 0000000000000001c852e83fde7ac17341045d902404ae0f...
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.144849       23.211.149.25         192.168.1.11          TCP      54     443 → 2439 [ACK] Seq=106 Ack=903 Win=31360 Len=0
+
+Frame 10: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 23.211.149.25, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2439, Seq: 106, Ack: 903, Len: 0
+    Source Port: 443
+    Destination Port: 2439
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 106    (relative sequence number)
+    [Next sequence number: 106    (relative sequence number)]
+    Acknowledgment number: 903    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 245
+    [Calculated window size: 31360]
+    [Window size scaling factor: 128]
+    Checksum: 0x2e05 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.251215       23.211.149.25         192.168.1.11          TLSv1.2  493    Application Data
+
+Frame 11: 493 bytes on wire (3944 bits), 493 bytes captured (3944 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 23.211.149.25, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2439, Seq: 106, Ack: 903, Len: 439
+    Source Port: 443
+    Destination Port: 2439
+    [Stream index: 0]
+    [TCP Segment Len: 439]
+    Sequence number: 106    (relative sequence number)
+    [Next sequence number: 545    (relative sequence number)]
+    Acknowledgment number: 903    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 245
+    [Calculated window size: 31360]
+    [Window size scaling factor: 128]
+    Checksum: 0xe535 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (439 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 434
+        Encrypted Application Data: 14030dec323f537a768bd51a0bead79f4222ccdaa803a911...
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.251281       192.168.1.11          23.211.149.25         TCP      54     2439 → 443 [ACK] Seq=903 Ack=545 Win=261376 Len=0
+
+Frame 12: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 23.211.149.25
+Transmission Control Protocol, Src Port: 2439, Dst Port: 443, Seq: 903, Ack: 545, Len: 0
+    Source Port: 2439
+    Destination Port: 443
+    [Stream index: 0]
+    [TCP Segment Len: 0]
+    Sequence number: 903    (relative sequence number)
+    [Next sequence number: 903    (relative sequence number)]
+    Acknowledgment number: 545    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1021
+    [Calculated window size: 261376]
+    [Window size scaling factor: 256]
+    Checksum: 0x2946 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.251647       192.168.1.11          40.90.136.19          TCP      66     2440 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1432 WS=256 SACK_PERM=1
+
+Frame 13: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 0, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...0 .... = Acknowledgment: Not set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ··········S·]
+    Window size value: 65535
+    [Calculated window size: 65535]
+    Checksum: 0x68f4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.385241       40.90.136.19          192.168.1.11          TCP      66     443 → 2440 [SYN, ACK] Seq=0 Ack=1 Win=8192 Len=0 MSS=1440 WS=256 SACK_PERM=1
+
+Frame 14: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 0, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A··S·]
+    Window size value: 8192
+    [Calculated window size: 8192]
+    Checksum: 0x02f9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.385309       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=1 Ack=1 Win=262144 Len=0
+
+Frame 15: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 1, Ack: 1, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x5fb8 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.385530       192.168.1.11          40.90.136.19          TLSv1.2  282    Client Hello
+
+Frame 16: 282 bytes on wire (2256 bits), 282 bytes captured (2256 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 1, Ack: 1, Len: 228
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 228]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 229    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x7188 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (228 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 223
+        Handshake Protocol: Client Hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.524929       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=1 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 17: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 1, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1433    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0xa77a [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.524974       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=229 Ack=1433 Win=262144 Len=0
+
+Frame 18: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 229, Ack: 1433, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 229    (relative sequence number)
+    [Next sequence number: 229    (relative sequence number)]
+    Acknowledgment number: 1433    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x593c [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.527745       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=1433 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 19: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 1433, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 1433    (relative sequence number)
+    [Next sequence number: 2865    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0x4921 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 0.527745       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=2865 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 20: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 2865, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 2865    (relative sequence number)
+    [Next sequence number: 4297    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0xde06 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 0.527747       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=4297 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 21: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 4297, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 4297    (relative sequence number)
+    [Next sequence number: 5729    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0x54ca [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 0.527766       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=229 Ack=5729 Win=262144 Len=0
+
+Frame 22: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 229, Ack: 5729, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 229    (relative sequence number)
+    [Next sequence number: 229    (relative sequence number)]
+    Acknowledgment number: 5729    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x4874 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 0.529199       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=5729 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 23: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 5729, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 5729    (relative sequence number)
+    [Next sequence number: 7161    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0xc75b [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 0.529216       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=229 Ack=7161 Win=262144 Len=0
+
+Frame 24: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 229, Ack: 7161, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 229    (relative sequence number)
+    [Next sequence number: 229    (relative sequence number)]
+    Acknowledgment number: 7161    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x42dc [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 0.530321       40.90.136.19          192.168.1.11          TCP      1486   443 → 2440 [ACK] Seq=7161 Ack=229 Win=263424 Len=1432 [TCP segment of a reassembled PDU]
+
+Frame 25: 1486 bytes on wire (11888 bits), 1486 bytes captured (11888 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 7161, Ack: 229, Len: 1432
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 1432]
+    Sequence number: 7161    (relative sequence number)
+    [Next sequence number: 8593    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0x6f9c [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1432 bytes)
+    [Reassembled PDU in frame: 26]
+    TCP segment data (1432 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 0.530321       40.90.136.19          192.168.1.11          TLSv1.2  117    Server Hello, Certificate, Certificate Status, Server Key Exchange, Server Hello Done
+
+Frame 26: 117 bytes on wire (936 bits), 117 bytes captured (936 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 8593, Ack: 229, Len: 63
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 63]
+    Sequence number: 8593    (relative sequence number)
+    [Next sequence number: 8656    (relative sequence number)]
+    Acknowledgment number: 229    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1029
+    [Calculated window size: 263424]
+    [Window size scaling factor: 256]
+    Checksum: 0x3432 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (63 bytes)
+    TCP segment data (63 bytes)
+[7 Reassembled TCP Segments (8655 bytes): #17(1432), #19(1432), #20(1432), #21(1432), #23(1432), #25(1432), #26(63)]
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Multiple Handshake Messages
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 8650
+        Handshake Protocol: Server Hello
+        Handshake Protocol: Certificate
+        Handshake Protocol: Certificate Status
+        Handshake Protocol: Server Key Exchange
+        Handshake Protocol: Server Hello Done
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 0.530336       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=229 Ack=8656 Win=262144 Len=0
+
+Frame 27: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 229, Ack: 8656, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 229    (relative sequence number)
+    [Next sequence number: 229    (relative sequence number)]
+    Acknowledgment number: 8656    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x3d05 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 0.533907       192.168.1.11          40.90.136.19          TLSv1.2  268    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 28: 268 bytes on wire (2144 bits), 268 bytes captured (2144 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 229, Ack: 8656, Len: 214
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 214]
+    Sequence number: 229    (relative sequence number)
+    [Next sequence number: 443    (relative sequence number)]
+    Acknowledgment number: 8656    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0xc634 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (214 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 102
+        Handshake Protocol: Client Key Exchange
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 96
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 0.534204       192.168.1.11          40.90.136.19          TLSv1.2  603    Application Data
+
+Frame 29: 603 bytes on wire (4824 bits), 603 bytes captured (4824 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 443, Ack: 8656, Len: 549
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 549]
+    Sequence number: 443    (relative sequence number)
+    [Next sequence number: 992    (relative sequence number)]
+    Acknowledgment number: 8656    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1024
+    [Calculated window size: 262144]
+    [Window size scaling factor: 256]
+    Checksum: 0x52da [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (549 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 544
+        Encrypted Application Data: 5c3b82eedded8f388fd22ed39336defcf49aa5758f5da40a...
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 0.667344       40.90.136.19          192.168.1.11          TLSv1.2  161    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 30: 161 bytes on wire (1288 bits), 161 bytes captured (1288 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 8656, Ack: 443, Len: 107
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 107]
+    Sequence number: 8656    (relative sequence number)
+    [Next sequence number: 8763    (relative sequence number)]
+    Acknowledgment number: 443    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1028
+    [Calculated window size: 263168]
+    [Window size scaling factor: 256]
+    Checksum: 0xedc5 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (107 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 96
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 0.667375       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=992 Ack=8763 Win=261888 Len=0
+
+Frame 31: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 992, Ack: 8763, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 992    (relative sequence number)
+    [Next sequence number: 992    (relative sequence number)]
+    Acknowledgment number: 8763    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1023
+    [Calculated window size: 261888]
+    [Window size scaling factor: 256]
+    Checksum: 0x39a0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 0.674488       40.90.136.19          192.168.1.11          TLSv1.2  731    Application Data
+
+Frame 32: 731 bytes on wire (5848 bits), 731 bytes captured (5848 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 40.90.136.19, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2440, Seq: 8763, Ack: 992, Len: 677
+    Source Port: 443
+    Destination Port: 2440
+    [Stream index: 1]
+    [TCP Segment Len: 677]
+    Sequence number: 8763    (relative sequence number)
+    [Next sequence number: 9440    (relative sequence number)]
+    Acknowledgment number: 992    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 1026
+    [Calculated window size: 262656]
+    [Window size scaling factor: 256]
+    Checksum: 0x6e21 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (677 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 672
+        Encrypted Application Data: 934167f278da1256b32aa8b80ae78e86087392de9e82a2ba...
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 0.674560       192.168.1.11          40.90.136.19          TCP      54     2440 → 443 [ACK] Seq=992 Ack=9440 Win=261120 Len=0
+
+Frame 33: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: Zte_25:31:03 (c8:64:c7:25:31:03)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 40.90.136.19
+Transmission Control Protocol, Src Port: 2440, Dst Port: 443, Seq: 992, Ack: 9440, Len: 0
+    Source Port: 2440
+    Destination Port: 443
+    [Stream index: 1]
+    [TCP Segment Len: 0]
+    Sequence number: 992    (relative sequence number)
+    [Next sequence number: 992    (relative sequence number)]
+    Acknowledgment number: 9440    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window size value: 1020
+    [Calculated window size: 261120]
+    [Window size scaling factor: 256]
+    Checksum: 0x36fe [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 8.365289       13.78.177.144         192.168.1.11          TCP      54     443 → 2436 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+
+Frame 34: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4)
+Internet Protocol Version 4, Src: 13.78.177.144, Dst: 192.168.1.11
+Transmission Control Protocol, Src Port: 443, Dst Port: 2436, Seq: 1, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 2436
+    [Stream index: 2]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x014 (RST, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .1.. = Reset: Set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A·R··]
+    Window size value: 0
+    [Calculated window size: 0]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x5afa [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 12.860180      192.168.1.1           224.0.0.1             IGMPv2   46     Membership Query, general
+
+Frame 35: 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface 0
+Ethernet II, Src: Zte_25:31:03 (c8:64:c7:25:31:03), Dst: IPv4mcast_01 (01:00:5e:00:00:01)
+Internet Protocol Version 4, Src: 192.168.1.1, Dst: 224.0.0.1
+Internet Group Management Protocol
+    [IGMP Version: 2]
+    Type: Membership Query (0x11)
+    Max Resp Time: 10.0 sec (0x64)
+    Checksum: 0xee9b [correct]
+    [Checksum Status: Good]
+    Multicast Address: 0.0.0.0
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 13.924436      192.168.1.11          224.0.0.252           IGMPv2   46     Membership Report group 224.0.0.252
+
+Frame 36: 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: IPv4mcast_fc (01:00:5e:00:00:fc)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 224.0.0.252
+Internet Group Management Protocol
+    [IGMP Version: 2]
+    Type: Membership Report (0x16)
+    Max Resp Time: 0.0 sec (0x00)
+    Checksum: 0x0903 [correct]
+    [Checksum Status: Good]
+    Multicast Address: 224.0.0.252
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 15.924975      192.168.1.11          239.255.255.250       IGMPv2   46     Membership Report group 239.255.255.250
+
+Frame 37: 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 239.255.255.250
+Internet Group Management Protocol
+    [IGMP Version: 2]
+    Type: Membership Report (0x16)
+    Max Resp Time: 0.0 sec (0x00)
+    Checksum: 0xfa04 [correct]
+    [Checksum Status: Good]
+    Multicast Address: 239.255.255.250
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 16.925258      192.168.1.11          224.0.0.251           IGMPv2   46     Membership Report group 224.0.0.251
+
+Frame 38: 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface 0
+Ethernet II, Src: IntelCor_b7:5c:b4 (e4:b3:18:b7:5c:b4), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.1.11, Dst: 224.0.0.251
+Internet Group Management Protocol
+    [IGMP Version: 2]
+    Type: Membership Report (0x16)
+    Max Resp Time: 0.0 sec (0x00)
+    Checksum: 0x0904 [correct]
+    [Checksum Status: Good]
+    Multicast Address: 224.0.0.251
+
+

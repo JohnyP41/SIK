@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sprawozdanie PUBLIC "sprawozdanie" "http://faculty.wmi.amu.edu.pl:20002/zajecia/file-storage/view/sprawozdanie.dtd">
+<sprawozdanie przedmiot="SIK" temat="F">
+<imie_nazwisko>Jan Przybylski</imie_nazwisko>
+<nr_indeksu>426228</nr_indeksu>
+<liczba_pkt>30.5</liczba_pkt>
+<zadanie nr="F.0a" pkt="2.5"></zadanie>
+<zadanie nr="F.0b" pkt="2.5"></zadanie>
+<zadanie nr="F.0c" pkt="4.5"></zadanie>
+<zadanie nr="F.9a" pkt="2.5"></zadanie>
+<zadanie nr="F.9b" pkt="2.5"></zadanie>
+<zadanie nr="F.9c" pkt="2.5"></zadanie>
+<zadanie nr="F.9d" pkt="1.0"></zadanie>
+<zadanie nr="F.9e" pkt="1.0"></zadanie>
+<zadanie nr="F.9f" pkt="1.0"></zadanie>
+<zadanie nr="F.9f2" pkt="1.0"></zadanie>
+<zadanie nr="F.9g" pkt="1.0"></zadanie>
+<zadanie nr="F.10" pkt="1.0"></zadanie>
+<zadanie nr="F.11" pkt="1.0"></zadanie>
+<zadanie nr="F.12" pkt="1.0"></zadanie>
+<zadanie nr="F.13" pkt="1.0"></zadanie>
+<zadanie nr="F.15" pkt="1.0"></zadanie>
+<zadanie nr="F.16" pkt="1.0"></zadanie>
+<zadanie nr="F.17" pkt="2.5"></zadanie>
+</sprawozdanie>
+
+Zadanie F.0a-------------------------------------
+\\\wydruk
+#!/bin/sh
+## This file was created by tkined version 1.4.11	>> DO NOT EDIT <<
+##
+## This may look like TCL code but it is definitely not! \
+exec tkined "$0" "$@"
+
+ined page A4 landscape
+
+set node10 [ ined -noupdate create NODE ]
+ined -noupdate move $node10 715.00 38.00
+ined -noupdate font $node10 fixed
+ined -noupdate name $node10 b0-15-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node10 150.254.77.129
+ined -noupdate label $node10 name
+
+set node11 [ ined -noupdate create NODE ]
+ined -noupdate move $node11 780.00 62.00
+ined -noupdate font $node11 fixed
+ined -noupdate name $node11 pn0070804.sci.wmi.amu.edu.pl
+ined -noupdate address $node11 150.254.77.136
+ined -noupdate label $node11 name
+
+set node12 [ ined -noupdate create NODE ]
+ined -noupdate move $node12 845.00 38.00
+ined -noupdate font $node12 fixed
+ined -noupdate name $node12 pn0216121.sci.wmi.amu.edu.pl
+ined -noupdate address $node12 150.254.77.138
+ined -noupdate label $node12 name
+
+set node13 [ ined -noupdate create NODE ]
+ined -noupdate move $node13 910.00 62.00
+ined -noupdate font $node13 fixed
+ined -noupdate name $node13 b0-11.sci.wmi.amu.edu.pl
+ined -noupdate address $node13 150.254.77.141
+ined -noupdate label $node13 name
+
+set node14 [ ined -noupdate create NODE ]
+ined -noupdate move $node14 975.00 38.00
+ined -noupdate font $node14 fixed
+ined -noupdate name $node14 b1-35-2.sci.wmi.amu.edu.pl
+ined -noupdate address $node14 150.254.77.149
+ined -noupdate label $node14 name
+
+set node15 [ ined -noupdate create NODE ]
+ined -noupdate move $node15 1040.00 62.00
+ined -noupdate font $node15 fixed
+ined -noupdate name $node15 pn0070809.sci.wmi.amu.edu.pl
+ined -noupdate address $node15 150.254.77.144
+ined -noupdate label $node15 name
+
+set node16 [ ined -noupdate create NODE ]
+ined -noupdate move $node16 65.00 88.00
+ined -noupdate font $node16 fixed
+ined -noupdate name $node16 pn0257866.sci.wmi.amu.edu.pl
+ined -noupdate address $node16 150.254.77.163
+ined -noupdate label $node16 name
+
+set node17 [ ined -noupdate create NODE ]
+ined -noupdate move $node17 130.00 112.00
+ined -noupdate font $node17 fixed
+ined -noupdate name $node17 pn0070630.sci.wmi.amu.edu.pl
+ined -noupdate address $node17 150.254.77.166
+ined -noupdate label $node17 name
+
+set node18 [ ined -noupdate create NODE ]
+ined -noupdate move $node18 195.00 88.00
+ined -noupdate font $node18 fixed
+ined -noupdate name $node18 pn0070619.sci.wmi.amu.edu.pl
+ined -noupdate address $node18 150.254.77.168
+ined -noupdate label $node18 name
+
+set node20 [ ined -noupdate create NODE ]
+ined -noupdate move $node20 325.00 88.00
+ined -noupdate font $node20 fixed
+ined -noupdate name $node20 b4-4-2.sci.wmi.amu.edu.pl
+ined -noupdate address $node20 150.254.77.180
+ined -noupdate label $node20 name
+
+set node19 [ ined -noupdate create NODE ]
+ined -noupdate move $node19 260.00 112.00
+ined -noupdate font $node19 fixed
+ined -noupdate name $node19 pn0286368.sci.wmi.amu.edu.pl
+ined -noupdate address $node19 150.254.77.173
+ined -noupdate label $node19 name
+
+set node21 [ ined -noupdate create NODE ]
+ined -noupdate move $node21 390.00 112.00
+ined -noupdate font $node21 fixed
+ined -noupdate name $node21 b1-15-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node21 150.254.77.181
+ined -noupdate label $node21 name
+
+set node22 [ ined -noupdate create NODE ]
+ined -noupdate move $node22 455.00 88.00
+ined -noupdate font $node22 fixed
+ined -noupdate name $node22 pn0216182.sci.wmi.amu.edu.pl
+ined -noupdate address $node22 150.254.77.182
+ined -noupdate label $node22 name
+
+set node23 [ ined -noupdate create NODE ]
+ined -noupdate move $node23 520.00 112.00
+ined -noupdate font $node23 fixed
+ined -noupdate name $node23 pn0070816.sci.wmi.amu.edu.pl
+ined -noupdate address $node23 150.254.77.183
+ined -noupdate label $node23 name
+
+set node24 [ ined -noupdate create NODE ]
+ined -noupdate move $node24 585.00 88.00
+ined -noupdate font $node24 fixed
+ined -noupdate name $node24 pn0070806.sci.wmi.amu.edu.pl
+ined -noupdate address $node24 150.254.77.189
+ined -noupdate label $node24 name
+
+set node25 [ ined -noupdate create NODE ]
+ined -noupdate move $node25 650.00 112.00
+ined -noupdate font $node25 fixed
+ined -noupdate name $node25 pn0070628.sci.wmi.amu.edu.pl
+ined -noupdate address $node25 150.254.77.184
+ined -noupdate label $node25 name
+
+set node26 [ ined -noupdate create NODE ]
+ined -noupdate move $node26 715.00 88.00
+ined -noupdate font $node26 fixed
+ined -noupdate name $node26 pn0070624.sci.wmi.amu.edu.pl
+ined -noupdate address $node26 150.254.77.190
+ined -noupdate label $node26 name
+
+set node27 [ ined -noupdate create NODE ]
+ined -noupdate move $node27 780.00 112.00
+ined -noupdate font $node27 fixed
+ined -noupdate name $node27 pn0070599.sci.wmi.amu.edu.pl
+ined -noupdate address $node27 150.254.77.191
+ined -noupdate label $node27 name
+
+set node28 [ ined -noupdate create NODE ]
+ined -noupdate move $node28 845.00 88.00
+ined -noupdate font $node28 fixed
+ined -noupdate name $node28 pn0278429.sci.wmi.amu.edu.pl
+ined -noupdate address $node28 150.254.77.195
+ined -noupdate label $node28 name
+
+set node30 [ ined -noupdate create NODE ]
+ined -noupdate move $node30 975.00 88.00
+ined -noupdate font $node30 fixed
+ined -noupdate name $node30 b2-12-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node30 150.254.77.208
+ined -noupdate label $node30 name
+
+set node29 [ ined -noupdate create NODE ]
+ined -noupdate move $node29 910.00 112.00
+ined -noupdate font $node29 fixed
+ined -noupdate name $node29 pn0070818.sci.wmi.amu.edu.pl
+ined -noupdate address $node29 150.254.77.202
+ined -noupdate label $node29 name
+
+set node31 [ ined -noupdate create NODE ]
+ined -noupdate move $node31 1040.00 112.00
+ined -noupdate font $node31 fixed
+ined -noupdate name $node31 b2-34-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node31 150.254.77.212
+ined -noupdate label $node31 name
+
+set node32 [ ined -noupdate create NODE ]
+ined -noupdate move $node32 65.00 138.00
+ined -noupdate font $node32 fixed
+ined -noupdate name $node32 pn0302049.sci.wmi.amu.edu.pl
+ined -noupdate address $node32 150.254.77.213
+ined -noupdate label $node32 name
+
+set node33 [ ined -noupdate create NODE ]
+ined -noupdate move $node33 130.00 162.00
+ined -noupdate font $node33 fixed
+ined -noupdate name $node33 pn0070627.sci.wmi.amu.edu.pl
+ined -noupdate address $node33 150.254.77.214
+ined -noupdate label $node33 name
+
+set node34 [ ined -noupdate create NODE ]
+ined -noupdate move $node34 195.00 138.00
+ined -noupdate font $node34 fixed
+ined -noupdate name $node34 pn0070814.sci.wmi.amu.edu.pl
+ined -noupdate address $node34 150.254.77.222
+ined -noupdate label $node34 name
+
+set stripchart10 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart10 730.00 253.00
+ined -noupdate font $stripchart10 fixed
+ined -noupdate scale $stripchart10 100.00
+ined -noupdate size $stripchart10 698 231 762 275
+ined -noupdate name $stripchart10 pn0070605.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart10 150.254.77.71
+ined -noupdate attribute $stripchart10 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart10 {round trip time}
+ined -noupdate values $stripchart10 0.2
+
+set node35 [ ined -noupdate create NODE ]
+ined -noupdate move $node35 260.00 162.00
+ined -noupdate font $node35 fixed
+ined -noupdate name $node35 blackmagic.wmi.amu.edu.pl
+ined -noupdate address $node35 150.254.77.219
+ined -noupdate label $node35 name
+
+set stripchart11 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart11 795.00 277.00
+ined -noupdate font $stripchart11 fixed
+ined -noupdate scale $stripchart11 100.00
+ined -noupdate size $stripchart11 763 255 827 299
+ined -noupdate name $stripchart11 a1-27-test-b.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart11 150.254.77.75
+ined -noupdate attribute $stripchart11 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart11 {round trip time}
+ined -noupdate values $stripchart11 0.1
+
+set node36 [ ined -noupdate create NODE ]
+ined -noupdate move $node36 325.00 138.00
+ined -noupdate font $node36 fixed
+ined -noupdate name $node36 40-006013.sci.wmi.amu.edu.pl
+ined -noupdate address $node36 150.254.77.223
+ined -noupdate label $node36 name
+
+set stripchart12 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart12 860.00 253.00
+ined -noupdate font $stripchart12 fixed
+ined -noupdate scale $stripchart12 100.00
+ined -noupdate size $stripchart12 828 231 892 275
+ined -noupdate name $stripchart12 pn0216187.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart12 150.254.77.76
+ined -noupdate attribute $stripchart12 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart12 {round trip time}
+ined -noupdate values $stripchart12 0.2
+
+set node37 [ ined -noupdate create NODE ]
+ined -noupdate move $node37 390.00 162.00
+ined -noupdate font $node37 fixed
+ined -noupdate name $node37 pn0070635.sci.wmi.amu.edu.pl
+ined -noupdate address $node37 150.254.77.224
+ined -noupdate label $node37 name
+
+set stripchart13 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart13 925.00 277.00
+ined -noupdate font $stripchart13 fixed
+ined -noupdate scale $stripchart13 100.00
+ined -noupdate size $stripchart13 893 255 957 299
+ined -noupdate name $stripchart13 pn0070625.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart13 150.254.77.89
+ined -noupdate attribute $stripchart13 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart13 {round trip time}
+ined -noupdate values $stripchart13 0.1
+
+set node38 [ ined -noupdate create NODE ]
+ined -noupdate move $node38 455.00 138.00
+ined -noupdate font $node38 fixed
+ined -noupdate name $node38 c2-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node38 150.254.77.225
+ined -noupdate label $node38 name
+
+set stripchart14 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart14 990.00 253.00
+ined -noupdate font $stripchart14 fixed
+ined -noupdate scale $stripchart14 100.00
+ined -noupdate size $stripchart14 958 231 1022 275
+ined -noupdate name $stripchart14 pn0070631.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart14 150.254.77.96
+ined -noupdate attribute $stripchart14 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart14 {round trip time}
+ined -noupdate values $stripchart14 0.1
+
+set node40 [ ined -noupdate create NODE ]
+ined -noupdate move $node40 585.00 138.00
+ined -noupdate font $node40 fixed
+ined -noupdate name $node40 pn0070618.sci.wmi.amu.edu.pl
+ined -noupdate address $node40 150.254.77.230
+ined -noupdate label $node40 name
+
+set node39 [ ined -noupdate create NODE ]
+ined -noupdate move $node39 520.00 162.00
+ined -noupdate font $node39 fixed
+ined -noupdate name $node39 pn0070797.sci.wmi.amu.edu.pl
+ined -noupdate address $node39 150.254.77.226
+ined -noupdate label $node39 name
+
+set stripchart15 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart15 1055.00 277.00
+ined -noupdate font $stripchart15 fixed
+ined -noupdate scale $stripchart15 100.00
+ined -noupdate size $stripchart15 1023 255 1087 299
+ined -noupdate name $stripchart15 b0-15-6.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart15 150.254.77.101
+ined -noupdate attribute $stripchart15 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart15 {round trip time}
+ined -noupdate values $stripchart15 0.1
+
+set node41 [ ined -noupdate create NODE ]
+ined -noupdate move $node41 650.00 162.00
+ined -noupdate font $node41 fixed
+ined -noupdate name $node41 pn0070629.sci.wmi.amu.edu.pl
+ined -noupdate address $node41 150.254.77.233
+ined -noupdate label $node41 name
+
+set stripchart16 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart16 730.00 53.00
+ined -noupdate font $stripchart16 fixed
+ined -noupdate scale $stripchart16 100.00
+ined -noupdate size $stripchart16 698 31 762 75
+ined -noupdate name $stripchart16 b0-15-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart16 150.254.77.129
+ined -noupdate attribute $stripchart16 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart16 {round trip time}
+ined -noupdate values $stripchart16 0.1
+
+set node42 [ ined -noupdate create NODE ]
+ined -noupdate move $node42 715.00 138.00
+ined -noupdate font $node42 fixed
+ined -noupdate name $node42 pn0070634.sci.wmi.amu.edu.pl
+ined -noupdate address $node42 150.254.77.234
+ined -noupdate label $node42 name
+
+set stripchart17 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart17 795.00 77.00
+ined -noupdate font $stripchart17 fixed
+ined -noupdate scale $stripchart17 100.00
+ined -noupdate size $stripchart17 763 55 827 99
+ined -noupdate name $stripchart17 pn0070804.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart17 150.254.77.136
+ined -noupdate attribute $stripchart17 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart17 {round trip time}
+ined -noupdate values $stripchart17 0.2
+
+set node43 [ ined -noupdate create NODE ]
+ined -noupdate move $node43 780.00 162.00
+ined -noupdate font $node43 fixed
+ined -noupdate name $node43 b2-10-2.sci.wmi.amu.edu.pl
+ined -noupdate address $node43 150.254.77.235
+ined -noupdate label $node43 name
+
+set stripchart18 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart18 860.00 53.00
+ined -noupdate font $stripchart18 fixed
+ined -noupdate scale $stripchart18 100.00
+ined -noupdate size $stripchart18 828 31 892 75
+ined -noupdate name $stripchart18 pn0216121.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart18 150.254.77.138
+ined -noupdate attribute $stripchart18 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart18 {round trip time}
+ined -noupdate values $stripchart18 0.1
+
+set stripchart20 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart20 990.00 53.00
+ined -noupdate font $stripchart20 fixed
+ined -noupdate scale $stripchart20 100.00
+ined -noupdate size $stripchart20 958 31 1022 75
+ined -noupdate name $stripchart20 b1-35-2.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart20 150.254.77.149
+ined -noupdate attribute $stripchart20 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart20 {round trip time}
+ined -noupdate values $stripchart20 0.1
+
+set node44 [ ined -noupdate create NODE ]
+ined -noupdate move $node44 845.00 138.00
+ined -noupdate font $node44 fixed
+ined -noupdate name $node44 gw-v100.core.wmi.amu.edu.pl
+ined -noupdate address $node44 150.254.79.1
+ined -noupdate label $node44 name
+
+set stripchart19 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart19 925.00 77.00
+ined -noupdate font $stripchart19 fixed
+ined -noupdate scale $stripchart19 100.00
+ined -noupdate size $stripchart19 893 55 957 99
+ined -noupdate name $stripchart19 b0-11.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart19 150.254.77.141
+ined -noupdate attribute $stripchart19 {round trip time} {rtt 11 ms}
+ined -noupdate label $stripchart19 {round trip time}
+ined -noupdate values $stripchart19 1.1
+
+set stripchart21 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart21 1055.00 77.00
+ined -noupdate font $stripchart21 fixed
+ined -noupdate scale $stripchart21 100.00
+ined -noupdate size $stripchart21 1023 55 1087 99
+ined -noupdate name $stripchart21 pn0070809.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart21 150.254.77.144
+ined -noupdate attribute $stripchart21 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart21 {round trip time}
+ined -noupdate values $stripchart21 0.1
+
+set node45 [ ined -noupdate create NODE ]
+ined -noupdate move $node45 910.00 162.00
+ined -noupdate font $node45 fixed
+ined -noupdate name $node45 10.0.2.2
+ined -noupdate address $node45 10.0.2.2
+ined -noupdate label $node45 name
+
+set stripchart22 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart22 80.00 103.00
+ined -noupdate font $stripchart22 fixed
+ined -noupdate scale $stripchart22 100.00
+ined -noupdate size $stripchart22 48 81 112 125
+ined -noupdate name $stripchart22 pn0257866.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart22 150.254.77.163
+ined -noupdate attribute $stripchart22 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart22 {round trip time}
+ined -noupdate values $stripchart22 0.1
+
+set node46 [ ined -noupdate create NODE ]
+ined -noupdate move $node46 975.00 138.00
+ined -noupdate font $node46 fixed
+ined -noupdate name $node46 pn0216113.sci.wmi.amu.edu.pl
+ined -noupdate address $node46 150.254.77.15
+ined -noupdate label $node46 name
+
+set stripchart23 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart23 145.00 127.00
+ined -noupdate font $stripchart23 fixed
+ined -noupdate scale $stripchart23 100.00
+ined -noupdate size $stripchart23 113 105 177 149
+ined -noupdate name $stripchart23 pn0070630.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart23 150.254.77.166
+ined -noupdate attribute $stripchart23 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart23 {round trip time}
+ined -noupdate values $stripchart23 0.2
+
+set node47 [ ined -noupdate create NODE ]
+ined -noupdate move $node47 1040.00 162.00
+ined -noupdate font $node47 fixed
+ined -noupdate name $node47 pn0070807.sci.wmi.amu.edu.pl
+ined -noupdate address $node47 150.254.77.16
+ined -noupdate label $node47 name
+
+set stripchart24 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart24 210.00 103.00
+ined -noupdate font $stripchart24 fixed
+ined -noupdate scale $stripchart24 100.00
+ined -noupdate size $stripchart24 178 81 242 125
+ined -noupdate name $stripchart24 pn0070619.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart24 150.254.77.168
+ined -noupdate attribute $stripchart24 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart24 {round trip time}
+ined -noupdate values $stripchart24 0.1
+
+set node48 [ ined -noupdate create NODE ]
+ined -noupdate move $node48 65.00 188.00
+ined -noupdate font $node48 fixed
+ined -noupdate name $node48 pn0070822.sci.wmi.amu.edu.pl
+ined -noupdate address $node48 150.254.77.17
+ined -noupdate label $node48 name
+
+set stripchart25 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart25 275.00 127.00
+ined -noupdate font $stripchart25 fixed
+ined -noupdate scale $stripchart25 100.00
+ined -noupdate size $stripchart25 243 105 307 149
+ined -noupdate name $stripchart25 pn0286368.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart25 150.254.77.173
+ined -noupdate attribute $stripchart25 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart25 {round trip time}
+ined -noupdate values $stripchart25 0.1
+
+set node49 [ ined -noupdate create NODE ]
+ined -noupdate move $node49 130.00 212.00
+ined -noupdate font $node49 fixed
+ined -noupdate name $node49 pn0216116.sci.wmi.amu.edu.pl
+ined -noupdate address $node49 150.254.77.18
+ined -noupdate label $node49 name
+
+set node50 [ ined -noupdate create NODE ]
+ined -noupdate move $node50 195.00 188.00
+ined -noupdate font $node50 fixed
+ined -noupdate name $node50 pn0070796.sci.wmi.amu.edu.pl
+ined -noupdate address $node50 150.254.77.19
+ined -noupdate label $node50 name
+
+set stripchart26 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart26 340.00 103.00
+ined -noupdate font $stripchart26 fixed
+ined -noupdate scale $stripchart26 100.00
+ined -noupdate size $stripchart26 308 81 372 125
+ined -noupdate name $stripchart26 b4-4-2.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart26 150.254.77.180
+ined -noupdate attribute $stripchart26 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart26 {round trip time}
+ined -noupdate values $stripchart26 0.1
+
+set node51 [ ined -noupdate create NODE ]
+ined -noupdate move $node51 260.00 212.00
+ined -noupdate font $node51 fixed
+ined -noupdate name $node51 pn0278424.sci.wmi.amu.edu.pl
+ined -noupdate address $node51 150.254.77.20
+ined -noupdate label $node51 name
+
+set stripchart27 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart27 405.00 127.00
+ined -noupdate font $stripchart27 fixed
+ined -noupdate scale $stripchart27 100.00
+ined -noupdate size $stripchart27 373 105 437 149
+ined -noupdate name $stripchart27 b1-15-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart27 150.254.77.181
+ined -noupdate attribute $stripchart27 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart27 {round trip time}
+ined -noupdate values $stripchart27 0.1
+
+set node52 [ ined -noupdate create NODE ]
+ined -noupdate move $node52 325.00 188.00
+ined -noupdate font $node52 fixed
+ined -noupdate name $node52 b2-34-4.sci.wmi.amu.edu.pl
+ined -noupdate address $node52 150.254.77.22
+ined -noupdate label $node52 name
+
+set stripchart28 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart28 470.00 103.00
+ined -noupdate font $stripchart28 fixed
+ined -noupdate scale $stripchart28 100.00
+ined -noupdate size $stripchart28 438 81 502 125
+ined -noupdate name $stripchart28 pn0216182.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart28 150.254.77.182
+ined -noupdate attribute $stripchart28 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart28 {round trip time}
+ined -noupdate values $stripchart28 0.1
+
+set node53 [ ined -noupdate create NODE ]
+ined -noupdate move $node53 390.00 212.00
+ined -noupdate font $node53 fixed
+ined -noupdate name $node53 pn0309640.sci.wmi.amu.edu.pl
+ined -noupdate address $node53 150.254.77.28
+ined -noupdate label $node53 name
+
+set stripchart30 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart30 600.00 103.00
+ined -noupdate font $stripchart30 fixed
+ined -noupdate scale $stripchart30 100.00
+ined -noupdate size $stripchart30 568 81 632 125
+ined -noupdate name $stripchart30 pn0070806.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart30 150.254.77.189
+ined -noupdate attribute $stripchart30 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart30 {round trip time}
+ined -noupdate values $stripchart30 0.1
+
+set stripchart29 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart29 535.00 127.00
+ined -noupdate font $stripchart29 fixed
+ined -noupdate scale $stripchart29 100.00
+ined -noupdate size $stripchart29 503 105 567 149
+ined -noupdate name $stripchart29 pn0070816.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart29 150.254.77.183
+ined -noupdate attribute $stripchart29 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart29 {round trip time}
+ined -noupdate values $stripchart29 0.1
+
+set node54 [ ined -noupdate create NODE ]
+ined -noupdate move $node54 455.00 188.00
+ined -noupdate font $node54 fixed
+ined -noupdate name $node54 gw-v200.core.wmi.amu.edu.pl
+ined -noupdate address $node54 150.254.77.1
+ined -noupdate label $node54 name
+
+set stripchart31 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart31 665.00 127.00
+ined -noupdate font $stripchart31 fixed
+ined -noupdate scale $stripchart31 100.00
+ined -noupdate size $stripchart31 633 105 697 149
+ined -noupdate name $stripchart31 pn0070628.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart31 150.254.77.184
+ined -noupdate attribute $stripchart31 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart31 {round trip time}
+ined -noupdate values $stripchart31 0.1
+
+set node55 [ ined -noupdate create NODE ]
+ined -noupdate move $node55 520.00 212.00
+ined -noupdate font $node55 fixed
+ined -noupdate name $node55 pn0070622.sci.wmi.amu.edu.pl
+ined -noupdate address $node55 150.254.77.29
+ined -noupdate label $node55 name
+
+set stripchart32 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart32 730.00 103.00
+ined -noupdate font $stripchart32 fixed
+ined -noupdate scale $stripchart32 100.00
+ined -noupdate size $stripchart32 698 81 762 125
+ined -noupdate name $stripchart32 pn0070624.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart32 150.254.77.190
+ined -noupdate attribute $stripchart32 {round trip time} {rtt 9 ms}
+ined -noupdate label $stripchart32 {round trip time}
+ined -noupdate values $stripchart32 0.9
+
+set node56 [ ined -noupdate create NODE ]
+ined -noupdate move $node56 585.00 188.00
+ined -noupdate font $node56 fixed
+ined -noupdate name $node56 john.wmi.amu.edu.pl
+ined -noupdate address $node56 150.254.77.2
+ined -noupdate label $node56 name
+
+set stripchart33 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart33 795.00 127.00
+ined -noupdate font $stripchart33 fixed
+ined -noupdate scale $stripchart33 100.00
+ined -noupdate size $stripchart33 763 105 827 149
+ined -noupdate name $stripchart33 pn0070599.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart33 150.254.77.191
+ined -noupdate attribute $stripchart33 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart33 {round trip time}
+ined -noupdate values $stripchart33 0.1
+
+set node57 [ ined -noupdate create NODE ]
+ined -noupdate move $node57 650.00 212.00
+ined -noupdate font $node57 fixed
+ined -noupdate name $node57 pn0070803.sci.wmi.amu.edu.pl
+ined -noupdate address $node57 150.254.77.30
+ined -noupdate label $node57 name
+
+set stripchart34 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart34 860.00 103.00
+ined -noupdate font $stripchart34 fixed
+ined -noupdate scale $stripchart34 100.00
+ined -noupdate size $stripchart34 828 81 892 125
+ined -noupdate name $stripchart34 pn0278429.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart34 150.254.77.195
+ined -noupdate attribute $stripchart34 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart34 {round trip time}
+ined -noupdate values $stripchart34 0.1
+
+set node58 [ ined -noupdate create NODE ]
+ined -noupdate move $node58 715.00 188.00
+ined -noupdate font $node58 fixed
+ined -noupdate name $node58 pn0070798.sci.wmi.amu.edu.pl
+ined -noupdate address $node58 150.254.77.35
+ined -noupdate label $node58 name
+
+set stripchart35 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart35 925.00 127.00
+ined -noupdate font $stripchart35 fixed
+ined -noupdate scale $stripchart35 100.00
+ined -noupdate size $stripchart35 893 105 957 149
+ined -noupdate name $stripchart35 pn0070818.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart35 150.254.77.202
+ined -noupdate attribute $stripchart35 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart35 {round trip time}
+ined -noupdate values $stripchart35 0.2
+
+set node59 [ ined -noupdate create NODE ]
+ined -noupdate move $node59 780.00 212.00
+ined -noupdate font $node59 fixed
+ined -noupdate name $node59 pn0070597.sci.wmi.amu.edu.pl
+ined -noupdate address $node59 150.254.77.4
+ined -noupdate label $node59 name
+
+set node60 [ ined -noupdate create NODE ]
+ined -noupdate move $node60 845.00 188.00
+ined -noupdate font $node60 fixed
+ined -noupdate name $node60 pn0070633.sci.wmi.amu.edu.pl
+ined -noupdate address $node60 150.254.77.49
+ined -noupdate label $node60 name
+
+set stripchart36 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart36 990.00 103.00
+ined -noupdate font $stripchart36 fixed
+ined -noupdate scale $stripchart36 100.00
+ined -noupdate size $stripchart36 958 81 1022 125
+ined -noupdate name $stripchart36 b2-12-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart36 150.254.77.208
+ined -noupdate attribute $stripchart36 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart36 {round trip time}
+ined -noupdate values $stripchart36 0.1
+
+set node61 [ ined -noupdate create NODE ]
+ined -noupdate move $node61 910.00 212.00
+ined -noupdate font $node61 fixed
+ined -noupdate name $node61 pn0271328.sci.wmi.amu.edu.pl
+ined -noupdate address $node61 150.254.77.5
+ined -noupdate label $node61 name
+
+set stripchart37 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart37 1055.00 127.00
+ined -noupdate font $stripchart37 fixed
+ined -noupdate scale $stripchart37 100.00
+ined -noupdate size $stripchart37 1023 105 1087 149
+ined -noupdate name $stripchart37 b2-34-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart37 150.254.77.212
+ined -noupdate attribute $stripchart37 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart37 {round trip time}
+ined -noupdate values $stripchart37 0.1
+
+set node62 [ ined -noupdate create NODE ]
+ined -noupdate move $node62 975.00 188.00
+ined -noupdate font $node62 fixed
+ined -noupdate name $node62 pn0070626.sci.wmi.amu.edu.pl
+ined -noupdate address $node62 150.254.77.51
+ined -noupdate label $node62 name
+
+set stripchart38 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart38 80.00 153.00
+ined -noupdate font $stripchart38 fixed
+ined -noupdate scale $stripchart38 100.00
+ined -noupdate size $stripchart38 48 131 112 175
+ined -noupdate name $stripchart38 pn0302049.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart38 150.254.77.213
+ined -noupdate attribute $stripchart38 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart38 {round trip time}
+ined -noupdate values $stripchart38 0.1
+
+set node63 [ ined -noupdate create NODE ]
+ined -noupdate move $node63 1040.00 212.00
+ined -noupdate font $node63 fixed
+ined -noupdate name $node63 pn0070617.sci.wmi.amu.edu.pl
+ined -noupdate address $node63 150.254.77.6
+ined -noupdate label $node63 name
+
+set stripchart40 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart40 210.00 153.00
+ined -noupdate font $stripchart40 fixed
+ined -noupdate scale $stripchart40 100.00
+ined -noupdate size $stripchart40 178 131 242 175
+ined -noupdate name $stripchart40 pn0070814.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart40 150.254.77.222
+ined -noupdate attribute $stripchart40 {round trip time} {rtt 19 ms}
+ined -noupdate label $stripchart40 {round trip time}
+ined -noupdate values $stripchart40 1.9
+
+set stripchart39 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart39 145.00 177.00
+ined -noupdate font $stripchart39 fixed
+ined -noupdate scale $stripchart39 100.00
+ined -noupdate size $stripchart39 113 155 177 199
+ined -noupdate name $stripchart39 pn0070627.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart39 150.254.77.214
+ined -noupdate attribute $stripchart39 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart39 {round trip time}
+ined -noupdate values $stripchart39 0.2
+
+set node64 [ ined -noupdate create NODE ]
+ined -noupdate move $node64 65.00 238.00
+ined -noupdate font $node64 fixed
+ined -noupdate name $node64 pn0070817.sci.wmi.amu.edu.pl
+ined -noupdate address $node64 150.254.77.54
+ined -noupdate label $node64 name
+
+set stripchart41 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart41 80.00 53.00
+ined -noupdate font $stripchart41 fixed
+ined -noupdate scale $stripchart41 100.00
+ined -noupdate size $stripchart41 48 31 112 75
+ined -noupdate name $stripchart41 pn0070613.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart41 150.254.77.102
+ined -noupdate attribute $stripchart41 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart41 {round trip time}
+ined -noupdate values $stripchart41 0.1
+
+set node65 [ ined -noupdate create NODE ]
+ined -noupdate move $node65 130.00 262.00
+ined -noupdate font $node65 fixed
+ined -noupdate name $node65 pn0070604.sci.wmi.amu.edu.pl
+ined -noupdate address $node65 150.254.77.7
+ined -noupdate label $node65 name
+
+set stripchart42 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart42 275.00 177.00
+ined -noupdate font $stripchart42 fixed
+ined -noupdate scale $stripchart42 100.00
+ined -noupdate size $stripchart42 243 155 307 199
+ined -noupdate name $stripchart42 blackmagic.wmi.amu.edu.pl
+ined -noupdate address $stripchart42 150.254.77.219
+ined -noupdate attribute $stripchart42 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart42 {round trip time}
+ined -noupdate values $stripchart42 0.1
+
+set node66 [ ined -noupdate create NODE ]
+ined -noupdate move $node66 195.00 238.00
+ined -noupdate font $node66 fixed
+ined -noupdate name $node66 pn0216124.sci.wmi.amu.edu.pl
+ined -noupdate address $node66 150.254.77.56
+ined -noupdate label $node66 name
+
+set stripchart43 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart43 145.00 77.00
+ined -noupdate font $stripchart43 fixed
+ined -noupdate scale $stripchart43 100.00
+ined -noupdate size $stripchart43 113 55 177 99
+ined -noupdate name $stripchart43 pn0070815.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart43 150.254.77.105
+ined -noupdate attribute $stripchart43 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart43 {round trip time}
+ined -noupdate values $stripchart43 0.2
+
+set node67 [ ined -noupdate create NODE ]
+ined -noupdate move $node67 260.00 262.00
+ined -noupdate font $node67 fixed
+ined -noupdate name $node67 b1-30-lap.sci.wmi.amu.edu.pl
+ined -noupdate address $node67 150.254.77.8
+ined -noupdate label $node67 name
+
+set stripchart44 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart44 340.00 153.00
+ined -noupdate font $stripchart44 fixed
+ined -noupdate scale $stripchart44 100.00
+ined -noupdate size $stripchart44 308 131 372 175
+ined -noupdate name $stripchart44 40-006013.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart44 150.254.77.223
+ined -noupdate attribute $stripchart44 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart44 {round trip time}
+ined -noupdate values $stripchart44 0.1
+
+set node68 [ ined -noupdate create NODE ]
+ined -noupdate move $node68 325.00 238.00
+ined -noupdate font $node68 fixed
+ined -noupdate name $node68 pn0070616.sci.wmi.amu.edu.pl
+ined -noupdate address $node68 150.254.77.58
+ined -noupdate label $node68 name
+
+set stripchart45 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart45 210.00 53.00
+ined -noupdate font $stripchart45 fixed
+ined -noupdate scale $stripchart45 100.00
+ined -noupdate size $stripchart45 178 31 242 75
+ined -noupdate name $stripchart45 pn0070638.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart45 150.254.77.106
+ined -noupdate attribute $stripchart45 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart45 {round trip time}
+ined -noupdate values $stripchart45 0.2
+
+set node69 [ ined -noupdate create NODE ]
+ined -noupdate move $node69 390.00 262.00
+ined -noupdate font $node69 fixed
+ined -noupdate name $node69 pn0216127.sci.wmi.amu.edu.pl
+ined -noupdate address $node69 150.254.77.11
+ined -noupdate label $node69 name
+
+set node70 [ ined -noupdate create NODE ]
+ined -noupdate move $node70 455.00 238.00
+ined -noupdate font $node70 fixed
+ined -noupdate name $node70 pn0218283.sci.wmi.amu.edu.pl
+ined -noupdate address $node70 150.254.77.62
+ined -noupdate label $node70 name
+
+set stripchart46 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart46 405.00 177.00
+ined -noupdate font $stripchart46 fixed
+ined -noupdate scale $stripchart46 100.00
+ined -noupdate size $stripchart46 373 155 437 199
+ined -noupdate name $stripchart46 pn0070635.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart46 150.254.77.224
+ined -noupdate attribute $stripchart46 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart46 {round trip time}
+ined -noupdate values $stripchart46 0.2
+
+set node71 [ ined -noupdate create NODE ]
+ined -noupdate move $node71 520.00 262.00
+ined -noupdate font $node71 fixed
+ined -noupdate name $node71 pn0070606.sci.wmi.amu.edu.pl
+ined -noupdate address $node71 150.254.77.13
+ined -noupdate label $node71 name
+
+set stripchart47 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart47 275.00 77.00
+ined -noupdate font $stripchart47 fixed
+ined -noupdate scale $stripchart47 100.00
+ined -noupdate size $stripchart47 243 55 307 99
+ined -noupdate name $stripchart47 pn0070801.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart47 150.254.77.108
+ined -noupdate attribute $stripchart47 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart47 {round trip time}
+ined -noupdate values $stripchart47 0.1
+
+set node72 [ ined -noupdate create NODE ]
+ined -noupdate move $node72 585.00 238.00
+ined -noupdate font $node72 fixed
+ined -noupdate name $node72 b2-46-3.sci.wmi.amu.edu.pl
+ined -noupdate address $node72 150.254.77.63
+ined -noupdate label $node72 name
+
+set stripchart48 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart48 470.00 153.00
+ined -noupdate font $stripchart48 fixed
+ined -noupdate scale $stripchart48 100.00
+ined -noupdate size $stripchart48 438 131 502 175
+ined -noupdate name $stripchart48 c2-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart48 150.254.77.225
+ined -noupdate attribute $stripchart48 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart48 {round trip time}
+ined -noupdate values $stripchart48 0.1
+
+set node73 [ ined -noupdate create NODE ]
+ined -noupdate move $node73 650.00 262.00
+ined -noupdate font $node73 fixed
+ined -noupdate name $node73 pn0070636.sci.wmi.amu.edu.pl
+ined -noupdate address $node73 150.254.77.66
+ined -noupdate label $node73 name
+
+set stripchart50 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart50 535.00 177.00
+ined -noupdate font $stripchart50 fixed
+ined -noupdate scale $stripchart50 100.00
+ined -noupdate size $stripchart50 503 155 567 199
+ined -noupdate name $stripchart50 pn0070797.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart50 150.254.77.226
+ined -noupdate attribute $stripchart50 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart50 {round trip time}
+ined -noupdate values $stripchart50 0.1
+
+set stripchart49 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart49 340.00 53.00
+ined -noupdate font $stripchart49 fixed
+ined -noupdate scale $stripchart49 100.00
+ined -noupdate size $stripchart49 308 31 372 75
+ined -noupdate name $stripchart49 pn0070810.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart49 150.254.77.113
+ined -noupdate attribute $stripchart49 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart49 {round trip time}
+ined -noupdate values $stripchart49 0.1
+
+set node74 [ ined -noupdate create NODE ]
+ined -noupdate move $node74 715.00 238.00
+ined -noupdate font $node74 fixed
+ined -noupdate name $node74 pn0070605.sci.wmi.amu.edu.pl
+ined -noupdate address $node74 150.254.77.71
+ined -noupdate label $node74 name
+
+set stripchart51 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart51 600.00 153.00
+ined -noupdate font $stripchart51 fixed
+ined -noupdate scale $stripchart51 100.00
+ined -noupdate size $stripchart51 568 131 632 175
+ined -noupdate name $stripchart51 pn0070618.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart51 150.254.77.230
+ined -noupdate attribute $stripchart51 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart51 {round trip time}
+ined -noupdate values $stripchart51 0.1
+
+set node75 [ ined -noupdate create NODE ]
+ined -noupdate move $node75 780.00 262.00
+ined -noupdate font $node75 fixed
+ined -noupdate name $node75 a1-27-test-b.sci.wmi.amu.edu.pl
+ined -noupdate address $node75 150.254.77.75
+ined -noupdate label $node75 name
+
+set stripchart52 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart52 405.00 77.00
+ined -noupdate font $stripchart52 fixed
+ined -noupdate scale $stripchart52 100.00
+ined -noupdate size $stripchart52 373 55 437 99
+ined -noupdate name $stripchart52 pn0070620.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart52 150.254.77.115
+ined -noupdate attribute $stripchart52 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart52 {round trip time}
+ined -noupdate values $stripchart52 0.2
+
+set node76 [ ined -noupdate create NODE ]
+ined -noupdate move $node76 845.00 238.00
+ined -noupdate font $node76 fixed
+ined -noupdate name $node76 pn0216187.sci.wmi.amu.edu.pl
+ined -noupdate address $node76 150.254.77.76
+ined -noupdate label $node76 name
+
+set stripchart53 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart53 665.00 177.00
+ined -noupdate font $stripchart53 fixed
+ined -noupdate scale $stripchart53 100.00
+ined -noupdate size $stripchart53 633 155 697 199
+ined -noupdate name $stripchart53 pn0070629.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart53 150.254.77.233
+ined -noupdate attribute $stripchart53 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart53 {round trip time}
+ined -noupdate values $stripchart53 0.1
+
+set node77 [ ined -noupdate create NODE ]
+ined -noupdate move $node77 910.00 262.00
+ined -noupdate font $node77 fixed
+ined -noupdate name $node77 pn0070625.sci.wmi.amu.edu.pl
+ined -noupdate address $node77 150.254.77.89
+ined -noupdate label $node77 name
+
+set stripchart54 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart54 470.00 53.00
+ined -noupdate font $stripchart54 fixed
+ined -noupdate scale $stripchart54 100.00
+ined -noupdate size $stripchart54 438 31 502 75
+ined -noupdate name $stripchart54 pn0070821.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart54 150.254.77.118
+ined -noupdate attribute $stripchart54 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart54 {round trip time}
+ined -noupdate values $stripchart54 0.2
+
+set node78 [ ined -noupdate create NODE ]
+ined -noupdate move $node78 975.00 238.00
+ined -noupdate font $node78 fixed
+ined -noupdate name $node78 pn0070631.sci.wmi.amu.edu.pl
+ined -noupdate address $node78 150.254.77.96
+ined -noupdate label $node78 name
+
+set stripchart55 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart55 730.00 153.00
+ined -noupdate font $stripchart55 fixed
+ined -noupdate scale $stripchart55 100.00
+ined -noupdate size $stripchart55 698 131 762 175
+ined -noupdate name $stripchart55 pn0070634.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart55 150.254.77.234
+ined -noupdate attribute $stripchart55 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart55 {round trip time}
+ined -noupdate values $stripchart55 0.2
+
+set node79 [ ined -noupdate create NODE ]
+ined -noupdate move $node79 1040.00 262.00
+ined -noupdate font $node79 fixed
+ined -noupdate name $node79 b0-15-6.sci.wmi.amu.edu.pl
+ined -noupdate address $node79 150.254.77.101
+ined -noupdate label $node79 name
+
+set stripchart56 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart56 795.00 177.00
+ined -noupdate font $stripchart56 fixed
+ined -noupdate scale $stripchart56 100.00
+ined -noupdate size $stripchart56 763 155 827 199
+ined -noupdate name $stripchart56 b2-10-2.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart56 150.254.77.235
+ined -noupdate attribute $stripchart56 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart56 {round trip time}
+ined -noupdate values $stripchart56 0.1
+
+set stripchart57 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart57 535.00 77.00
+ined -noupdate font $stripchart57 fixed
+ined -noupdate scale $stripchart57 100.00
+ined -noupdate size $stripchart57 503 55 567 99
+ined -noupdate name $stripchart57 pn0216126.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart57 150.254.77.119
+ined -noupdate attribute $stripchart57 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart57 {round trip time}
+ined -noupdate values $stripchart57 0.2
+
+set stripchart58 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart58 860.00 153.00
+ined -noupdate font $stripchart58 fixed
+ined -noupdate scale $stripchart58 100.00
+ined -noupdate size $stripchart58 828 131 892 175
+ined -noupdate name $stripchart58 gw-v100.core.wmi.amu.edu.pl
+ined -noupdate address $stripchart58 150.254.79.1
+ined -noupdate attribute $stripchart58 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart58 {round trip time}
+ined -noupdate values $stripchart58 0.1
+
+set stripchart60 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart60 925.00 177.00
+ined -noupdate font $stripchart60 fixed
+ined -noupdate scale $stripchart60 100.00
+ined -noupdate size $stripchart60 893 155 957 199
+ined -noupdate name $stripchart60 10.0.2.2
+ined -noupdate address $stripchart60 10.0.2.2
+ined -noupdate attribute $stripchart60 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart60 {round trip time}
+ined -noupdate values $stripchart60 0.1
+
+set stripchart59 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart59 600.00 53.00
+ined -noupdate font $stripchart59 fixed
+ined -noupdate scale $stripchart59 100.00
+ined -noupdate size $stripchart59 568 31 632 75
+ined -noupdate name $stripchart59 pn0298698.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart59 150.254.77.120
+ined -noupdate attribute $stripchart59 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart59 {round trip time}
+ined -noupdate values $stripchart59 0.1
+
+set stripchart61 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart61 665.00 77.00
+ined -noupdate font $stripchart61 fixed
+ined -noupdate scale $stripchart61 100.00
+ined -noupdate size $stripchart61 633 55 697 99
+ined -noupdate name $stripchart61 pn0278425.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart61 150.254.77.127
+ined -noupdate attribute $stripchart61 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart61 {round trip time}
+ined -noupdate values $stripchart61 0.1
+
+set stripchart62 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart62 990.00 153.00
+ined -noupdate font $stripchart62 fixed
+ined -noupdate scale $stripchart62 100.00
+ined -noupdate size $stripchart62 958 131 1022 175
+ined -noupdate name $stripchart62 pn0216113.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart62 150.254.77.15
+ined -noupdate attribute $stripchart62 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart62 {round trip time}
+ined -noupdate values $stripchart62 0.2
+
+set stripchart63 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart63 1055.00 177.00
+ined -noupdate font $stripchart63 fixed
+ined -noupdate scale $stripchart63 100.00
+ined -noupdate size $stripchart63 1023 155 1087 199
+ined -noupdate name $stripchart63 pn0070807.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart63 150.254.77.16
+ined -noupdate attribute $stripchart63 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart63 {round trip time}
+ined -noupdate values $stripchart63 0.2
+
+set stripchart64 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart64 80.00 203.00
+ined -noupdate font $stripchart64 fixed
+ined -noupdate scale $stripchart64 100.00
+ined -noupdate size $stripchart64 48 181 112 225
+ined -noupdate name $stripchart64 pn0070822.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart64 150.254.77.17
+ined -noupdate attribute $stripchart64 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart64 {round trip time}
+ined -noupdate values $stripchart64 0.1
+
+set stripchart65 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart65 210.00 203.00
+ined -noupdate font $stripchart65 fixed
+ined -noupdate scale $stripchart65 100.00
+ined -noupdate size $stripchart65 178 181 242 225
+ined -noupdate name $stripchart65 pn0070796.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart65 150.254.77.19
+ined -noupdate attribute $stripchart65 {round trip time} {rtt 3 ms}
+ined -noupdate label $stripchart65 {round trip time}
+ined -noupdate values $stripchart65 0.3
+
+set network1 [ ined -noupdate create NETWORK 0.000000 0.000000 300.000000 0.000000  ]
+ined -noupdate move $network1 130.00 312.00
+ined -noupdate font $network1 fixed
+ined -noupdate name $network1 {150.254 (class B)}
+ined -noupdate address $network1 150.254
+ined -noupdate label $network1 name
+
+set link10 [ ined -noupdate create LINK $network1 $node61  ]
+
+set stripchart66 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart66 145.00 227.00
+ined -noupdate font $stripchart66 fixed
+ined -noupdate scale $stripchart66 100.00
+ined -noupdate size $stripchart66 113 205 177 249
+ined -noupdate name $stripchart66 pn0216116.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart66 150.254.77.18
+ined -noupdate attribute $stripchart66 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart66 {round trip time}
+ined -noupdate values $stripchart66 0.1
+
+set link11 [ ined -noupdate create LINK $network1 $node62  ]
+
+set stripchart67 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart67 275.00 227.00
+ined -noupdate font $stripchart67 fixed
+ined -noupdate scale $stripchart67 100.00
+ined -noupdate size $stripchart67 243 205 307 249
+ined -noupdate name $stripchart67 pn0278424.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart67 150.254.77.20
+ined -noupdate attribute $stripchart67 {round trip time} {rtt 4 ms}
+ined -noupdate label $stripchart67 {round trip time}
+ined -noupdate values $stripchart67 0.4
+
+set link12 [ ined -noupdate create LINK $network1 $node63  ]
+
+set stripchart68 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart68 340.00 203.00
+ined -noupdate font $stripchart68 fixed
+ined -noupdate scale $stripchart68 100.00
+ined -noupdate size $stripchart68 308 181 372 225
+ined -noupdate name $stripchart68 b2-34-4.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart68 150.254.77.22
+ined -noupdate attribute $stripchart68 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart68 {round trip time}
+ined -noupdate values $stripchart68 0.1
+
+set link13 [ ined -noupdate create LINK $network1 $node64  ]
+
+set stripchart70 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart70 470.00 203.00
+ined -noupdate font $stripchart70 fixed
+ined -noupdate scale $stripchart70 100.00
+ined -noupdate size $stripchart70 438 181 502 225
+ined -noupdate name $stripchart70 gw-v200.core.wmi.amu.edu.pl
+ined -noupdate address $stripchart70 150.254.77.1
+ined -noupdate attribute $stripchart70 {round trip time} {rtt 9 ms}
+ined -noupdate label $stripchart70 {round trip time}
+ined -noupdate values $stripchart70 0.9
+
+set stripchart69 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart69 405.00 227.00
+ined -noupdate font $stripchart69 fixed
+ined -noupdate scale $stripchart69 100.00
+ined -noupdate size $stripchart69 373 205 437 249
+ined -noupdate name $stripchart69 pn0309640.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart69 150.254.77.28
+ined -noupdate attribute $stripchart69 {round trip time} {rtt 4 ms}
+ined -noupdate label $stripchart69 {round trip time}
+ined -noupdate values $stripchart69 0.4
+
+set link14 [ ined -noupdate create LINK $network1 $node65  ]
+
+set stripchart71 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart71 535.00 227.00
+ined -noupdate font $stripchart71 fixed
+ined -noupdate scale $stripchart71 100.00
+ined -noupdate size $stripchart71 503 205 567 249
+ined -noupdate name $stripchart71 pn0070622.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart71 150.254.77.29
+ined -noupdate attribute $stripchart71 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart71 {round trip time}
+ined -noupdate values $stripchart71 0.1
+
+set link15 [ ined -noupdate create LINK $network1 $node67  ]
+
+set stripchart72 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart72 600.00 203.00
+ined -noupdate font $stripchart72 fixed
+ined -noupdate scale $stripchart72 100.00
+ined -noupdate size $stripchart72 568 181 632 225
+ined -noupdate name $stripchart72 john.wmi.amu.edu.pl
+ined -noupdate address $stripchart72 150.254.77.2
+ined -noupdate attribute $stripchart72 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart72 {round trip time}
+ined -noupdate values $stripchart72 0.1
+
+set link16 [ ined -noupdate create LINK $network1 $node66  ]
+
+set stripchart73 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart73 665.00 227.00
+ined -noupdate font $stripchart73 fixed
+ined -noupdate scale $stripchart73 100.00
+ined -noupdate size $stripchart73 633 205 697 249
+ined -noupdate name $stripchart73 pn0070803.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart73 150.254.77.30
+ined -noupdate attribute $stripchart73 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart73 {round trip time}
+ined -noupdate values $stripchart73 0.1
+
+set link17 [ ined -noupdate create LINK $network1 $node68  ]
+
+set stripchart74 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart74 730.00 203.00
+ined -noupdate font $stripchart74 fixed
+ined -noupdate scale $stripchart74 100.00
+ined -noupdate size $stripchart74 698 181 762 225
+ined -noupdate name $stripchart74 pn0070798.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart74 150.254.77.35
+ined -noupdate attribute $stripchart74 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart74 {round trip time}
+ined -noupdate values $stripchart74 0.1
+
+set link18 [ ined -noupdate create LINK $network1 $node69  ]
+
+set stripchart75 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart75 860.00 203.00
+ined -noupdate font $stripchart75 fixed
+ined -noupdate scale $stripchart75 100.00
+ined -noupdate size $stripchart75 828 181 892 225
+ined -noupdate name $stripchart75 pn0070633.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart75 150.254.77.49
+ined -noupdate attribute $stripchart75 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart75 {round trip time}
+ined -noupdate values $stripchart75 0.2
+
+set link19 [ ined -noupdate create LINK $network1 $node70  ]
+
+set link20 [ ined -noupdate create LINK $network1 $node71  ]
+
+set stripchart76 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart76 795.00 227.00
+ined -noupdate font $stripchart76 fixed
+ined -noupdate scale $stripchart76 100.00
+ined -noupdate size $stripchart76 763 205 827 249
+ined -noupdate name $stripchart76 pn0070597.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart76 150.254.77.4
+ined -noupdate attribute $stripchart76 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart76 {round trip time}
+ined -noupdate values $stripchart76 0.2
+
+set link21 [ ined -noupdate create LINK $network1 $node72  ]
+
+set stripchart77 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart77 925.00 227.00
+ined -noupdate font $stripchart77 fixed
+ined -noupdate scale $stripchart77 100.00
+ined -noupdate size $stripchart77 893 205 957 249
+ined -noupdate name $stripchart77 pn0271328.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart77 150.254.77.5
+ined -noupdate attribute $stripchart77 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart77 {round trip time}
+ined -noupdate values $stripchart77 0.1
+
+set link22 [ ined -noupdate create LINK $network1 $node73  ]
+
+set stripchart78 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart78 990.00 203.00
+ined -noupdate font $stripchart78 fixed
+ined -noupdate scale $stripchart78 100.00
+ined -noupdate size $stripchart78 958 181 1022 225
+ined -noupdate name $stripchart78 pn0070626.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart78 150.254.77.51
+ined -noupdate attribute $stripchart78 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart78 {round trip time}
+ined -noupdate values $stripchart78 0.1
+
+set link23 [ ined -noupdate create LINK $network1 $node74  ]
+
+set stripchart79 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart79 1055.00 227.00
+ined -noupdate font $stripchart79 fixed
+ined -noupdate scale $stripchart79 100.00
+ined -noupdate size $stripchart79 1023 205 1087 249
+ined -noupdate name $stripchart79 pn0070617.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart79 150.254.77.6
+ined -noupdate attribute $stripchart79 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart79 {round trip time}
+ined -noupdate values $stripchart79 0.1
+
+set link24 [ ined -noupdate create LINK $network1 $node75  ]
+
+set link25 [ ined -noupdate create LINK $network1 $node77  ]
+
+set link26 [ ined -noupdate create LINK $network1 $node76  ]
+
+set link27 [ ined -noupdate create LINK $network1 $node78  ]
+
+set link28 [ ined -noupdate create LINK $network1 $node79  ]
+
+set link29 [ ined -noupdate create LINK $network1 $node45  ]
+
+set link30 [ ined -noupdate create LINK $network1 $node17  ]
+
+set link31 [ ined -noupdate create LINK $network1 $node18  ]
+
+set link32 [ ined -noupdate create LINK $network1 $node19  ]
+
+set link33 [ ined -noupdate create LINK $network1 $node20  ]
+
+set link34 [ ined -noupdate create LINK $network1 $node21  ]
+
+set link35 [ ined -noupdate create LINK $network1 $node22  ]
+
+set link36 [ ined -noupdate create LINK $network1 $node23  ]
+
+set link37 [ ined -noupdate create LINK $network1 $node24  ]
+
+set link38 [ ined -noupdate create LINK $network1 $node25  ]
+
+set link39 [ ined -noupdate create LINK $network1 $node26  ]
+
+set link40 [ ined -noupdate create LINK $network1 $node27  ]
+
+set node0 [ ined -noupdate create NODE ]
+ined -noupdate move $node0 65.00 38.00
+ined -noupdate font $node0 fixed
+ined -noupdate name $node0 pn0070613.sci.wmi.amu.edu.pl
+ined -noupdate address $node0 150.254.77.102
+ined -noupdate label $node0 name
+
+set link41 [ ined -noupdate create LINK $network1 $node0  ]
+
+set link42 [ ined -noupdate create LINK $network1 $node28  ]
+
+set node1 [ ined -noupdate create NODE ]
+ined -noupdate move $node1 130.00 62.00
+ined -noupdate font $node1 fixed
+ined -noupdate name $node1 pn0070815.sci.wmi.amu.edu.pl
+ined -noupdate address $node1 150.254.77.105
+ined -noupdate label $node1 name
+
+set link43 [ ined -noupdate create LINK $network1 $node1  ]
+
+set link44 [ ined -noupdate create LINK $network1 $node29  ]
+
+set node2 [ ined -noupdate create NODE ]
+ined -noupdate move $node2 195.00 38.00
+ined -noupdate font $node2 fixed
+ined -noupdate name $node2 pn0070638.sci.wmi.amu.edu.pl
+ined -noupdate address $node2 150.254.77.106
+ined -noupdate label $node2 name
+
+set link45 [ ined -noupdate create LINK $network1 $node2  ]
+
+set link46 [ ined -noupdate create LINK $network1 $node30  ]
+
+set node3 [ ined -noupdate create NODE ]
+ined -noupdate move $node3 260.00 62.00
+ined -noupdate font $node3 fixed
+ined -noupdate name $node3 pn0070801.sci.wmi.amu.edu.pl
+ined -noupdate address $node3 150.254.77.108
+ined -noupdate label $node3 name
+
+set link47 [ ined -noupdate create LINK $network1 $node3  ]
+
+set link48 [ ined -noupdate create LINK $network1 $node31  ]
+
+set node4 [ ined -noupdate create NODE ]
+ined -noupdate move $node4 325.00 38.00
+ined -noupdate font $node4 fixed
+ined -noupdate name $node4 pn0070810.sci.wmi.amu.edu.pl
+ined -noupdate address $node4 150.254.77.113
+ined -noupdate label $node4 name
+
+set link49 [ ined -noupdate create LINK $network1 $node4  ]
+
+set link50 [ ined -noupdate create LINK $network1 $node32  ]
+
+set node5 [ ined -noupdate create NODE ]
+ined -noupdate move $node5 390.00 62.00
+ined -noupdate font $node5 fixed
+ined -noupdate name $node5 pn0070620.sci.wmi.amu.edu.pl
+ined -noupdate address $node5 150.254.77.115
+ined -noupdate label $node5 name
+
+set link51 [ ined -noupdate create LINK $network1 $node5  ]
+
+set link52 [ ined -noupdate create LINK $network1 $node33  ]
+
+set node7 [ ined -noupdate create NODE ]
+ined -noupdate move $node7 520.00 62.00
+ined -noupdate font $node7 fixed
+ined -noupdate name $node7 pn0216126.sci.wmi.amu.edu.pl
+ined -noupdate address $node7 150.254.77.119
+ined -noupdate label $node7 name
+
+set link53 [ ined -noupdate create LINK $network1 $node7  ]
+
+set node6 [ ined -noupdate create NODE ]
+ined -noupdate move $node6 455.00 38.00
+ined -noupdate font $node6 fixed
+ined -noupdate name $node6 pn0070821.sci.wmi.amu.edu.pl
+ined -noupdate address $node6 150.254.77.118
+ined -noupdate label $node6 name
+
+set link54 [ ined -noupdate create LINK $network1 $node6  ]
+
+set link55 [ ined -noupdate create LINK $network1 $node34  ]
+
+set node8 [ ined -noupdate create NODE ]
+ined -noupdate move $node8 585.00 38.00
+ined -noupdate font $node8 fixed
+ined -noupdate name $node8 pn0298698.sci.wmi.amu.edu.pl
+ined -noupdate address $node8 150.254.77.120
+ined -noupdate label $node8 name
+
+set link56 [ ined -noupdate create LINK $network1 $node8  ]
+
+set link57 [ ined -noupdate create LINK $network1 $node35  ]
+
+set node9 [ ined -noupdate create NODE ]
+ined -noupdate move $node9 650.00 62.00
+ined -noupdate font $node9 fixed
+ined -noupdate name $node9 pn0278425.sci.wmi.amu.edu.pl
+ined -noupdate address $node9 150.254.77.127
+ined -noupdate label $node9 name
+
+set link58 [ ined -noupdate create LINK $network1 $node9  ]
+
+set link59 [ ined -noupdate create LINK $network1 $node36  ]
+
+set link60 [ ined -noupdate create LINK $network1 $node37  ]
+
+set link61 [ ined -noupdate create LINK $network1 $node10  ]
+
+set link62 [ ined -noupdate create LINK $network1 $node38  ]
+
+set link63 [ ined -noupdate create LINK $network1 $node11  ]
+
+set link64 [ ined -noupdate create LINK $network1 $node39  ]
+
+set link65 [ ined -noupdate create LINK $network1 $node12  ]
+
+set link66 [ ined -noupdate create LINK $network1 $node40  ]
+
+set link67 [ ined -noupdate create LINK $network1 $node13  ]
+
+set link68 [ ined -noupdate create LINK $network1 $node41  ]
+
+set stripchart0 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart0 80.00 253.00
+ined -noupdate font $stripchart0 fixed
+ined -noupdate scale $stripchart0 100.00
+ined -noupdate size $stripchart0 48 231 112 275
+ined -noupdate name $stripchart0 pn0070817.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart0 150.254.77.54
+ined -noupdate attribute $stripchart0 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart0 {round trip time}
+ined -noupdate values $stripchart0 0.2
+
+set link69 [ ined -noupdate create LINK $network1 $node14  ]
+
+set link70 [ ined -noupdate create LINK $network1 $node42  ]
+
+set stripchart1 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart1 145.00 277.00
+ined -noupdate font $stripchart1 fixed
+ined -noupdate scale $stripchart1 100.00
+ined -noupdate size $stripchart1 113 255 177 299
+ined -noupdate name $stripchart1 pn0070604.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart1 150.254.77.7
+ined -noupdate attribute $stripchart1 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart1 {round trip time}
+ined -noupdate values $stripchart1 0.1
+
+set link71 [ ined -noupdate create LINK $network1 $node15  ]
+
+set stripchart2 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart2 210.00 253.00
+ined -noupdate font $stripchart2 fixed
+ined -noupdate scale $stripchart2 100.00
+ined -noupdate size $stripchart2 178 231 242 275
+ined -noupdate name $stripchart2 pn0216124.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart2 150.254.77.56
+ined -noupdate attribute $stripchart2 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart2 {round trip time}
+ined -noupdate values $stripchart2 0.1
+
+set link72 [ ined -noupdate create LINK $network1 $node43  ]
+
+set stripchart3 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart3 275.00 277.00
+ined -noupdate font $stripchart3 fixed
+ined -noupdate scale $stripchart3 100.00
+ined -noupdate size $stripchart3 243 255 307 299
+ined -noupdate name $stripchart3 b1-30-lap.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart3 150.254.77.8
+ined -noupdate attribute $stripchart3 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart3 {round trip time}
+ined -noupdate values $stripchart3 0.1
+
+set link73 [ ined -noupdate create LINK $network1 $node16  ]
+
+set stripchart4 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart4 340.00 253.00
+ined -noupdate font $stripchart4 fixed
+ined -noupdate scale $stripchart4 100.00
+ined -noupdate size $stripchart4 308 231 372 275
+ined -noupdate name $stripchart4 pn0070616.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart4 150.254.77.58
+ined -noupdate attribute $stripchart4 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart4 {round trip time}
+ined -noupdate values $stripchart4 0.1
+
+set link74 [ ined -noupdate create LINK $network1 $node44  ]
+
+set stripchart5 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart5 470.00 253.00
+ined -noupdate font $stripchart5 fixed
+ined -noupdate scale $stripchart5 100.00
+ined -noupdate size $stripchart5 438 231 502 275
+ined -noupdate name $stripchart5 pn0218283.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart5 150.254.77.62
+ined -noupdate attribute $stripchart5 {round trip time} {rtt 3 ms}
+ined -noupdate label $stripchart5 {round trip time}
+ined -noupdate values $stripchart5 0.3
+
+set network0 [ ined -noupdate create NETWORK 0.000000 0.000000 300.000000 0.000000  ]
+ined -noupdate move $network0 65.00 288.00
+ined -noupdate font $network0 fixed
+ined -noupdate name $network0 {10 (class A)}
+ined -noupdate address $network0 10
+ined -noupdate label $network0 name
+
+set link75 [ ined -noupdate create LINK $network0 $node45  ]
+
+set stripchart6 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart6 405.00 277.00
+ined -noupdate font $stripchart6 fixed
+ined -noupdate scale $stripchart6 100.00
+ined -noupdate size $stripchart6 373 255 437 299
+ined -noupdate name $stripchart6 pn0216127.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart6 150.254.77.11
+ined -noupdate attribute $stripchart6 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart6 {round trip time}
+ined -noupdate values $stripchart6 0.2
+
+set link76 [ ined -noupdate create LINK $network1 $node46  ]
+
+set stripchart7 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart7 535.00 277.00
+ined -noupdate font $stripchart7 fixed
+ined -noupdate scale $stripchart7 100.00
+ined -noupdate size $stripchart7 503 255 567 299
+ined -noupdate name $stripchart7 pn0070606.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart7 150.254.77.13
+ined -noupdate attribute $stripchart7 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart7 {round trip time}
+ined -noupdate values $stripchart7 0.1
+
+set link77 [ ined -noupdate create LINK $network1 $node47  ]
+
+set stripchart8 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart8 600.00 253.00
+ined -noupdate font $stripchart8 fixed
+ined -noupdate scale $stripchart8 100.00
+ined -noupdate size $stripchart8 568 231 632 275
+ined -noupdate name $stripchart8 b2-46-3.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart8 150.254.77.63
+ined -noupdate attribute $stripchart8 {round trip time} {rtt 1 ms}
+ined -noupdate label $stripchart8 {round trip time}
+ined -noupdate values $stripchart8 0.1
+
+set link78 [ ined -noupdate create LINK $network1 $node48  ]
+
+set stripchart9 [ ined -noupdate create STRIPCHART ]
+ined -noupdate move $stripchart9 665.00 277.00
+ined -noupdate font $stripchart9 fixed
+ined -noupdate scale $stripchart9 100.00
+ined -noupdate size $stripchart9 633 255 697 299
+ined -noupdate name $stripchart9 pn0070636.sci.wmi.amu.edu.pl
+ined -noupdate address $stripchart9 150.254.77.66
+ined -noupdate attribute $stripchart9 {round trip time} {rtt 2 ms}
+ined -noupdate label $stripchart9 {round trip time}
+ined -noupdate values $stripchart9 0.2
+
+set link79 [ ined -noupdate create LINK $network1 $node49  ]
+
+set link80 [ ined -noupdate create LINK $network1 $node50  ]
+
+set link0 [ ined -noupdate create LINK $network1 $node51  ]
+
+set link1 [ ined -noupdate create LINK $network1 $node52  ]
+
+set link2 [ ined -noupdate create LINK $network1 $node53  ]
+
+set link3 [ ined -noupdate create LINK $network1 $node54  ]
+
+set link4 [ ined -noupdate create LINK $network1 $node55  ]
+
+set link5 [ ined -noupdate create LINK $network1 $node57  ]
+
+set link6 [ ined -noupdate create LINK $network1 $node56  ]
+
+set link7 [ ined -noupdate create LINK $network1 $node58  ]
+
+set link8 [ ined -noupdate create LINK $network1 $node59  ]
+
+set link9 [ ined -noupdate create LINK $network1 $node60  ]
+
+set interpreter3 [ ined -noupdate create INTERPRETER ip_monitor.tcl ]
+ined send $interpreter3 restart {Round Trip Time} 60 job0 $stripchart0 $stripchart1 $stripchart2 $stripchart3 $stripchart4 $stripchart5 $stripchart6 $stripchart7 $stripchart8 $stripchart9 $stripchart10 $stripchart11 $stripchart12 $stripchart13 $stripchart14 $stripchart15 $stripchart16 $stripchart17 $stripchart18 $stripchart19 $stripchart20 $stripchart21 $stripchart22 $stripchart23 $stripchart24 $stripchart25 $stripchart26 $stripchart27 $stripchart28 $stripchart29 $stripchart30 $stripchart31 $stripchart32 $stripchart33 $stripchart34 $stripchart35 $stripchart36 $stripchart37 $stripchart38 $stripchart39 $stripchart40 $stripchart41 $stripchart42 $stripchart43 $stripchart44 $stripchart45 $stripchart46 $stripchart47 $stripchart48 $stripchart49 $stripchart50 $stripchart51 $stripchart52 $stripchart53 $stripchart54 $stripchart55 $stripchart56 $stripchart57 $stripchart58 $stripchart59 $stripchart60 $stripchart61 $stripchart62 $stripchart63 $stripchart64 $stripchart65 $stripchart66 $stripchart67 $stripchart68 $stripchart69 $stripchart70 $stripchart71 $stripchart72 $stripchart73 $stripchart74 $stripchart75 $stripchart76 $stripchart77 $stripchart78 $stripchart79 
+
+
+SNMP devices: 
+pn0070817.sci.wmi.amu.edu.pl     [150.254.77.54] noResponse 
+pn0070604.sci.wmi.amu.edu.pl     [150.254.77.7] noResponse 
+pn0216124.sci.wmi.amu.edu.pl     [150.254.77.56] noResponse 
+b1-30-lap.sci.wmi.amu.edu.pl     [150.254.77.8] noResponse 
+pn0070616.sci.wmi.amu.edu.pl     [150.254.77.58] noResponse 
+pn0218283.sci.wmi.amu.edu.pl     [150.254.77.62] noResponse 
+pn0216127.sci.wmi.amu.edu.pl     [150.254.77.11] noResponse 
+pn0070606.sci.wmi.amu.edu.pl     [150.254.77.13] noResponse 
+b2-46-3.sci.wmi.amu.edu.pl       [150.254.77.63] noResponse 
+pn0070636.sci.wmi.amu.edu.pl     [150.254.77.66] noResponse 
+pn0070605.sci.wmi.amu.edu.pl     [150.254.77.71] noResponse 
+a1-27-test-b.sci.wmi.amu.edu.pl  [150.254.77.75] noResponse 
+pn0216187.sci.wmi.amu.edu.pl     [150.254.77.76] noResponse 
+pn0070625.sci.wmi.amu.edu.pl     [150.254.77.89] noResponse 
+pn0070631.sci.wmi.amu.edu.pl     [150.254.77.96] noResponse 
+b0-15-6.sci.wmi.amu.edu.pl       [150.254.77.101] noResponse 
+b0-15-3.sci.wmi.amu.edu.pl       [150.254.77.129] noResponse 
+pn0070804.sci.wmi.amu.edu.pl     [150.254.77.136] noResponse 
+pn0216121.sci.wmi.amu.edu.pl     [150.254.77.138] noResponse 
+b0-11.sci.wmi.amu.edu.pl         [150.254.77.141] noResponse 
+b1-35-2.sci.wmi.amu.edu.pl       [150.254.77.149] noResponse 
+pn0070809.sci.wmi.amu.edu.pl     [150.254.77.144] noResponse 
+pn0257866.sci.wmi.amu.edu.pl     [150.254.77.163] noResponse 
+pn0070630.sci.wmi.amu.edu.pl     [150.254.77.166] noResponse 
+pn0070619.sci.wmi.amu.edu.pl     [150.254.77.168] noResponse 
+pn0286368.sci.wmi.amu.edu.pl     [150.254.77.173] noResponse 
+b4-4-2.sci.wmi.amu.edu.pl        [150.254.77.180] noResponse 
+b1-15-3.sci.wmi.amu.edu.pl       [150.254.77.181] noResponse 
+pn0216182.sci.wmi.amu.edu.pl     [150.254.77.182] noResponse 
+pn0070816.sci.wmi.amu.edu.pl     [150.254.77.183] noResponse 
+pn0070806.sci.wmi.amu.edu.pl     [150.254.77.189] noResponse 
+pn0070628.sci.wmi.amu.edu.pl     [150.254.77.184] noResponse 
+pn0070624.sci.wmi.amu.edu.pl     [150.254.77.190] noResponse 
+pn0070599.sci.wmi.amu.edu.pl     [150.254.77.191] noResponse 
+pn0278429.sci.wmi.amu.edu.pl     [150.254.77.195] noResponse 
+pn0070818.sci.wmi.amu.edu.pl     [150.254.77.202] noResponse 
+b2-12-3.sci.wmi.amu.edu.pl       [150.254.77.208] noResponse 
+b2-34-3.sci.wmi.amu.edu.pl       [150.254.77.212] noResponse 
+pn0302049.sci.wmi.amu.edu.pl     [150.254.77.213] noResponse 
+pn0070627.sci.wmi.amu.edu.pl     [150.254.77.214] noResponse 
+pn0070814.sci.wmi.amu.edu.pl     [150.254.77.222] noResponse 
+pn0070613.sci.wmi.amu.edu.pl     [150.254.77.102] noResponse 
+blackmagic.wmi.amu.edu.pl        [150.254.77.219] noResponse 
+pn0070815.sci.wmi.amu.edu.pl     [150.254.77.105] noResponse 
+40-006013.sci.wmi.amu.edu.pl     [150.254.77.223] noResponse 
+pn0070638.sci.wmi.amu.edu.pl     [150.254.77.106] noResponse 
+pn0070635.sci.wmi.amu.edu.pl     [150.254.77.224] noResponse 
+pn0070801.sci.wmi.amu.edu.pl     [150.254.77.108] noResponse 
+c2-3.sci.wmi.amu.edu.pl          [150.254.77.225] noResponse 
+pn0070810.sci.wmi.amu.edu.pl     [150.254.77.113] noResponse 
+pn0070797.sci.wmi.amu.edu.pl     [150.254.77.226] noResponse 
+pn0070618.sci.wmi.amu.edu.pl     [150.254.77.230] noResponse 
+pn0070620.sci.wmi.amu.edu.pl     [150.254.77.115] noResponse 
+pn0070629.sci.wmi.amu.edu.pl     [150.254.77.233] noResponse 
+pn0070821.sci.wmi.amu.edu.pl     [150.254.77.118] noResponse 
+pn0070634.sci.wmi.amu.edu.pl     [150.254.77.234] noResponse 
+b2-10-2.sci.wmi.amu.edu.pl       [150.254.77.235] noResponse 
+pn0216126.sci.wmi.amu.edu.pl     [150.254.77.119] noResponse 
+gw-v100.core.wmi.amu.edu.pl      [150.254.79.1] noResponse 
+pn0298698.sci.wmi.amu.edu.pl     [150.254.77.120] noResponse 
+10.0.2.2                         [10.0.2.2] noResponse 
+pn0278425.sci.wmi.amu.edu.pl     [150.254.77.127] noResponse 
+pn0216113.sci.wmi.amu.edu.pl     [150.254.77.15] noResponse 
+pn0070807.sci.wmi.amu.edu.pl     [150.254.77.16] noResponse 
+pn0070822.sci.wmi.amu.edu.pl     [150.254.77.17] noResponse 
+pn0070796.sci.wmi.amu.edu.pl     [150.254.77.19] noResponse 
+pn0216116.sci.wmi.amu.edu.pl     [150.254.77.18] noResponse 
+pn0278424.sci.wmi.amu.edu.pl     [150.254.77.20] noResponse 
+b2-34-4.sci.wmi.amu.edu.pl       [150.254.77.22] noResponse 
+pn0309640.sci.wmi.amu.edu.pl     [150.254.77.28] noResponse 
+
+Zadanie F.0b-------------------------------------
+\\\wydruk
+C:\sik>ping 192.168.3.2
+
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=254
+Packet sequence number 1 received in 0.00 ms, ttl=254
+Packet sequence number 2 received in 0.00 ms, ttl=254
+Packet sequence number 3 received in 0.00 ms, ttl=254
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 4.25 ms (not counting lost packets)
+
+
+
+Wed May 30 08:19:31 PM GMT-8 2018 
+Discover 192.168 from puppypc [127.0.0.1] 
+0 nodes found on network 192.168.0 in 6 seconds. 
+0 nodes found on network 192.168.1 in 5 seconds. 
+1 nodes found on network 192.168.2 in 6 seconds. 
+1 nodes found on network 192.168.3 in 6 seconds. 
+0 nodes found on network 192.168.4 in 6 seconds. 
+0 nodes found on network 192.168.5 in 6 seconds. 
+0 nodes found on network 192.168.6 in 6 seconds. 
+0 nodes found on network 192.168.7 in 5 seconds. 
+0 nodes found on network 192.168.8 in 6 seconds. 
+0 nodes found on network 192.168.9 in 6 seconds. 
+0 nodes found on network 192.168.10 in 7 seconds. 
+0 nodes found on network 192.168.11 in 6 seconds. 
+0 nodes found on network 192.168.12 in 7 seconds. 
+0 nodes found on network 192.168.13 in 6 seconds. 
+0 nodes found on network 192.168.14 in 6 seconds. 
+0 nodes found on network 192.168.15 in 6 seconds. 
+0 nodes found on network 192.168.16 in 7 seconds. 
+0 nodes found on network 192.168.17 in 6 seconds. 
+0 nodes found on network 192.168.18 in 6 seconds. 
+0 nodes found on network 192.168.19 in 6 seconds. 
+0 nodes found on network 192.168.20 in 6 seconds. 
+0 nodes found on network 192.168.21 in 7 seconds. 
+0 nodes found on network 192.168.22 in 6 seconds. 
+0 nodes found on network 192.168.23 in 6 seconds. 
+0 nodes found on network 192.168.24 in 6 seconds. 
+0 nodes found on network 192.168.25 in 6 seconds. 
+0 nodes found on network 192.168.26 in 7 seconds. 
+
+Zadanie F.0c-------------------------------------
+\\\Ping miedzy dosemu
+C:\sik>ping 192.168.3.2
+
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=254
+Packet sequence number 1 received in 0.00 ms, ttl=254
+Packet sequence number 2 received in 0.00 ms, ttl=254
+Packet sequence number 3 received in 0.00 ms, ttl=254
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 4.25 ms (not counting lost packets)
+
+\\\Ping miedzy Puppy 1 i Puppy 2
+# ping 192.168.10.2
+PING 192.168.10.2 (192.168.10.2): 56 data bytes
+64 bytes from 192.168.10.2: seq=0 ttl=64 time=9.784 ms
+64 bytes from 192.168.10.2: seq=1 ttl=64 time=9.627 ms
+64 bytes from 192.168.10.2: seq=2 ttl=64 time=9.471 ms
+64 bytes from 192.168.10.2: seq=3 ttl=64 time=9.290 ms
+64 bytes from 192.168.10.2: seq=4 ttl=64 time=9.045 ms
+64 bytes from 192.168.10.2: seq=5 ttl=64 time=9.652 ms
+64 bytes from 192.168.10.2: seq=6 ttl=64 time=8.645 ms
+64 bytes from 192.168.10.2: seq=7 ttl=64 time=11.634 ms
+64 bytes from 192.168.10.2: seq=8 ttl=64 time=11.479 ms
+64 bytes from 192.168.10.2: seq=9 ttl=64 time=15.284 ms
+64 bytes from 192.168.10.2: seq=10 ttl=64 time=11.125 ms
+64 bytes from 192.168.10.2: seq=11 ttl=64 time=10.135 ms
+64 bytes from 192.168.10.2: seq=12 ttl=64 time=11.287 ms
+64 bytes from 192.168.10.2: seq=13 ttl=64 time=10.610 ms
+
+\\\Ping miedzy Puppy 2 i Puppy 1
+# ping 192.168.10.1
+PING 192.168.10.1 (192.168.10.1): 56 data bytes
+64 bytes from 192.168.10.1: seq=0 ttl=64 time=15.336 ms
+64 bytes from 192.168.10.1: seq=1 ttl=64 time=15.273 ms
+64 bytes from 192.168.10.1: seq=2 ttl=64 time=15.074 ms
+64 bytes from 192.168.10.1: seq=3 ttl=64 time=14.123 ms
+64 bytes from 192.168.10.1: seq=4 ttl=64 time=15.318 ms
+64 bytes from 192.168.10.1: seq=5 ttl=64 time=14.445 ms
+64 bytes from 192.168.10.1: seq=6 ttl=64 time=18.231 ms
+64 bytes from 192.168.10.1: seq=7 ttl=64 time=14.067 ms
+64 bytes from 192.168.10.1: seq=8 ttl=64 time=13.929 ms
+64 bytes from 192.168.10.1: seq=9 ttl=64 time=13.738 ms
+64 bytes from 192.168.10.1: seq=10 ttl=64 time=8.612 ms
+64 bytes from 192.168.10.1: seq=11 ttl=64 time=12.466 ms
+64 bytes from 192.168.10.1: seq=12 ttl=64 time=12.281 ms
+64 bytes from 192.168.10.1: seq=13 ttl=64 time=12.023 ms
+64 bytes from 192.168.10.1: seq=14 ttl=64 time=11.807 ms
+
+\\\Ping miedzy dosemu i puppy 1
+C:\sik>ping 192.168.10.1
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=64
+Packet sequence number 1 received in 0.00 ms, ttl=64
+Packet sequence number 2 received in 0.00 ms, ttl=64
+Packet sequence number 3 received in 0.00 ms, ttl=64
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 0.00 ms (not counting lost packets)
+
+\\\Ping miedzy puppy 1 i dosemu
+# ping 192.168.3.2
+PING 192.168.3.2 (192.168.3.2): 56 data bytes
+64 bytes from 192.168.3.2: seq=0 ttl=64 time=15.336 ms
+64 bytes from 192.168.3.2: seq=1 ttl=64 time=13.273 ms
+64 bytes from 192.168.3.2: seq=2 ttl=64 time=11.074 ms
+64 bytes from 192.168.3.2: seq=3 ttl=64 time=14.123 ms
+64 bytes from 192.168.3.2: seq=4 ttl=64 time=12.318 ms
+64 bytes from 192.168.3.2: seq=5 ttl=64 time=14.445 ms
+
+Zadanie F.9a-------------------------------------
+\\\komendy na Puppy
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.2.15
+
+\\\Puppy
+# ping wp.pl
+PING wp.pl (212.77.98.9): 56 data bytes
+64 bytes from 212.77.98.9: seq=0 ttl=52 time=47.108 ms
+64 bytes from 212.77.98.9: seq=1 ttl=52 time=50.947 ms
+64 bytes from 212.77.98.9: seq=2 ttl=52 time=49.812 ms
+64 bytes from 212.77.98.9: seq=3 ttl=52 time=48.803 ms
+64 bytes from 212.77.98.9: seq=4 ttl=52 time=54.711 ms
+64 bytes from 212.77.98.9: seq=5 ttl=52 time=49.170 ms
+64 bytes from 212.77.98.9: seq=6 ttl=52 time=50.385 ms
+
+\\\Dos 1
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 17.00 ms, ttl=51
+Packet sequence number 1 received in 90.95 ms, ttl=51
+Packet sequence number 2 received in 45.05 ms, ttl=51
+Packet sequence number 3 received in 45.05 ms, ttl=51
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 49.51 ms (not counting lost packets) 
+
+\\\Dos 2
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 8.50 ms, ttl=51
+Packet sequence number 1 received in 50.15 ms, ttl=51
+Packet sequence number 2 received in 45.90 ms, ttl=51
+Packet sequence number 3 received in 45.05 ms, ttl=51
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 37.40 ms (not counting lost packets) 
+
+Zadanie F.9b-------------------------------------
+\\\na Puppy 1
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o ppp0 -j SNAT --to 10.0.2.15
+
+\\\na Puppy 2
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.2.15
+
+\\\Puppy 1
+# ping wp.pl
+PING wp.pl (212.77.98.9): 56 data bytes
+64 bytes from 212.77.98.9: seq=0 ttl=52 time=50.125 ms
+64 bytes from 212.77.98.9: seq=1 ttl=52 time=48.744 ms
+64 bytes from 212.77.98.9: seq=2 ttl=52 time=51.349 ms
+64 bytes from 212.77.98.9: seq=3 ttl=52 time=50.507 ms
+64 bytes from 212.77.98.9: seq=4 ttl=52 time=48.695 ms
+
+\\\Puppy 2
+# ping wp.pl
+PING wp.pl (212.77.98.9): 56 data bytes
+64 bytes from 212.77.98.9: seq=0 ttl=52 time=47.108 ms
+64 bytes from 212.77.98.9: seq=1 ttl=52 time=50.947 ms
+64 bytes from 212.77.98.9: seq=2 ttl=52 time=49.812 ms
+64 bytes from 212.77.98.9: seq=3 ttl=52 time=48.803 ms
+64 bytes from 212.77.98.9: seq=4 ttl=52 time=54.711 ms
+64 bytes from 212.77.98.9: seq=5 ttl=52 time=49.170 ms
+64 bytes from 212.77.98.9: seq=6 ttl=52 time=50.385 ms
+
+\\\Dos 1
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=51
+Packet sequence number 1 received in 25.35 ms, ttl=51
+Packet sequence number 2 received in 24.05 ms, ttl=51
+Packet sequence number 3 received in 26.01 ms, ttl=51
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 49.51 ms (not counting lost packets) 
+
+\\\Dos 2
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=51
+Packet sequence number 1 received in 30.15 ms, ttl=51
+Packet sequence number 2 received in 29.90 ms, ttl=51
+Packet sequence number 3 received in 27.05 ms, ttl=51
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 37.40 ms (not counting lost packets) 
+Zadanie F.9c-------------------------------------
+\\\na Puppy 1
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+\\\na Puppy 2
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o ppp1 -j SNAT --to 10.0.2.15
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.2.15
+
+\\\Puppy 1
+# ping wp.pl
+PING wp.pl (212.77.98.9): 56 data bytes
+64 bytes from 212.77.98.9: seq=0 ttl=59 time=29.098 ms
+64 bytes from 212.77.98.9: seq=1 ttl=59 time=62.338 ms
+64 bytes from 212.77.98.9: seq=2 ttl=59 time=29.236 ms
+64 bytes from 212.77.98.9: seq=3 ttl=59 time=27.078 ms
+64 bytes from 212.77.98.9: seq=4 ttl=59 time=28.445 ms
+64 bytes from 212.77.98.9: seq=1 ttl=59 time=29.063 ms
+64 bytes from 212.77.98.9: seq=2 ttl=59 time=35.937 ms
+64 bytes from 212.77.98.9: seq=3 ttl=59 time=27.664 ms
+
+\\\Puppy 2
+# ping wp.pl
+PING wp.pl (212.77.98.9): 56 data bytes
+64 bytes from 212.77.98.9: seq=0 ttl=59 time=28.025 ms
+64 bytes from 212.77.98.9: seq=1 ttl=59 time=29.382 ms
+64 bytes from 212.77.98.9: seq=2 ttl=59 time=28.070 ms
+64 bytes from 212.77.98.9: seq=3 ttl=59 time=27.166 ms
+64 bytes from 212.77.98.9: seq=4 ttl=59 time=27.595 ms
+64 bytes from 212.77.98.9: seq=5 ttl=59 time=27.660 ms
+64 bytes from 212.77.98.9: seq=6 ttl=59 time=26.955 ms
+64 bytes from 212.77.98.9: seq=7 ttl=59 time=28.224 ms
+64 bytes from 212.77.98.9: seq=8 ttl=59 time=31.693 ms
+
+\\\Dos 1
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=58
+Packet sequence number 1 received in 26.35 ms, ttl=58
+Packet sequence number 2 received in 27.20 ms, ttl=58
+Packet sequence number 3 received in 27.20 ms, ttl=58
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 20.18 ms (not counting lost packets)
+
+\\\Dos 2
+C:\sik>ping 212.77.98.9
+ 
+mTCP Ping by M Brutman (mbbrutman@gmail.com) (C)opyright 2009-2015
+Version: Jul  5 2015
+ 
+ICMP Packet payload is 32 bytes.
+ 
+Packet sequence number 0 received in 0.00 ms, ttl=58
+Packet sequence number 1 received in 27.20 ms, ttl=58
+Packet sequence number 2 received in 24.65 ms, ttl=58
+Packet sequence number 3 received in 27.20 ms, ttl=58
+ 
+Packets sent: 4, Replies received: 4, Replies lost: 0
+Average time for a reply: 19.76 ms (not counting lost packets)  
+
+Zadanie F.9d-------------------------------------
+\\\na Puppy 2
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i tap0 -p tcp --dport 500 -j DNAT --to 192.168.2.1:5000
+iptables -A INPUT -p tcp –dport 5000 -j ACCEPT
+iptables -A OUTPUT -p tcp –dport 5000 -j ACCEPT
+
+Zadanie F.9e-------------------------------------
+\\\na Puppy 2
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2 -j DNAT --to 10.0.2.15:22
+iptables -A INPUT -p tcp –dport 22 -j ACCEPT
+iptables -P OUTPUT ACCEPT
+
+Zadanie F.9f-------------------------------------
+\\\
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2 -j DNAT --to 10.0.2.15:21
+iptables -A INPUT -p tcp –dport 21 -j ACCEPT
+iptables -P OUTPUT ACCEPT
+
+Zadanie F.9f2-------------------------------------
+\\\
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i tap0 -p tcp --dport 2 -j DNAT --to 192.168.2.1:21
+iptables -A INPUT -p tcp –dport 21 -j ACCEPT
+iptables -P OUTPUT ACCEPT
+
+
+Zadanie F.9g-------------------------------------
+\\na Puppy 1
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -A OUTPUT -d 212.77.98.9 -j DROP
+
+\\\na Puppy 2
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.2.15
+iptables -A OUTPUT -d 212.77.98.9 -j DROP
+
+Zadanie F.10-------------------------------------
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+To polecenie nalezy wykonac na komputerze B.
+
+Zadanie F.11-------------------------------------
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -P FORWARD DROP
+
+Zadanie F.12-------------------------------------
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i ppp1 -p tcp --dport 8015 -j DNAT --to 10.0.2.15:10000
+iptables -A INPUT -p tcp --dport 10000 -j ACCEPT
+iptables -P OUTPUT ACCEPT
+
+Zadanie F.13-------------------------------------
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i ppp1 -p tcp --dport 8015 -j DNAT --to 192.168.10.1:80
+
+Zadanie F.15-------------------------------------
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o ppp1 -j SNAT --to 10.0.2.15
+
+Zadanie F.16-------------------------------------
+ESTABLISHED - oznacza, pakiet należący do istniejącego połączenia.
+RELATED - oznacza, że pakiet związany jest z połączeniem już ustanowionym, ale nie będący jego częścią.
+
+Zadanie F.17-------------------------------------
+## serwer
+load tcludp.so udp
+  #% 
+set sock [udp_open 10000]
+  #% sock5
+fileevent $sock readable "obsluga $sock"; # budowanie odpowiedzi na pytanie klienta...
+  #% 
+proc obsluga s {
+  set x [read $s]; set peer [fconfigure $s -peer]
+  puts "$peer : $x"
+  fconfigure $s -remote $peer
+  puts -nonewline $s "$x (odp)"; flush $s
+}                                                                                                               
+  #% 
+vwait qqq
+
+## klient
+load tcludp.so udp                                                                                              
+  #% 
+set s [udp_open 10001]
+  #% sock5
+fconfigure $s -remote {faculty.wmi.amu.edu.pl 10000}
+  #% 
+fileevent $s readable "obsluga $s"; # obsługa odpowiedzi od serwera...
+  #% 
+proc obsluga s {
+  set x [read $s]; set peer [fconfigure $s -peer]
+  puts "$peer : $x"
+}
+  #% 
+set licznik 0
+  #% 0
+puts -nonewline $s "licznik=$licznik"; incr licznik; flush $s                                                   
+  #% 
+  #% 
+  #% 
+  #% 
+  #% 
+  # tu klient wysyła datagramy do serwera
+
+
+
